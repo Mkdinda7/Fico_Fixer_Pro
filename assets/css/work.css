@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #020817;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+
+:root {
+    --bg1: #0C0F38;
+    /* Dark Navy */
+    --bg2: #317BA5;
+    /* Pure Dark */
+    --white: #ffffff;
+    --muted: rgba(255, 255, 255, 0.72);
+
+    --orange: #FF5B30;
+    --orange2: #FF8F5E;
+
+    --blue: #2563EB;
+    --sky: #38BDF8;
+
+    --border: rgba(255, 255, 255, 0.10);
+    --glass: rgba(255, 255, 255, 0.04);
+}
+
+/*==================work breadcrum =================*/
+/* Section */
+.breadcrumb-hero {
+     min-height: 500px !important;
+    padding: 180px 15px 80px 15px;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.06), transparent 45%),
+        linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 100%);
+}
+
+/* Title */
+.hero-title {
+    font-size: clamp(32px, 5vw, 46px);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero-title span {
+    color: #ff7a45;
+}
+
+/* Subtitle */
+.hero-subtitle {
+    max-width: 720px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #aeb6cf;
+}
+
+
+
+/* Mobile */
+@media (max-width: 576px) {
+    .hero-subtitle {
+        font-size: 15px;
+    }
+
+    .hero-actions a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*====================HOW TO WORK =============== */
+/* Section */
+.stepper-section {
+    padding: 90px 0;
+    color: white;
+}
+
+/* Heading */
+.badge-top {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    color: #ff7a45;
+    background: rgba(255, 122, 69, 0.12);
+    border: 1px solid rgba(255, 122, 69, 0.35);
+}
+
+.title {
+    margin-top: 18px;
+    font-weight: 800;
+}
+
+.title span {
+    color: #ff7a45;
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: #aeb6cf;
+    font-size: 15px;
+}
+
+/* Stepper */
+.stepper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 70px;
+    position: relative;
+}
+
+/* Connector line */
+.stepper::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.2),
+            transparent);
+}
+
+/* Step */
+.step {
+    width: 18%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Circle */
+.circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.03);
+}
+
+/* Colors */
+.blue {
+    background: #339af0;
+}
+
+.purple {
+    background: #9775fa;
+}
+
+.orange {
+    background: #ff922b;
+}
+
+.green {
+    background: #20c997;
+}
+
+.teal {
+    background: #12b886;
+}
+
+/* Card */
+.step .card {
+    margin-top: 22px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: white;
+}
+
+.step .card span {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ff7a45;
+}
+
+.step h5 {
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+.step p {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #c6cdef;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+    .stepper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .stepper::before {
+        display: none;
+    }
+
+    .step {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .circle {
+        margin: 0;
+    }
+
+    .step .card {
+        margin-top: 0;
+    }
+}
+
+
+/*===================== what is except =====================*/
+
+/* Section */
+.expect-section {
+    padding: 90px 0;
+}
+
+/* Heading */
+.badge-top {
+    display: inline-block;
+    padding: 6px 16px;
+    font-size: 13px;
+    border-radius: 30px;
+    color: #ff7a45;
+    background: rgba(255, 122, 69, 0.12);
+    border: 1px solid rgba(255, 122, 69, 0.35);
+}
+
+.title {
+    margin-top: 16px;
+    font-weight: 800;
+}
+
+.title span {
+    color: #ff7a45;
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: #aeb6cf;
+    font-size: 15px;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 60px auto 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(-50%);
+}
+
+/* Item */
+.timeline-item {
+    position: relative;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.timeline-item.left {
+    justify-content: flex-start;
+    padding-right: 50%;
+}
+
+.timeline-item.right {
+    justify-content: flex-end;
+    padding-left: 50%;
+}
+
+/* Box */
+.content-box {
+    background: linear-gradient(180deg, #0b1328, #050b18);
+    border-radius: 16px;
+    padding: 22px;
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.content-box h5 {
+    margin-top: 6px;
+    font-weight: 700;
+}
+
+.content-box p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #c6cdef;
+}
+
+/* Day */
+.day {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ff7a45;
+}
+
+/* Dot */
+.dot {
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: #ff7a45;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 6px rgba(255, 122, 69, 0.15);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        padding: 0 0 0 50px !important;
+        justify-content: flex-start !important;
+    }
+
+    .dot {
+        left: 20px;
+    }
+
+    .content-box {
+        width: 100%;
+    }
+}
+
+
+
+/*===================== call to action section ===================*/
+
+/* Section */
+.cta-section {
+    padding: 90px 15px;
+}
+
+/* Box */
+.cta-box {
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 20px;
+    border-radius: 26px;
+    background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.06), transparent 50%),
+        linear-gradient(180deg, #0b1328, #050b18);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Heading */
+.cta-box h2 {
+    font-size: clamp(26px, 4vw, 36px);
+    font-weight: 800;
+}
+
+/* Text */
+.cta-box p {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #aeb6cf;
+}
+
+/* Button */
+.cta-btn {
+    display: inline-block;
+    margin-top: 26px;
+    padding: 16px 38px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #ff7a45, #ff5c2a);
+    box-shadow: 0 12px 36px rgba(255, 122, 69, 0.4);
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 16px 42px rgba(255, 122, 69, 0.6);
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .cta-box {
+        padding: 50px 18px;
+    }
+
+    .cta-box p {
+        font-size: 15px;
+    }
+
+    .cta-btn {
+        width: 100%;
+        padding: 16px 0;
+    }
+}

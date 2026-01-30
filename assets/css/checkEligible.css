@@ -1,0 +1,199 @@
+/* ===============================
+   EMPLOYMENT – ULTRA PREMIUM
+================================ */
+
+.employment-premium {
+    height: 100dvh;
+    padding: 110px 0;
+    background:
+        radial-gradient(1200px 400px at top center, rgba(255, 255, 255, 0.08), transparent 60%),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+    padding: 150px 0px !important;
+    overflow-y: scroll !important;
+}
+
+/* ===============================
+   STEP BADGE
+================================ */
+.step-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 16px;
+    background: linear-gradient(135deg,
+            rgba(37, 99, 235, 0.18),
+            rgba(37, 99, 235, 0.08));
+    color: var(--blue);
+    border-radius: 999px;
+    font-weight: 900;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+/* ===============================
+   TITLES
+================================ */
+.section-title {
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 900;
+    margin-top: 14px;
+    color: var(--white);
+    letter-spacing: -0.6px;
+}
+
+.section-subtitle {
+    color: var(--muted);
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* SECURITY TEXT */
+.secure-text {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--sky);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* ===============================
+   OPTION CARD (GLASS PRO)
+================================ */
+
+.employment-option {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.employment-option input {
+    display: none;
+}
+
+.option-box {
+    position: relative;
+    background:
+        linear-gradient(180deg,
+            var(--bg2), 
+            var(--bg1));
+    backdrop-filter: blur(18px);
+    border-radius: 18px;
+    padding: 26px 26px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    transition: all 0.45s cubic-bezier(.2, .9, .3, 1);
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* Glow layer */
+.option-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(300px 120px at top left,
+            rgba(37, 99, 235, 0.18),
+            transparent 60%);
+    opacity: 0;
+    transition: opacity 0.45s ease;
+    pointer-events: none;
+}
+
+/* ICON */
+.option-icon {
+    font-size: 36px;
+    color: var(--blue);
+    transition: transform 0.45s ease;
+}
+
+/* TEXT */
+.option-box h6 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 16px;
+    color: #0f172a;
+}
+
+.option-box p {
+    margin: 6px 0 0;
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+/* ===============================
+   HOVER – LUXURY MOTION
+================================ */
+
+.employment-option:hover .option-box {
+    transform: translateY(-10px) scale(1.015);
+    box-shadow:
+        0 45px 120px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.employment-option:hover .option-box::before {
+    opacity: 1;
+}
+
+.employment-option:hover .option-icon {
+    transform: scale(1.12);
+}
+
+/* ===============================
+   SELECTED – ELITE STATE
+================================ */
+
+.employment-option input:checked+.option-box {
+    border-color: var(--blue);
+    background:
+        linear-gradient(180deg,
+            rgba(37, 99, 235, 0.22),
+            rgba(37, 99, 235, 0.10));
+    box-shadow:
+        0 50px 140px rgba(37, 99, 235, 0.35),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+.employment-option input:checked+.option-box::before {
+    opacity: 1;
+}
+
+.employment-option input:checked+.option-box h6,
+.employment-option input:checked+.option-box .option-icon {
+    color: var(--blue);
+}
+
+/* ===============================
+   CONTINUE BUTTON – HERO LEVEL
+================================ */
+
+.btn-continue {
+    background: linear-gradient(135deg,
+            var(--orange),
+            var(--orange2));
+    color: var(--white);
+    font-weight: 900;
+    padding: 16px 48px;
+    border-radius: 14px;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    box-shadow:
+        0 22px 60px rgba(255, 91, 48, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    transition: all 0.35s cubic-bezier(.2, .9, .3, 1);
+}
+
+.btn-continue:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow:
+        0 40px 110px rgba(255, 91, 48, 0.65);
+}

@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* ===============================
+   ROOT VARIABLES
+================================ */
+:root {
+    --bg1: #0C0F38;
+    --bg2: #020617;
+
+    --white: #ffffff;
+    --muted: rgba(255, 255, 255, 0.7);
+
+    --orange: #FF5B30;
+    --orange2: #FF8F5E;
+
+    --glass: rgba(255, 255, 255, 0.06);
+    --border: rgba(255, 255, 255, 0.12);
+}
+
+
+/* ===============================
+   BODY BACKGROUND
+================================ */
+body {
+    min-height: 100vh;
+
+    background-image:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.04), transparent 60%),
+        linear-gradient(180deg, rgba(12, 15, 56, 0.85), rgba(2, 6, 23, 0.9)),
+        url("./../../images/authImg/loginImg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--white);
+}
+
+/* ===============================
+   WRAPPER
+================================ */
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ===============================
+   CARD
+================================ */
+.auth-card {
+    width: 100%;
+    max-width: 520px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.10),
+        rgba(255, 255, 255, 0.04)
+    );
+
+    backdrop-filter: blur(22px);
+    border-radius: 26px;
+    padding: 56px;
+    border: 1px solid var(--border);
+    box-shadow: 0 40px 120px rgba(0, 0, 0, 0.55);
+}
+
+/* ===============================
+   TITLE
+================================ */
+.auth-title {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.25;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+/* ===============================
+   SOCIAL BUTTONS
+================================ */
+.social-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    background: rgba(255, 255, 255, 0.14);
+    transform: translateY(-2px);
+}
+
+/* ===============================
+   DIVIDER
+================================ */
+.divider {
+    text-align: center;
+    font-size: 14px;
+    color: var(--muted);
+    margin: 24px 0;
+}
+
+/* ===============================
+   FORM
+================================ */
+.form-label {
+    font-weight: 700;
+    color: var(--muted);
+}
+
+.form-control {
+    height: 48px;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border);
+
+    color: var(--white);
+    font-size: 15px;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--orange);
+    box-shadow: none;
+    color: var(--white);
+}
+
+/* ===============================
+   CHECKBOX
+================================ */
+.form-check-input {
+    background-color: transparent;
+    border: 1px solid var(--border);
+}
+
+.form-check-input:checked {
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.btn-primary {
+    background: linear-gradient(135deg, var(--orange), var(--orange2));
+    border: none;
+    border-radius: 999px;
+    padding: 14px;
+
+    font-weight: 900;
+    letter-spacing: 0.4px;
+
+    box-shadow: 0 18px 55px rgba(255, 91, 48, 0.35);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 25px 75px rgba(255, 91, 48, 0.45);
+}
+
+.btn-link {
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 575px) {
+    .auth-card {
+        padding: 28px 20px;
+        border-radius: 20px;
+    }
+
+    .auth-title {
+        font-size: 24px;
+    }
+
+    .social-btn {
+        width: 48px;
+        height: 48px;
+    }
+}

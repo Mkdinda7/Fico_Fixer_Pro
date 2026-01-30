@@ -1,0 +1,494 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/* ===============================
+   ALL ACCOUNTS BREADCRUMB
+================================ */
+.account-breadcrumb {
+    padding-top: 150px;
+    position: relative;
+    height: 420px;
+    background: url("./../../../images/accountimg/allaccountBg.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+/* Dark overlay */
+.account-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.55) 50%,
+            rgba(0, 0, 0, 0.35) 100%);
+}
+
+/* Ensure content above overlay */
+.account-breadcrumb .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Title */
+.account-title {
+    font-size: clamp(32px, 5vw, 46px);
+    font-weight: 800;
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 2px;
+}
+
+/* Breadcrumb nav */
+.account-breadcrumb-nav {
+    background: transparent;
+    margin-bottom: 0;
+}
+
+.account-breadcrumb-nav .breadcrumb-item a {
+    color: #f97316;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.account-breadcrumb-nav .breadcrumb-item.active {
+    color: #ffffff;
+}
+
+/* Divider */
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .account-breadcrumb {
+        height: 260px;
+    }
+
+    .account-title {
+        font-size: 30px;
+    }
+}
+
+
+/* ===============================
+   PREMIUM ACCOUNTS SECTION
+================================ */
+.premium-accounts {
+    padding: 100px 0;
+    background: linear-gradient(180deg, #020617, #020617);
+}
+
+/* Heading */
+.accounts-title {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 800;
+    color: #fff;
+}
+
+.accounts-title span {
+    color: #ff7a3d;
+}
+
+.accounts-subtitle {
+    color: #9ca3af;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Card */
+.account-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 2px solid rgba(255, 115, 0, 0.911);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    height: 100%;
+
+}
+
+.account-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.35s ease;
+    cursor: pointer;
+}
+
+.account-content {
+    padding: 22px;
+    background: #131F49;
+    color: white !important;
+}
+
+.account-content h5 {
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: white;
+}
+
+.account-content p {
+    font-size: 14px;
+    color: #9da3af;
+}
+
+/* Hover */
+.account-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+.account-card:hover img {
+    filter: grayscale(0%);
+}
+
+/* CTA */
+.view-all-btn {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ff7a3d;
+    padding: 15px 20px;
+    border-radius: 26px;
+    gap: 8px;
+    font-weight: 600;
+    color: #ff7a3d;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.view-all-btn:hover {
+    color: #ffa375;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .premium-accounts {
+        padding: 70px 20px;
+    }
+
+    .account-card img {
+        height: 200px;
+    }
+}
+
+
+/* ===============================
+   PREMIUM STEPS SECTION
+================================ */
+.premium-steps {
+    padding: 100px 0;
+    background: linear-gradient(180deg, #020617, #020617);
+}
+
+/* Heading */
+.steps-title {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 800;
+    color: #fff;
+}
+
+.steps-title span {
+    color: #ff7a3d;
+}
+
+.steps-subtitle {
+    color: #9ca3af;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+/* Card */
+.step-card {
+    position: relative;
+    height: 100%;
+    padding: 30px 24px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: left;
+    transition: all 0.35s ease;
+}
+
+/* Step badge */
+.step-badge {
+    position: absolute;
+    top: -14px;
+    right: 20px;
+    background: linear-gradient(135deg, #ff7a3d, #ff9f6b);
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 999px;
+}
+
+/* Icon */
+.step-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: rgba(255, 122, 61, 0.15);
+    color: #ff7a3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+/* Text */
+.step-card h5 {
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.step-card p {
+    font-size: 14px;
+    color: #9ca3af;
+    line-height: 1.6;
+}
+
+/* Hover */
+.step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+    border-color: rgba(255, 122, 61, 0.4);
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .premium-steps {
+        padding: 70px 20px;
+    }
+
+    .step-card {
+        text-align: center;
+    }
+
+    .step-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* ===============================
+   PREMIUM FEATURE SECTION
+================================ */
+.premium-feature {
+    background: #020617;
+    color: #fff;
+}
+
+/* LEFT IMAGE */
+.feature-image {
+    position: relative;
+    background: url("./../../../images/accountimg/banking-tab-1.jpg") center/cover no-repeat;
+    min-height: 520px;
+}
+
+.feature-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+            rgba(2, 6, 23, 0.9),
+            rgba(2, 6, 23, 0.6),
+            rgba(2, 6, 23, 0.3));
+}
+
+/* RIGHT CONTENT */
+.feature-content {
+    padding: 80px 60px;
+    background: #020617;
+}
+
+.feature-tag {
+    display: inline-block;
+    color: #ff7a3d;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.feature-title {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.feature-text {
+    color: #9ca3af;
+    font-size: 15px;
+    max-width: 520px;
+}
+
+/* LIST */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.feature-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #ff7a3d;
+    font-weight: bold;
+}
+
+/* BOTTOM SERVICES */
+.feature-services {
+    background: linear-gradient(135deg, #0ea5a4, #0284c7);
+    padding: 24px 0;
+}
+
+.service-item {
+    color: #fff;
+    opacity: 0.85;
+    transition: all 0.3s ease;
+}
+
+.service-item i {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.service-item h6 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.service-item.active,
+.service-item:hover {
+    opacity: 1;
+    transform: translateY(-4px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .feature-content {
+        padding: 60px 30px;
+    }
+
+    .feature-image {
+        min-height: 300px;
+    }
+}
+
+
+/* ===============================
+   QUESTIONS & ANSWERS
+================================ */
+.qa-section {
+    padding: 100px 0;
+    background: linear-gradient(180deg, #020617, #020617);
+
+}
+
+/* Left */
+.qa-title {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    color: #020617;
+}
+
+.qa-subtitle {
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.qa-image {
+    border-radius: 14px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Search */
+.qa-search-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #020617;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.qa-search .form-control {
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #e5e7eb;
+    box-shadow: none;
+}
+
+.qa-search .input-group-text {
+    background: #ff7a3d;
+    color: #fff;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Accordion */
+.qa-accordion .accordion-item {
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    margin-bottom: 14px;
+    overflow: hidden;
+}
+
+.qa-accordion .accordion-button {
+    font-weight: 600;
+    color: #020617;
+    background: #fff;
+    box-shadow: none;
+}
+
+.qa-accordion .accordion-button:not(.collapsed) {
+    color: #ff7a3d;
+}
+
+.qa-accordion .accordion-button::after {
+    transform: scale(0.8);
+}
+
+/* Body */
+.qa-accordion .accordion-body {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+/* Footer */
+.qa-footer {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.qa-footer a {
+    color: #ff7a3d;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .qa-section {
+        padding: 70px 20px;
+    }
+
+    .qa-image {
+        margin-bottom: 30px;
+    }
+}

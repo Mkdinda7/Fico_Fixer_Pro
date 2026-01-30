@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* ===============================
+   PREMIUM BREADCRUMB SECTION
+================================ */
+
+.page-breadcrumb {
+    position: relative;
+    height: 260px;
+    background: url("./../../../images/accountimg/allaccountBg.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 250px 0px !important;
+}
+
+/* Dark overlay */
+.breadcrumb-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.45));
+}
+
+/* Title Card */
+.breadcrumb-card {
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    padding: 18px 32px;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.breadcrumb-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #111;
+    margin: 0;
+}
+
+/* Breadcrumb Nav */
+.breadcrumb-nav {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 999px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Breadcrumb Links */
+.breadcrumb-nav .breadcrumb-item a {
+    color: #ff5b30;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.breadcrumb-nav .breadcrumb-item.active {
+    color: #444;
+    font-weight: 700;
+}
+
+/* Separator */
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "›";
+    color: #999;
+    padding: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-breadcrumb {
+        height: 220px;
+        text-align: center;
+    }
+
+    .breadcrumb-card {
+        border-radius: 8px;
+    }
+}
+
+
+/* ===== PREMIUM THEME ===== */
+
+
+.allCard-section {
+    background: linear-gradient(180deg, #0c0f38, #1b3c59);
+    color: #fff;
+}
+
+.section-title {
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.nav-tabs {
+    border: none;
+    gap: 10px;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    border-radius: 999px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-weight: 600;
+}
+
+.nav-tabs .nav-link.active {
+    background: linear-gradient(135deg, #ff5b30, #ff8f5e);
+    color: #fff;
+}
+
+/* CARD */
+.credit-card {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+    margin-bottom: 24px;
+}
+
+.credit-card:hover {
+    transform: translateY(-6px);
+}
+
+.card-left img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.badge-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 12px;
+    border-radius: 999px;
+    background: #ff5b30;
+    margin-bottom: 8px;
+}
+
+.features div {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.btn-premium {
+    background: linear-gradient(135deg, #ff5b30, #ff8f5e);
+    border: none;
+    color: #fff;
+    border-radius: 999px;
+    padding: 10px 18px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .credit-card {
+        grid-template-columns: 1fr;
+    }
+}

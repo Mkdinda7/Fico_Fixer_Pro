@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ===============================
+   CONTACT-US BREADCRUMB
+================================ */
+
+.page-breadcrumb {
+    position: relative;
+    height: 260px;
+    background: url("./../images/accountimg/allaccountBg.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 250px 0px !important;
+}
+
+/* Dark overlay */
+.breadcrumb-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.45));
+}
+
+/* Title Card */
+.breadcrumb-card {
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    padding: 18px 32px;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.breadcrumb-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #111;
+    margin: 0;
+}
+
+/* Breadcrumb Nav */
+.breadcrumb-nav {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 999px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Breadcrumb Links */
+.breadcrumb-nav .breadcrumb-item a {
+    color: #ff5b30;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.breadcrumb-nav .breadcrumb-item.active {
+    color: #444;
+    font-weight: 700;
+}
+
+/* Separator */
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "›";
+    color: #999;
+    padding: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-breadcrumb {
+        height: 220px;
+        text-align: center;
+    }
+
+    .breadcrumb-card {
+        border-radius: 8px;
+    }
+}
+
+
+/* ==============================
+   PREMIUM CONTACT SECTION
+============================== */
+
+.contact-premium {
+    /* background: #f6efe8; */
+    padding: 90px 0;
+}
+
+.contact-wrapper {
+    background: #12244F;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+
+}
+
+/* LEFT PANEL */
+.contact-left {
+    padding: 60px;
+}
+
+.contact-left h2 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.contact-subtext {
+    color: #777;
+    margin: 14px 0 30px;
+}
+
+.contact-info-card {
+    background: #fff;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.info-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 26px;
+}
+
+.info-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #f3ece6;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+}
+
+.info-row span {
+    font-weight: 700;
+    font-size: 14px;
+    color: #999;
+}
+
+.info-row p {
+    margin: 2px 0 0;
+    font-weight: 600;
+}
+
+.info-row small {
+    color: #999;
+}
+
+/* FOOTER */
+.contact-footer {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.social-icons a {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    text-decoration: none;
+}
+
+/* RIGHT PANEL */
+.contact-right {
+    background: #f7f1e9;
+    padding: 60px;
+}
+
+.contact-right label {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 14px;
+}
+
+.contact-right .form-control {
+    border-radius: 6px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.contact-right .form-control:focus {
+    border-color: #FF7A3D;
+    box-shadow: none;
+}
+
+/* BUTTON */
+.contact-btn {
+    margin-top: 20px;
+    background: #FF7A3D;
+    color: #fff;
+    font-weight: 700;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.contact-btn:hover {
+    background: #b05010;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+
+    .contact-left,
+    .contact-right {
+        padding: 35px;
+    }
+}
