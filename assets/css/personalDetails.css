@@ -73,26 +73,6 @@ body {
     color: #fff;
 }
 
-/* Tooltip bubble */
-.tip {
-    background: #1ac79d;
-    color: #0b2e25;
-    padding: 6px 12px;
-    border-radius: 10px;
-    font-size: 13px;
-    display: inline-block;
-    position: relative;
-}
-
-.tip:after {
-    content: '';
-    position: absolute;
-    left: -8px;
-    top: 10px;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-right: 8px solid #1ac79d;
-}
 
 /* Text blocks */
 .info-text {
@@ -127,6 +107,30 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 25px 70px rgba(255, 91, 48, .45);
 }
+
+/* Select Box */
+select.form-control {
+    background: rgba(255, 255, 255, 0.06) !important;
+    color: #fff !important;
+}
+
+/* Option background */
+select.form-control option {
+    background: #0C0F38 !important;
+    color: #ffffff !important;
+}
+
+/* Hover & focus */
+select.form-control:focus {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: #FF5B30 !important;
+}
+
+/* Disabled first option */
+select.form-control option:disabled {
+    color: #aab4cf !important;
+}
+
 
 /* Responsive */
 @media(max-width:575px) {
