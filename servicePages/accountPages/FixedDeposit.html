@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon area -->
+    <link rel="shortcut icon" href="./assets/images/webImg/favicon.png" type="image/x-icon">
+
+    <!--  Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--  Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+
+    <!--  Custom CSS -->
+    <link rel="stylesheet" href="./../../assets/css/AllPagesCss/serviceCss/fixeddeposit.css" />
+    <link rel="stylesheet" href="./../../assets/css/main.css">
+</head>
+
+<body>
+
+     <!--==================Header section area ==================-->
+    <header>
+        <!--  Premium Navbar -->
+        <nav class="navbar navbar-expand-lg premium-navbar sticky-top">
+            <div class="container">
+
+                <!--  Brand / Logo -->
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+
+                    <img src="./../../assets/images/webImg/nav-logo.png" alt="header-logo"
+                        style="width: 100%; height: 80px;">
+                </a>
+
+                <!--  Mobile toggler -->
+                <button class="navbar-toggler premium-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--  Desktop Menu -->
+                <div class="collapse navbar-collapse">
+
+                    <!-- Center Links -->
+                    <ul class="navbar-nav mx-auto gap-lg-4">
+                        <li class="nav-item"><a class="nav-link nav-premium active" href="./../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-premium" href="./../../features.html">Features</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-premium" href="./../../pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-premium" href="./../../work.html">Works</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-premium dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">
+                                Services
+                            </a>
+
+                            <ul class="dropdown-menu premium-dropdown-menu">
+
+                                <!-- Accounts -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                        Accounts
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./AllAccount.html">All Account</a></li>
+                                        <li><a class="dropdown-item" href="./SavingAccount.html">Savings Account</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Current Account</a></li>
+                                        <li><a class="dropdown-item" href="#">Fixed Deposit</a></li>
+                                        <li><a class="dropdown-item" href="#">Salary Account</a></li>
+                                        <li><a class="dropdown-item" href="#">NRI Account</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- Cards -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                        Cards
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./../cardPages/allCard.html">All Card</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Credit Card</a></li>
+                                        <li><a class="dropdown-item" href="#">Debit Card</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- Loans -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                        Loans
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Home Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Personal Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Vehicle Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Education Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Gold Loan</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-premium dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Apply Now
+                            </a>
+
+                            <ul class="dropdown-menu premium-dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Home Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Personal Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Vehicle Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Education Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Gold Loan</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Right Action -->
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="./../../auth/login.html" class="nav-signin">Sign In</a>
+                        <a href="./../../auth/register.html" class="btn btn-premium">Get Started</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Offcanvas Mobile Menu -->
+        <div class="offcanvas offcanvas-end premium-offcanvas" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header border-bottom border-light border-opacity-10">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <img src="./../../assets/images/webImg/nav-logo.png" alt="header-logo" style="height:80px;">
+                </a>
+                <button type="button" class="btn-close btn-close-white me-3" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+
+                <!-- NORMAL LINKS -->
+                <ul class="navbar-nav gap-2 mb-2">
+                    <li class="nav-item"><a class="nav-link nav-premium " href="./../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-premium" href="./../../features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link nav-premium" href="./../../pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link nav-premium" href="./../../work.html">Works</a></li>
+                </ul>
+
+                <!-- MAIN ACCORDION -->
+                <div class="accordion accordion-flush" id="mobileAccordion">
+
+                    <!-- SERVICES -->
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent text-white active" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#servicesAcc">
+                                Services
+                            </button>
+                        </h2>
+
+                        <div id="servicesAcc" class="accordion-collapse collapse">
+                            <div class="accordion-body pt-0">
+
+                                <!-- MINI ACCORDION -->
+                                <div class="accordion accordion-flush ms-3" id="servicesMini">
+
+                                    <!-- ACCOUNTS -->
+                                    <div class="accordion-item bg-transparent border-0">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent text-white"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#accountsAcc">
+                                                Accounts
+                                            </button>
+                                        </h2>
+                                        <div id="accountsAcc" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <a class="nav-link nav-premium" href="./AllAccount.html">All Account</a>
+                                                <a class="nav-link nav-premium" href="./SavingAccount.html">Savings
+                                                    Account</a>
+                                                <a class="nav-link nav-premium" href="#">Current Account</a>
+                                                <a class="nav-link nav-premium" href="#">Fixed Deposit</a>
+                                                <a class="nav-link nav-premium" href="#">Salary Account</a>
+                                                <a class="nav-link nav-premium" href="#">NRI Account</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- CARDS -->
+                                    <div class="accordion-item bg-transparent border-0">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent text-white"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#cardsAcc">
+                                                Cards
+                                            </button>
+                                        </h2>
+                                        <div id="cardsAcc" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <a class="dropdown-item" href="./../cardPages/allCard.html">All Card</a>
+                                                <a class="nav-link nav-premium" href="#">Credit Card</a>
+                                                <a class="nav-link nav-premium" href="#">Debit Card</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- LOANS -->
+                                    <div class="accordion-item bg-transparent border-0">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent text-white"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#loansAcc">
+                                                Loans
+                                            </button>
+                                        </h2>
+                                        <div id="loansAcc" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <a class="nav-link nav-premium" href="#">Home Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Personal Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Vehicle Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Education Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Gold Loan</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- APPLY NOW -->
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#applyAcc">
+                                Apply Now
+                            </button>
+                        </h2>
+                        <div id="applyAcc" class="accordion-collapse collapse">
+                            <div class="accordion-body pt-0">
+                                <a class="nav-link nav-premium" href="#">Dispute Letters</a>
+                                <a class="nav-link nav-premium" href="#">Goodwill Letters</a>
+                                <a class="nav-link nav-premium" href="#">Debt Validation</a>
+                                <a class="nav-link nav-premium" href="#">Identity Theft</a>
+                                <a class="nav-link nav-premium" href="#">Cease & Desist</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="mt-4 d-grid gap-2">
+                    <a href="./../../auth/register.html" class="btn btn-premium w-100">Get Started</a>
+                    <a href="./../../auth/login.html" class="btn btn-outline-light w-100 rounded-pill py-2 fw-bold">
+                        Sign In
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- FIXED DEPOSIT HERO -->
+    <section class="fd-hero">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-6">
+                    <h1 class="fd-title">
+                        Fixed <span>Deposit</span>
+                    </h1>
+
+                    <p class="fd-subtitle">
+                        Grow your savings with guaranteed returns
+                    </p>
+
+                    <div class="fd-rate-badge">
+                        <i class="bi bi-graph-up-arrow"></i>
+                        <div>
+                            <small>Interest Rate Up To</small>
+                            <strong>8.5% p.a.</strong>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3 flex-wrap mt-4">
+                        <a href="#" class="fd-btn-primary">
+                            Open Fixed Deposit <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                        <a href="#" class="fd-btn-outline">
+                            <i class="bi bi-calculator"></i>
+                            Calculate Returns
+                        </a>
+                    </div>
+
+                    <div class="fd-trust mt-4">
+                        <span><i class="bi bi-shield-check"></i> 100% Secure</span>
+                        <span><i class="bi bi-check-circle"></i> Guaranteed Returns</span>
+                    </div>
+                </div>
+
+                <!-- RIGHT INFO CARDS -->
+                <div class="col-lg-6">
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <div class="fd-info-card">
+                                <i class="bi bi-graph-up"></i>
+                                <p>Interest Rate</p>
+                                <h6>Up to 8.5%</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="fd-info-card">
+                                <i class="bi bi-shield-check"></i>
+                                <p>Capital Safety</p>
+                                <h6>100%</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="fd-info-card">
+                                <i class="bi bi-calculator"></i>
+                                <p>Min. Deposit</p>
+                                <h6>₹10,000</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="fd-info-card">
+                                <i class="bi bi-arrow-right"></i>
+                                <p>Tenure</p>
+                                <h6>7 days – 10 years</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FD BENEFITS SECTION -->
+    <section class="fd-benefits-section">
+        <div class="container">
+
+            <!-- Top Badge -->
+            <div class="text-center mb-3">
+                <span class="fd-badge">Key Features</span>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="fd-benefits-title text-center">
+                Our Fixed Deposit <span>Benefits</span>
+            </h2>
+            <p class="fd-benefits-subtitle text-center">
+                Designed to help individuals and families grow their savings with complete security
+            </p>
+
+            <!-- Cards -->
+            <div class="row g-4 mt-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="fd-benefit-card">
+                        <div class="fd-benefit-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <h5>High Guaranteed Returns</h5>
+                        <p>
+                            Enjoy attractive interest rates up to 8.5% p.a. with assured returns on your investment.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="fd-benefit-card">
+                        <div class="fd-benefit-icon">
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+                        <h5>Flexible Tenure Options</h5>
+                        <p>
+                            Choose from 7 days to 10 years tenure based on your financial goals.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="fd-benefit-card">
+                        <div class="fd-benefit-icon">
+                            <i class="bi bi-wallet2"></i>
+                        </div>
+                        <h5>Interest Payout Options</h5>
+                        <p>
+                            Get monthly, quarterly, or cumulative interest payouts as per your preference.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="fd-benefit-card">
+                        <div class="fd-benefit-icon">
+                            <i class="bi bi-arrow-counterclockwise"></i>
+                        </div>
+                        <h5>Premature Withdrawal</h5>
+                        <p>
+                            Facility to withdraw your deposit before maturity with applicable charges.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="fd-benefit-card">
+                        <div class="fd-benefit-icon">
+                            <i class="bi bi-repeat"></i>
+                        </div>
+                        <h5>Auto-Renewal Option</h5>
+                        <p>
+                            Set up automatic renewal of your FD at maturity for continued growth.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="fd-benefit-card">
+                        <div class="fd-benefit-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h5>100% Capital Safety</h5>
+                        <p>
+                            Your principal amount is completely secure with guaranteed returns.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FD INTEREST RATES SECTION -->
+    <section class="fd-rates-section">
+        <div class="container">
+
+            <!-- Badge -->
+            <div class="text-center mb-3">
+                <span class="fd-rates-badge">Interest Rates</span>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="fd-rates-title text-center">
+                FD Interest <span>Rates</span>
+            </h2>
+            <p class="fd-rates-subtitle text-center">
+                Competitive interest rates for all tenure options. Senior citizens enjoy additional benefits.
+            </p>
+
+            <!-- Table -->
+            <div class="fd-rates-table-wrapper mt-5">
+                <div class="table-responsive">
+                    <table class="fd-rates-table">
+                        <thead>
+                            <tr>
+                                <th>Tenure</th>
+                                <th>General Public</th>
+                                <th>Senior Citizens</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>7 – 14 days</td>
+                                <td>4.50%</td>
+                                <td>5.00%</td>
+                            </tr>
+                            <tr>
+                                <td>15 – 45 days</td>
+                                <td>5.00%</td>
+                                <td>5.50%</td>
+                            </tr>
+                            <tr>
+                                <td>46 – 90 days</td>
+                                <td>5.50%</td>
+                                <td>6.00%</td>
+                            </tr>
+                            <tr>
+                                <td>91 – 180 days</td>
+                                <td>6.00%</td>
+                                <td>6.50%</td>
+                            </tr>
+                            <tr>
+                                <td>181 days – 1 year</td>
+                                <td>6.75%</td>
+                                <td>7.25%</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>1 year – 2 years</td>
+                                <td>
+                                    7.50%
+                                    <span class="best-badge">Best</span>
+                                </td>
+                                <td>
+                                    8.00%
+                                    <span class="best-badge">Best</span>
+                                </td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>2 years – 3 years</td>
+                                <td>
+                                    7.75%
+                                    <span class="best-badge">Best</span>
+                                </td>
+                                <td>
+                                    8.25%
+                                    <span class="best-badge">Best</span>
+                                </td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>3 years – 5 years</td>
+                                <td>
+                                    8.00%
+                                    <span class="best-badge">Best</span>
+                                </td>
+                                <td>
+                                    8.50%
+                                    <span class="best-badge">Best</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5 years – 10 years</td>
+                                <td>7.50%</td>
+                                <td>8.00%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Note -->
+            <p class="fd-rates-note">
+                * Interest rates are subject to change. Senior citizens (60 years and above)
+                get additional 0.50% on all tenures.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE FD SECTION -->
+    <section class="fd-why-section">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-6">
+
+                    <span class="fd-why-badge">Why Choose Us</span>
+
+                    <h2 class="fd-why-title">
+                        Why Choose Our <span>Fixed Deposit</span>
+                    </h2>
+
+                    <p class="fd-why-subtitle">
+                        Experience the perfect blend of security, returns, and convenience
+                        with our Fixed Deposit offerings.
+                    </p>
+
+                    <div class="fd-why-list">
+
+                        <div class="fd-why-item">
+                            <div class="fd-why-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <div>
+                                <h6>100% Capital Safety</h6>
+                                <p>Your investment is fully secured with our robust banking infrastructure</p>
+                            </div>
+                        </div>
+
+                        <div class="fd-why-item">
+                            <div class="fd-why-icon">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <div>
+                                <h6>Assured Returns</h6>
+                                <p>Guaranteed interest rates unaffected by market fluctuations</p>
+                            </div>
+                        </div>
+
+                        <div class="fd-why-item">
+                            <div class="fd-why-icon">
+                                <i class="bi bi-bank"></i>
+                            </div>
+                            <div>
+                                <h6>Trusted Banking Partner</h6>
+                                <p>Over 25+ years of excellence in financial services</p>
+                            </div>
+                        </div>
+
+                        <div class="fd-why-item">
+                            <div class="fd-why-icon">
+                                <i class="bi bi-phone"></i>
+                            </div>
+                            <div>
+                                <h6>Easy Online Booking</h6>
+                                <p>Open your FD in minutes from anywhere, anytime</p>
+                            </div>
+                        </div>
+
+                        <div class="fd-why-item">
+                            <div class="fd-why-icon">
+                                <i class="bi bi-receipt"></i>
+                            </div>
+                            <div>
+                                <h6>Tax-Saving FD Options</h6>
+                                <p>Save up to ₹1.5 Lakh under Section 80C with 5-year tax saver FD</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT STATS CARD -->
+                <div class="col-lg-6">
+                    <div class="fd-stats-card">
+
+                        <h4 class="fd-stats-title">
+                            Join 20k+ Happy Investors
+                        </h4>
+
+                        <div class="row g-3 mt-3">
+
+                            <div class="col-6">
+                                <div class="fd-stat-box">
+                                    <h3>₹500Cr+</h3>
+                                    <p>Total Deposits</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="fd-stat-box">
+                                    <h3>20k+</h3>
+                                    <p>Happy Customers</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="fd-stat-box">
+                                    <h3>8.5%</h3>
+                                    <p>Max Interest</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="fd-stat-box">
+                                    <h3>25+</h3>
+                                    <p>Years of Trust</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Avatars -->
+                        <div class="fd-investors mt-4">
+                            <div class="fd-avatar">A</div>
+                            <div class="fd-avatar">B</div>
+                            <div class="fd-avatar">C</div>
+                            <div class="fd-avatar">D</div>
+                            <span class="fd-more">+16k more investors</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FD ELIGIBILITY + DOCS -->
+    <section class="fd-eligibility-docs">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- LEFT : WHO CAN INVEST -->
+                <div class="col-lg-6">
+
+                    <span class="fd-pill">Eligibility</span>
+
+                    <h2 class="fd-ed-title">
+                        Who Can <span>Invest</span>
+                    </h2>
+
+                    <p class="fd-ed-subtitle">
+                        Our Fixed Deposit is open to a wide range of investors
+                    </p>
+
+                    <div class="fd-invest-list">
+
+                        <div class="fd-invest-item">
+                            <div class="fd-invest-icon">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            <div class="fd-invest-text">
+                                <h6>Individuals</h6>
+                                <p>Any Indian resident above 18 years</p>
+                            </div>
+                            <span class="fd-check"><i class="bi bi-check"></i></span>
+                        </div>
+
+                        <div class="fd-invest-item">
+                            <div class="fd-invest-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <div class="fd-invest-text">
+                                <h6>Senior Citizens</h6>
+                                <p>60 years and above with extra benefits</p>
+                            </div>
+                            <span class="fd-check"><i class="bi bi-check"></i></span>
+                        </div>
+
+                        <div class="fd-invest-item">
+                            <div class="fd-invest-icon">
+                                <i class="bi bi-person-plus"></i>
+                            </div>
+                            <div class="fd-invest-text">
+                                <h6>Joint Account Holders</h6>
+                                <p>Up to 3 joint holders allowed</p>
+                            </div>
+                            <span class="fd-check"><i class="bi bi-check"></i></span>
+                        </div>
+
+                        <div class="fd-invest-item">
+                            <div class="fd-invest-icon">
+                                <i class="bi bi-house"></i>
+                            </div>
+                            <div class="fd-invest-text">
+                                <h6>HUF</h6>
+                                <p>Hindu Undivided Family accounts</p>
+                            </div>
+                            <span class="fd-check"><i class="bi bi-check"></i></span>
+                        </div>
+
+                        <div class="fd-invest-item">
+                            <div class="fd-invest-icon">
+                                <i class="bi bi-globe"></i>
+                            </div>
+                            <div class="fd-invest-text">
+                                <h6>NRIs</h6>
+                                <p>Non-Resident Indians (NRO/NRE accounts)</p>
+                            </div>
+                            <span class="fd-check"><i class="bi bi-check"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT : REQUIRED DOCUMENTS -->
+                <div class="col-lg-6">
+
+                    <span class="fd-pill">Documents</span>
+
+                    <h2 class="fd-ed-title">
+                        Required <span>Documents</span>
+                    </h2>
+
+                    <p class="fd-ed-subtitle">
+                        Essential documents needed to open your Fixed Deposit
+                    </p>
+
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <div class="fd-doc-card">
+                                <div class="fd-doc-number">1</div>
+                                <h6>PAN Card</h6>
+                                <p>Mandatory for all deposits</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="fd-doc-card">
+                                <div class="fd-doc-number">2</div>
+                                <h6>Address Proof</h6>
+                                <p>Aadhaar / Passport / Utility Bill</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="fd-doc-card">
+                                <div class="fd-doc-number">3</div>
+                                <h6>KYC Documents</h6>
+                                <p>Identity and address verification</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="fd-doc-card">
+                                <div class="fd-doc-number">4</div>
+                                <h6>Photograph</h6>
+                                <p>Recent passport size photo</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="fd-doc-note">
+                        <strong>Note:</strong> All documents must be self-attested.
+                        Original documents may be required for verification.
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FD CALCULATOR -->
+    <section class="fd-calculator-section">
+        <div class="container">
+
+            <span class="fd-pill">FD Calculator</span>
+
+            <h2 class="fd-calc-title">
+                Calculate Your <span>Returns</span>
+            </h2>
+
+            <p class="fd-calc-subtitle">
+                Use our calculator to estimate your Fixed Deposit maturity amount and interest earned
+            </p>
+
+            <div class="row g-4 mt-4">
+
+                <!-- LEFT PANEL -->
+                <div class="col-lg-6">
+                    <div class="fd-calc-box">
+
+                        <!-- Deposit -->
+                        <div class="fd-field">
+                            <div class="fd-label">
+                                <span>Deposit Amount</span>
+                                <strong id="depositValue">₹18,80,000</strong>
+                            </div>
+                            <input type="range" min="10000" max="10000000" step="10000" value="1880000"
+                                id="depositRange">
+                            <div class="fd-range-labels">
+                                <span>₹10,000</span>
+                                <span>₹1 Crore</span>
+                            </div>
+                        </div>
+
+                        <!-- Tenure -->
+                        <div class="fd-field mt-4">
+                            <div class="fd-label">
+                                <span>Tenure (Months)</span>
+                                <strong id="tenureValue">31 months</strong>
+                            </div>
+                            <input type="range" min="1" max="120" value="31" id="tenureRange">
+                            <div class="fd-range-labels">
+                                <span>1 month</span>
+                                <span>10 years</span>
+                            </div>
+                        </div>
+
+                        <!-- Payout -->
+                        <div class="fd-field mt-4">
+                            <span class="fd-small-title">Interest Payout</span>
+                            <div class="fd-payout-buttons">
+                                <button class="active" data-type="cumulative">Cumulative</button>
+                                <button data-type="monthly">Monthly</button>
+                                <button data-type="quarterly">Quarterly</button>
+                            </div>
+                        </div>
+
+                        <!-- Rate -->
+                        <div class="fd-rate-box mt-4">
+                            <span>Applicable Rate</span>
+                            <strong id="rateValue">7.75% p.a.</strong>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT PANEL -->
+                <div class="col-lg-6">
+                    <div class="fd-result-box">
+
+                        <div class="fd-result-header">
+                            <div class="fd-result-icon">
+                                <i class="bi bi-calculator"></i>
+                            </div>
+                            <h5>Your Returns</h5>
+                        </div>
+
+                        <div class="fd-result-card">
+                            <span>Principal Amount</span>
+                            <h4 id="principalResult">₹18,80,000</h4>
+                        </div>
+
+                        <div class="fd-result-card">
+                            <span>Interest Earned</span>
+                            <h4 class="orange" id="interestResult">₹4,12,322</h4>
+                        </div>
+
+                        <div class="fd-result-card highlight">
+                            <span>Maturity Amount</span>
+                            <h3 id="maturityResult">₹22,92,322</h3>
+                        </div>
+
+                        <a href="#" class="fd-cta-btn">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            Open Fixed Deposit Now
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ SECTION -->
+    <section class="fd-faq-section">
+        <div class="container">
+
+            <span class="faq-pill">FAQ</span>
+
+            <h2 class="faq-title">
+                Questions & <span>Answers</span>
+            </h2>
+
+            <p class="faq-subtitle">
+                Find answers to all your questions about our banking services
+            </p>
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is the minimum Fixed Deposit amount?
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        The minimum Fixed Deposit amount starts from ₹10,000, making it accessible for most investors.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I withdraw my FD before maturity?
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, premature withdrawal is allowed with applicable charges depending on tenure.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How is interest calculated on Fixed Deposits?
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        Interest is calculated based on the deposit amount, tenure, and selected payout option.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is my Fixed Deposit safe?
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, Fixed Deposits are completely safe with guaranteed returns and capital protection.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do senior citizens get additional interest?
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        Senior citizens receive an additional interest rate over regular FD rates.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I take a loan against my Fixed Deposit?
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, you can avail a loan up to a certain percentage of your FD value.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is a Tax-Saving Fixed Deposit?
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        A Tax-Saving FD offers tax benefits under Section 80C with a 5-year lock-in period.
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="faq-footer">
+                Didn't find your answer? <a href="#">Contact us</a>
+            </p>
+
+        </div>
+    </section>
+
+    <!-- FD CTA SECTION -->
+     <section class="fd-cta-wrapper">
+    <div class="container">
+        <div class="fd-cta-box">
+
+            <!-- Top Icons -->
+            <div class="fd-cta-meta">
+                <span><i class="bi bi-shield-check"></i> 100% Secure</span>
+                <span><i class="bi bi-graph-up-arrow"></i> Up to 8.5% Returns</span>
+                <span><i class="bi bi-clock"></i> 5-Minute Setup</span>
+            </div>
+
+            <!-- Title -->
+            <h2 class="fd-cta-title">
+                Secure Your Future with <span>Fixed Deposits</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="fd-cta-desc">
+                Start your journey towards financial security today. Open a Fixed Deposit
+                account in minutes and enjoy guaranteed returns with complete peace of mind.
+            </p>
+
+            <!-- Buttons -->
+            <div class="fd-cta-actions">
+                <a href="#" class="fd-btn-primary">
+                    Invest Now <i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="#" class="fd-btn-outline">
+                    Talk to an Expert
+                </a>
+            </div>
+
+            <!-- Footer Note -->
+            <p class="fd-cta-note">
+                *Terms and conditions apply. Interest rates are subject to change.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!--====================  Footer =====================-->
+    <footer class="footer-premium pt-5">
+        <div class="container">
+
+            <div class="row gy-5">
+
+                <!--  Left Brand -->
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+
+                        <div class="footer-logo">
+                            <img src="./../../assets/images/webImg/nav-logo.png" alt="footer-logo">
+                        </div>
+
+                        <p class="brand-desc mt-3">
+                            AI-powered credit repair software that generates Metro 2 compliant dispute letters backed by
+                            consumer
+                            protection law.
+                        </p>
+
+                        <!-- contact -->
+                        <ul class="footer-contact">
+                            <li><i class="bi bi-envelope"></i> support@ficofixerpro.com</li>
+                            <li><i class="bi bi-telephone"></i> 1-800-FICO-FIX</li>
+                            <li><i class="bi bi-geo-alt"></i> Miami, FL 33101</li>
+                        </ul>
+
+                        <!-- social -->
+                        <div class="footer-social">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--  Product -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Product</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Templates</a></li>
+                        <li><a href="#">API Access</a></li>
+                    </ul>
+                </div>
+
+                <!--  Company -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!--  Resources -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Resources</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Credit Education</a></li>
+                        <li><a href="#">FCRA Guide</a></li>
+                        <li><a href="#">Sample Letters</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Legal</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">DMCA</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- bottom bar -->
+            <div class="footer-bottom mt-5">
+                <p class="mb-0">
+                    © 2026 FICO Fixer Pro. All rights reserved. Not affiliated with FICO® or Fair Isaac Corporation.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        // FD CACULATOR
+        const depositRange = document.getElementById("depositRange");
+        const tenureRange = document.getElementById("tenureRange");
+
+        const depositValue = document.getElementById("depositValue");
+        const tenureValue = document.getElementById("tenureValue");
+
+        const principalResult = document.getElementById("principalResult");
+        const interestResult = document.getElementById("interestResult");
+        const maturityResult = document.getElementById("maturityResult");
+        const rateValue = document.getElementById("rateValue");
+
+        let payoutType = "cumulative";
+        let rate = 7.75;
+
+        document.querySelectorAll(".fd-payout-buttons button").forEach(btn => {
+            btn.onclick = () => {
+                document.querySelectorAll(".fd-payout-buttons button").forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+                payoutType = btn.dataset.type;
+                calculateFD();
+            };
+        });
+
+        depositRange.oninput = tenureRange.oninput = calculateFD;
+
+        function calculateFD() {
+            const principal = +depositRange.value;
+            const months = +tenureRange.value;
+            const years = months / 12;
+
+            let interest;
+
+            if (payoutType === "cumulative") {
+                interest = principal * Math.pow((1 + rate / 100), years) - principal;
+            } else {
+                interest = principal * (rate / 100) * years;
+            }
+
+            depositValue.innerText = formatCurrency(principal);
+            tenureValue.innerText = months + " months";
+            principalResult.innerText = formatCurrency(principal);
+            interestResult.innerText = formatCurrency(Math.round(interest));
+            maturityResult.innerText = formatCurrency(Math.round(principal + interest));
+            rateValue.innerText = rate + "% p.a.";
+        }
+
+        function formatCurrency(num) {
+            return "₹" + num.toLocaleString("en-IN");
+        }
+
+        calculateFD();
+
+        // FAQ
+        document.querySelectorAll(".faq-question").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const item = btn.parentElement;
+
+                document.querySelectorAll(".faq-item").forEach(i => {
+                    if (i !== item) i.classList.remove("active");
+                });
+
+                item.classList.toggle("active");
+            });
+        });
+    </script>
+
+
+    <!-- MAIN JS LINK -->
+    <script src="./../../assets/js/main.js"></script>
+
+    <!--  Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

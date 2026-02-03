@@ -1,0 +1,1035 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= FIXED DEPOSIT HERO ================= */
+.fd-hero {
+padding-top: 150px !important;
+    padding: 90px 0;
+    background:
+        radial-gradient(circle at 70% 40%, rgba(255,255,255,0.06), transparent 45%),
+        linear-gradient(135deg, #070c17 0%, #0b1630 55%, #0a1328 100%);
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+/* TITLE */
+.fd-title {
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.fd-title span {
+    color: #ff7a00;
+}
+
+.fd-subtitle {
+    font-size: 18px;
+    color: #aeb7c6;
+    margin-bottom: 25px;
+}
+
+/* RATE BADGE */
+.fd-rate-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 16px 20px;
+    border-radius: 14px;
+}
+
+.fd-rate-badge i {
+    font-size: 22px;
+    color: #ff7a00;
+}
+
+.fd-rate-badge small {
+    display: block;
+    font-size: 13px;
+    color: #aeb7c6;
+}
+
+.fd-rate-badge strong {
+    font-size: 22px;
+}
+
+/* BUTTONS */
+.fd-btn-primary {
+    background: linear-gradient(135deg, #ff7a00, #ff9a3c);
+    padding: 14px 28px;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 14px 36px rgba(255,122,0,0.45);
+}
+
+.fd-btn-primary:hover {
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.fd-btn-outline {
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 14px 28px;
+    border-radius: 12px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.fd-btn-outline:hover {
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+}
+
+/* TRUST */
+.fd-trust {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    color: #aeb7c6;
+}
+
+.fd-trust i {
+    color: #ff7a00;
+    margin-right: 6px;
+}
+
+/* INFO CARDS */
+.fd-info-card {
+    height: 100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 26px;
+    transition: 0.3s ease;
+}
+
+.fd-info-card:hover {
+    background: rgba(255,255,255,0.06);
+    transform: translateY(-4px);
+}
+
+.fd-info-card i {
+    font-size: 22px;
+    color: #ff7a00;
+    margin-bottom: 12px;
+}
+
+.fd-info-card p {
+    font-size: 14px;
+    color: #aeb7c6;
+    margin-bottom: 4px;
+}
+
+.fd-info-card h6 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .fd-title {
+        font-size: 42px;
+    }
+}
+
+
+/* ================= FD BENEFITS SECTION ================= */
+.fd-benefits-section {
+    padding: 90px 0 110px;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(255,255,255,0.06), transparent 40%),
+        linear-gradient(180deg, #070c17 0%, #0b1630 100%);
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
+/* Badge */
+.fd-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 999px;
+    background: rgba(255,122,0,0.15);
+    color: #ff7a00;
+    letter-spacing: 0.3px;
+}
+
+/* Heading */
+.fd-benefits-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.fd-benefits-title span {
+    color: #ff7a00;
+}
+
+.fd-benefits-subtitle {
+    max-width: 720px;
+    margin: 0 auto 50px;
+    font-size: 16px;
+    color: #aeb7c6;
+}
+
+/* Cards */
+.fd-benefit-card {
+    height: 100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 18px;
+    padding: 34px 30px;
+    transition: all 0.3s ease;
+}
+
+.fd-benefit-card:hover {
+    background: rgba(255,255,255,0.06);
+    transform: translateY(-4px);
+}
+
+/* Icon */
+.fd-benefit-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: rgba(255,122,0,0.12);
+    border: 1px solid rgba(255,122,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #ff7a00;
+    margin-bottom: 22px;
+}
+
+/* Text */
+.fd-benefit-card h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.fd-benefit-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #aeb7c6;
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .fd-benefits-title {
+        font-size: 32px;
+    }
+
+    .fd-benefits-subtitle {
+        margin-bottom: 40px;
+    }
+}
+
+
+/* ================= FD INTEREST RATES SECTION ================= */
+.fd-rates-section {
+    padding: 90px 0 110px;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(255,255,255,0.06), transparent 40%),
+        linear-gradient(180deg, #070c17 0%, #0b1630 100%);
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
+/* Badge */
+.fd-rates-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 999px;
+    background: rgba(255,122,0,0.15);
+    color: #ff7a00;
+}
+
+/* Title */
+.fd-rates-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.fd-rates-title span {
+    color: #ff7a00;
+}
+
+.fd-rates-subtitle {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #aeb7c6;
+}
+
+/* Table Wrapper */
+.fd-rates-table-wrapper {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+/* Table */
+.fd-rates-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.fd-rates-table thead {
+    background: rgba(255,255,255,0.05);
+}
+
+.fd-rates-table th {
+    padding: 18px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.fd-rates-table td {
+    padding: 16px 22px;
+    font-size: 14px;
+    color: #aeb7c6;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.fd-rates-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Highlight rows */
+.highlight-row {
+    background: linear-gradient(
+        90deg,
+        rgba(255,122,0,0.08),
+        rgba(255,122,0,0.02)
+    );
+}
+
+/* Best badge */
+.best-badge {
+    margin-left: 10px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 999px;
+    background: rgba(255,122,0,0.15);
+    color: #ff7a00;
+}
+
+/* Note */
+.fd-rates-note {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 13px;
+    color: #aeb7c6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .fd-rates-title {
+        font-size: 32px;
+    }
+
+    .fd-rates-table th,
+    .fd-rates-table td {
+        padding: 14px 14px;
+        font-size: 13px;
+    }
+}
+
+/* ================= WHY CHOOSE FD SECTION ================= */
+.fd-why-section {
+    padding: 90px 0 110px;
+    background:
+        radial-gradient(circle at 20% 40%, rgba(255,255,255,0.06), transparent 45%),
+        linear-gradient(135deg, #070c17 0%, #0b1630 55%, #0a1328 100%);
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
+/* Badge */
+.fd-why-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 999px;
+    background: rgba(255,122,0,0.15);
+    color: #ff7a00;
+    margin-bottom: 18px;
+}
+
+/* Title */
+.fd-why-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.fd-why-title span {
+    color: #ff7a00;
+}
+
+.fd-why-subtitle {
+    font-size: 16px;
+    color: #aeb7c6;
+    margin-bottom: 40px;
+    max-width: 520px;
+}
+
+/* List */
+.fd-why-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.fd-why-item {
+    display: flex;
+    gap: 16px;
+}
+
+.fd-why-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(255,122,0,0.12);
+    border: 1px solid rgba(255,122,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff7a00;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.fd-why-item h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.fd-why-item p {
+    font-size: 14px;
+    color: #aeb7c6;
+    margin: 0;
+}
+
+/* Stats Card */
+.fd-stats-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    padding: 34px;
+}
+
+.fd-stats-title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* Stat Box */
+.fd-stat-box {
+    background: rgba(255,255,255,0.04);
+    border-radius: 14px;
+    padding: 22px;
+    text-align: center;
+}
+
+.fd-stat-box h3 {
+    color: #ff7a00;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.fd-stat-box p {
+    font-size: 13px;
+    color: #aeb7c6;
+    margin: 0;
+}
+
+/* Avatars */
+.fd-investors {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.fd-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fd-more {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #aeb7c6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .fd-why-title {
+        font-size: 32px;
+    }
+}
+
+/* ================= FD ELIGIBILITY + DOCS ================= */
+.fd-eligibility-docs {
+    padding: 90px 0 110px;
+    background:
+        radial-gradient(circle at 30% 30%, rgba(255,255,255,0.06), transparent 45%),
+        linear-gradient(135deg, #070c17 0%, #0b1630 55%, #0a1328 100%);
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
+/* Pill */
+.fd-pill {
+    display: inline-block;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 999px;
+    background: rgba(255,122,0,0.15);
+    color: #ff7a00;
+    margin-bottom: 14px;
+}
+
+/* Titles */
+.fd-ed-title {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.fd-ed-title span {
+    color: #ff7a00;
+}
+
+.fd-ed-subtitle {
+    font-size: 16px;
+    color: #aeb7c6;
+    margin-bottom: 36px;
+}
+
+/* LEFT LIST */
+.fd-invest-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.fd-invest-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 14px;
+    padding: 18px 20px;
+}
+
+.fd-invest-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: rgba(255,122,0,0.12);
+    border: 1px solid rgba(255,122,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff7a00;
+    font-size: 18px;
+}
+
+.fd-invest-text h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.fd-invest-text p {
+    font-size: 14px;
+    color: #aeb7c6;
+    margin: 0;
+}
+
+.fd-check {
+    margin-left: auto;
+    color: #ff7a00;
+    font-size: 18px;
+}
+
+/* DOCUMENT CARDS */
+.fd-doc-card {
+    height: 100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 18px;
+    padding: 28px;
+}
+
+.fd-doc-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(255,122,0,0.15);
+    color: #ff7a00;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.fd-doc-card h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.fd-doc-card p {
+    font-size: 14px;
+    color: #aeb7c6;
+    margin: 0;
+}
+
+/* NOTE */
+.fd-doc-note {
+    margin-top: 28px;
+    padding: 16px 20px;
+    border-radius: 14px;
+    background: linear-gradient(
+        90deg,
+        rgba(255,122,0,0.12),
+        rgba(255,122,0,0.04)
+    );
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .fd-ed-title {
+        font-size: 32px;
+    }
+}
+/* ================= FD CALCULATOR ================= */
+.fd-calculator-section {
+    padding: 100px 0 120px;
+    background:
+        radial-gradient(circle at 30% 30%, rgba(255,255,255,0.06), transparent 45%),
+        linear-gradient(135deg, #070c17 0%, #0b1630 55%, #0a1328 100%);
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+/* Pill */
+.fd-pill {
+    display: inline-block;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 999px;
+    background: rgba(255,122,0,0.15);
+    color: #ff7a00;
+    margin-bottom: 14px;
+}
+
+/* Titles */
+.fd-calc-title {
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.fd-calc-title span { color: #ff7a00; }
+
+.fd-calc-subtitle {
+    font-size: 16px;
+    color: #aeb7c6;
+    max-width: 720px;
+    margin: 0 auto 20px;
+}
+
+/* Boxes */
+.fd-calc-box,
+.fd-result-box {
+    height: 100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    padding: 34px;
+    text-align: left;
+}
+
+/* Fields */
+.fd-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.fd-label strong { color: #ff7a00; }
+
+input[type="range"] {
+    width: 100%;
+    margin: 14px 0;
+}
+
+.fd-range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #aeb7c6;
+}
+
+/* Payout buttons */
+.fd-payout-buttons {
+    display: flex;
+    gap: 10px;
+}
+.fd-payout-buttons button {
+    flex: 1;
+    background: #1a223a;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+}
+.fd-payout-buttons button.active {
+    background: #ff7a00;
+}
+
+/* Rate box */
+.fd-rate-box {
+    background: linear-gradient(90deg, rgba(255,122,0,0.15), rgba(255,122,0,0.05));
+    border-radius: 14px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.fd-rate-box strong { color: #ff7a00; }
+
+/* Results */
+.fd-result-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+.fd-result-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: rgba(255,122,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff7a00;
+}
+
+.fd-result-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 14px;
+}
+.fd-result-card span {
+    font-size: 13px;
+    color: #aeb7c6;
+}
+.fd-result-card h4,
+.fd-result-card h3 {
+    margin: 6px 0 0;
+}
+
+.fd-result-card .orange { color: #ff7a00; }
+
+.fd-result-card.highlight {
+    background: linear-gradient(135deg, rgba(255,122,0,0.2), rgba(255,122,0,0.05));
+}
+
+/* CTA */
+.fd-cta-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 26px;
+    background: linear-gradient(135deg, #ff7a00, #ff9a3c);
+    padding: 16px;
+    border-radius: 14px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+/* ================= FAQ SECTION ================= */
+.fd-faq-section {
+    padding: 100px 0 120px;
+    background:
+        radial-gradient(circle at 50% 30%, rgba(255,255,255,0.06), transparent 45%),
+        linear-gradient(135deg, #070c17 0%, #0b1630 55%, #0a1328 100%);
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+/* Pill */
+.faq-pill {
+    display: inline-block;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 999px;
+    background: rgba(255,122,0,0.15);
+    color: #ff7a00;
+    margin-bottom: 14px;
+}
+
+/* Title */
+.faq-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.faq-title span { color: #ff7a00; }
+
+.faq-subtitle {
+    font-size: 16px;
+    color: #aeb7c6;
+    margin-bottom: 50px;
+}
+
+/* FAQ list */
+.faq-list {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Item */
+.faq-item {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    margin-bottom: 14px;
+    overflow: hidden;
+}
+
+/* Question */
+.faq-question {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 18px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+    font-size: 18px;
+}
+
+/* Answer */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 22px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #aeb7c6;
+    transition: all 0.35s ease;
+}
+
+/* Active */
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding: 0 22px 18px;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+/* Footer */
+.faq-footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #aeb7c6;
+}
+
+.faq-footer a {
+    color: #ff7a00;
+    text-decoration: none;
+    font-weight: 500;
+}
+.faq-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .faq-title {
+        font-size: 32px;
+    }
+}
+
+/* ================= FD CTA SECTION ================= */
+.fd-cta-wrapper {
+    padding: 110px 0;
+    background:
+        radial-gradient(circle at 50% 20%, rgba(255,255,255,0.05), transparent 45%),
+        linear-gradient(135deg, #050913 0%, #0b1630 60%, #070c17 100%);
+    font-family: 'Inter', sans-serif;
+}
+
+.fd-cta-box {
+    max-width: 1050px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 60px;
+    border-radius: 22px;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 40px 120px rgba(0,0,0,0.6);
+}
+
+/* Meta Row */
+.fd-cta-meta {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #aeb7c6;
+    margin-bottom: 26px;
+}
+
+.fd-cta-meta i {
+    color: #ff7a00;
+    margin-right: 6px;
+}
+
+/* Title */
+.fd-cta-title {
+    font-size: 46px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
+.fd-cta-title span {
+    color: #ff7a00;
+}
+
+/* Description */
+.fd-cta-desc {
+    max-width: 720px;
+    margin: 0 auto 44px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #aeb7c6;
+}
+
+/* Buttons */
+.fd-cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+.fd-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 34px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #ff7a00, #ff9a3c);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    box-shadow: 0 18px 45px rgba(255,122,0,0.45);
+    transition: all 0.3s ease;
+}
+
+.fd-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 24px 55px rgba(255,122,0,0.55);
+    color: #fff;
+}
+
+.fd-btn-outline {
+    padding: 16px 34px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,122,0,0.6);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.fd-btn-outline:hover {
+    background: rgba(255,122,0,0.08);
+    color: #ffffff;
+}
+
+/* Note */
+.fd-cta-note {
+    font-size: 12px;
+    color: #8f98aa;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .fd-cta-box {
+        padding: 60px 30px;
+    }
+
+    .fd-cta-title {
+        font-size: 34px;
+    }
+
+    .fd-cta-desc {
+        font-size: 15px;
+    }
+}

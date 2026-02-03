@@ -1328,6 +1328,7 @@
 
 /* footer */
 .demo-footer {
+    
     position: relative;
     z-index: 2;
     display: flex;
@@ -1954,7 +1955,6 @@ input:checked+.slider:before {
 
 /* Footer */
 .footer-premium {
-    margin-top: 70px;
     padding-top: 60px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;

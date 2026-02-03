@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fico-Fixer Pro</title>
+
+    <!-- favicon area -->
+    <link rel="shortcut icon" href="./assets/images/webImg/favicon.png" type="image/x-icon">
+
+    <!--  Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--  Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+
+    <!--  Custom CSS -->
+    <link rel="stylesheet" href="./../../assets/css/AllPagesCss/serviceCss/currentAccount.css" />
+    <link rel="stylesheet" href="./../../assets/css/main.css">
+</head>
+
+<body>
+    <!--==================Header section area ==================-->
+    <header>
+        <!--  Premium Navbar -->
+        <nav class="navbar navbar-expand-lg premium-navbar sticky-top">
+            <div class="container">
+
+                <!--  Brand / Logo -->
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+
+                    <img src="./../../assets/images/webImg/nav-logo.png" alt="header-logo"
+                        style="width: 100%; height: 80px;">
+                </a>
+
+                <!--  Mobile toggler -->
+                <button class="navbar-toggler premium-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--  Desktop Menu -->
+                <div class="collapse navbar-collapse">
+
+                    <!-- Center Links -->
+                    <ul class="navbar-nav mx-auto gap-lg-4">
+                        <li class="nav-item"><a class="nav-link nav-premium active" href="./../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-premium" href="./../../features.html">Features</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-premium" href="./../../pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-premium" href="./../../work.html">Works</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-premium dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">
+                                Services
+                            </a>
+
+                            <ul class="dropdown-menu premium-dropdown-menu">
+
+                                <!-- Accounts -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                        Accounts
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./AllAccount.html">All Account</a></li>
+                                        <li><a class="dropdown-item" href="./SavingAccount.html">Savings Account</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Current Account</a></li>
+                                        <li><a class="dropdown-item" href="#">Fixed Deposit</a></li>
+                                        <li><a class="dropdown-item" href="#">Salary Account</a></li>
+                                        <li><a class="dropdown-item" href="#">NRI Account</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- Cards -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                        Cards
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./../cardPages/allCard.html">All Card</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Credit Card</a></li>
+                                        <li><a class="dropdown-item" href="#">Debit Card</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- Loans -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                        Loans
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Home Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Personal Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Vehicle Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Education Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Gold Loan</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-premium dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Apply Now
+                            </a>
+
+                            <ul class="dropdown-menu premium-dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Home Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Personal Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Vehicle Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Education Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Gold Loan</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Right Action -->
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="./../../auth/login.html" class="nav-signin">Sign In</a>
+                        <a href="./../../auth/register.html" class="btn btn-premium">Get Started</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Offcanvas Mobile Menu -->
+        <div class="offcanvas offcanvas-end premium-offcanvas" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header border-bottom border-light border-opacity-10">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <img src="./../../assets/images/webImg/nav-logo.png" alt="header-logo" style="height:80px;">
+                </a>
+                <button type="button" class="btn-close btn-close-white me-3" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+
+                <!-- NORMAL LINKS -->
+                <ul class="navbar-nav gap-2 mb-2">
+                    <li class="nav-item"><a class="nav-link nav-premium " href="./../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-premium" href="./../../features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link nav-premium" href="./../../pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link nav-premium" href="./../../work.html">Works</a></li>
+                </ul>
+
+                <!-- MAIN ACCORDION -->
+                <div class="accordion accordion-flush" id="mobileAccordion">
+
+                    <!-- SERVICES -->
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent text-white active" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#servicesAcc">
+                                Services
+                            </button>
+                        </h2>
+
+                        <div id="servicesAcc" class="accordion-collapse collapse">
+                            <div class="accordion-body pt-0">
+
+                                <!-- MINI ACCORDION -->
+                                <div class="accordion accordion-flush ms-3" id="servicesMini">
+
+                                    <!-- ACCOUNTS -->
+                                    <div class="accordion-item bg-transparent border-0">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent text-white"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#accountsAcc">
+                                                Accounts
+                                            </button>
+                                        </h2>
+                                        <div id="accountsAcc" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <a class="nav-link nav-premium" href="./AllAccount.html">All Account</a>
+                                                <a class="nav-link nav-premium" href="./SavingAccount.html">Savings
+                                                    Account</a>
+                                                <a class="nav-link nav-premium" href="#">Current Account</a>
+                                                <a class="nav-link nav-premium" href="#">Fixed Deposit</a>
+                                                <a class="nav-link nav-premium" href="#">Salary Account</a>
+                                                <a class="nav-link nav-premium" href="#">NRI Account</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- CARDS -->
+                                    <div class="accordion-item bg-transparent border-0">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent text-white"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#cardsAcc">
+                                                Cards
+                                            </button>
+                                        </h2>
+                                        <div id="cardsAcc" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <a class="dropdown-item" href="./../cardPages/allCard.html">All Card</a>
+                                                <a class="nav-link nav-premium" href="#">Credit Card</a>
+                                                <a class="nav-link nav-premium" href="#">Debit Card</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- LOANS -->
+                                    <div class="accordion-item bg-transparent border-0">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent text-white"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#loansAcc">
+                                                Loans
+                                            </button>
+                                        </h2>
+                                        <div id="loansAcc" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <a class="nav-link nav-premium" href="#">Home Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Personal Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Vehicle Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Education Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Gold Loan</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- APPLY NOW -->
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#applyAcc">
+                                Apply Now
+                            </button>
+                        </h2>
+                        <div id="applyAcc" class="accordion-collapse collapse">
+                            <div class="accordion-body pt-0">
+                                <a class="nav-link nav-premium" href="#">Dispute Letters</a>
+                                <a class="nav-link nav-premium" href="#">Goodwill Letters</a>
+                                <a class="nav-link nav-premium" href="#">Debt Validation</a>
+                                <a class="nav-link nav-premium" href="#">Identity Theft</a>
+                                <a class="nav-link nav-premium" href="#">Cease & Desist</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="mt-4 d-grid gap-2">
+                    <a href="./../../auth/register.html" class="btn btn-premium w-100">Get Started</a>
+                    <a href="./../../auth/login.html" class="btn btn-outline-light w-100 rounded-pill py-2 fw-bold">
+                        Sign In
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- current-account-hero -->
+    <section class="current-account-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-10">
+                    <h1 class="current-account-title">
+                        Current <span>Account</span>
+                    </h1>
+
+                    <p class="current-account-desc">
+                        Empower your business with seamless banking. Manage daily
+                        transactions, payments, and collections with our feature-rich
+                        current account designed for professionals, startups, and
+                        enterprises.
+                    </p>
+
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#" class="btn btn-current-orange">
+                            Open Current Account &nbsp; →
+                        </a>
+
+                        <a href="#" class="btn btn-current-outline">
+                            <i class="bi bi-telephone"></i>
+                            &nbsp; Contact Relationship Manager
+                        </a>
+                    </div>
+
+                    <div class="current-account-features">
+                        <div class="current-account-feature">
+                            <span class="feature-dot"></span>
+                            50K+ Business Accounts
+                        </div>
+                        <div class="current-account-feature">
+                            <span class="feature-dot"></span>
+                            RBI Licensed
+                        </div>
+                        <div class="current-account-feature">
+                            <span class="feature-dot gray"></span>
+                            256-bit Encryption
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ca-features-section -->
+    <section class="ca-features-section">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="ca-feature-card">
+                        <div class="ca-icon">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+                        <h5 class="ca-feature-title">Instant Account Opening</h5>
+                        <p class="ca-feature-text">
+                            Get your account ready in minutes with minimal documentation
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="ca-feature-card">
+                        <div class="ca-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h5 class="ca-feature-title">Zero Hidden Charges</h5>
+                        <p class="ca-feature-text">
+                            Transparent pricing with no surprise fees
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="ca-feature-card">
+                        <div class="ca-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h5 class="ca-feature-title">Secure Internet & Mobile Banking</h5>
+                        <p class="ca-feature-text">
+                            Bank anytime, anywhere with our secure digital platforms
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="ca-feature-card">
+                        <div class="ca-icon">
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <h5 class="ca-feature-title">Easy Account Management</h5>
+                        <p class="ca-feature-text">
+                            Intuitive tools to manage your business finances
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- kf-section -->
+     <section class="kf-section">
+    <div class="container">
+
+        <!-- Header -->
+        <div class="text-center">
+            <h2 class="kf-title">
+                Key <span>Features</span> & Benefits
+            </h2>
+            <p class="kf-subtitle">
+                Everything your business needs for efficient financial management
+            </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="kf-card">
+                    <div class="kf-icon">
+                        <i class="bi bi-arrow-left-right"></i>
+                    </div>
+                    <h5 class="kf-card-title">Unlimited Transactions</h5>
+                    <p class="kf-card-text">
+                        No limits on daily transactions. Process payments, receipts,
+                        and transfers without restrictions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="kf-card">
+                    <div class="kf-icon">
+                        <i class="bi bi-briefcase"></i>
+                    </div>
+                    <h5 class="kf-card-title">Business Banking Tools</h5>
+                    <p class="kf-card-text">
+                        Access comprehensive tools including bulk payments, GST
+                        invoicing, and business analytics.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="kf-card">
+                    <div class="kf-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h5 class="kf-card-title">Multi-User Access</h5>
+                    <p class="kf-card-text">
+                        Add team members with role-based permissions for secure
+                        collaborative banking.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="kf-card">
+                    <div class="kf-icon">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+                    <h5 class="kf-card-title">Fast Settlements</h5>
+                    <p class="kf-card-text">
+                        Instant NEFT, RTGS, and IMPS transfers with real-time
+                        confirmation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="kf-card">
+                    <div class="kf-icon">
+                        <i class="bi bi-person-check"></i>
+                    </div>
+                    <h5 class="kf-card-title">Dedicated Account Manager</h5>
+                    <p class="kf-card-text">
+                        Personal relationship manager for priority support and
+                        tailored solutions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="kf-card">
+                    <div class="kf-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h5 class="kf-card-title">Advanced Security</h5>
+                    <p class="kf-card-text">
+                        Bank-grade encryption, two-factor authentication, and
+                        fraud monitoring.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- WHO CAN OPEN SECTION -->
+ <section class="wc-section">
+    <div class="container">
+
+        <!-- Header -->
+        <h2 class="wc-title">
+            Who Can <span>Open</span> a Current Account?
+        </h2>
+        <p class="wc-subtitle">
+            Our current account is designed for various business entities
+        </p>
+
+        <!-- Cards -->
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-xl col-lg-4 col-md-6">
+                <div class="wc-card">
+                    <div class="wc-icon">
+                        <i class="bi bi-building"></i>
+                    </div>
+                    <h5 class="wc-card-title">Proprietorship</h5>
+                    <p class="wc-card-text">
+                        Sole proprietors and individual business owners
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-xl col-lg-4 col-md-6">
+                <div class="wc-card">
+                    <div class="wc-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h5 class="wc-card-title">Partnership Firm</h5>
+                    <p class="wc-card-text">
+                        Registered partnership businesses
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-xl col-lg-4 col-md-6">
+                <div class="wc-card">
+                    <div class="wc-icon">
+                        <i class="bi bi-buildings"></i>
+                    </div>
+                    <h5 class="wc-card-title">Private Limited Company</h5>
+                    <p class="wc-card-text">
+                        Incorporated private companies
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-xl col-lg-4 col-md-6">
+                <div class="wc-card">
+                    <div class="wc-icon">
+                        <i class="bi bi-balance-scale"></i>
+                    </div>
+                    <h5 class="wc-card-title">LLP</h5>
+                    <p class="wc-card-text">
+                        Limited Liability Partnerships
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-xl col-lg-4 col-md-6">
+                <div class="wc-card">
+                    <div class="wc-icon">
+                        <i class="bi bi-rocket"></i>
+                    </div>
+                    <h5 class="wc-card-title">Startups & Enterprises</h5>
+                    <p class="wc-card-text">
+                        Emerging and established businesses
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RBI Badge -->
+        <div class="wc-badge">
+            <div class="wc-badge-icon">
+                <i class="bi bi-patch-check"></i>
+            </div>
+            <div class="wc-badge-text text-start">
+                <h6>RBI Compliant</h6>
+                <p>Meets all regulatory requirements</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- REQUIRED DOCUMENTS SECTION -->
+<section class="rd-section">
+    <div class="container">
+
+        <!-- Header -->
+        <h2 class="rd-title">
+            Required <span>Documents</span>
+        </h2>
+        <p class="rd-subtitle">
+            Keep these documents ready for a smooth account opening process
+        </p>
+
+        <!-- Cards -->
+        <div class="row g-4">
+
+            <!-- Business Documents -->
+            <div class="col-lg-4 col-md-6">
+                <div class="rd-card">
+                    <div class="rd-icon">
+                        <i class="bi bi-file-earmark-text"></i>
+                    </div>
+                    <h5 class="rd-card-title">Business Documents</h5>
+                    <ul class="rd-list">
+                        <li><i class="bi bi-check-circle"></i> Business Registration Proof</li>
+                        <li><i class="bi bi-check-circle"></i> PAN Card (Business)</li>
+                        <li><i class="bi bi-check-circle"></i> GST Certificate</li>
+                        <li><i class="bi bi-check-circle"></i> Partnership Deed / MOA & AOA</li>
+                        <li><i class="bi bi-check-circle"></i> Board Resolution (for companies)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Signatory Documents -->
+            <div class="col-lg-4 col-md-6">
+                <div class="rd-card">
+                    <div class="rd-icon">
+                        <i class="bi bi-person-badge"></i>
+                    </div>
+                    <h5 class="rd-card-title">Signatory Documents</h5>
+                    <ul class="rd-list">
+                        <li><i class="bi bi-check-circle"></i> Authorized Signatory KYC</li>
+                        <li><i class="bi bi-check-circle"></i> Identity Proof (Aadhaar/Passport)</li>
+                        <li><i class="bi bi-check-circle"></i> Address Proof</li>
+                        <li><i class="bi bi-check-circle"></i> PAN Card (Individual)</li>
+                        <li><i class="bi bi-check-circle"></i> Letter of Authorization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Photographs -->
+            <div class="col-lg-4 col-md-6">
+                <div class="rd-card">
+                    <div class="rd-icon">
+                        <i class="bi bi-camera"></i>
+                    </div>
+                    <h5 class="rd-card-title">Photographs</h5>
+                    <ul class="rd-list">
+                        <li><i class="bi bi-check-circle"></i> Passport-size photos of all signatories</li>
+                        <li><i class="bi bi-check-circle"></i> Office / Business premises photos</li>
+                        <li><i class="bi bi-check-circle"></i> Signatory board / nameplate</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CHARGES SECTION -->
+<section class="cl-section">
+    <div class="container">
+
+        <!-- Header -->
+        <h2 class="cl-title">
+            Charges & <span>Limits</span>
+        </h2>
+        <p class="cl-subtitle">
+            Transparent pricing with competitive rates
+        </p>
+
+        <!-- Table -->
+        <div class="cl-table-wrapper">
+            <div class="table-responsive">
+                <table class="cl-table">
+                    <thead>
+                        <tr>
+                            <th>Particulars</th>
+                            <th>Charges/Limits</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Minimum Balance (Metro/Urban)</td>
+                            <td class="cl-highlight">₹10,000</td>
+                            <td>Average Quarterly Balance</td>
+                        </tr>
+                        <tr>
+                            <td>Minimum Balance (Semi-Urban/Rural)</td>
+                            <td class="cl-highlight">₹5,000</td>
+                            <td>Average Quarterly Balance</td>
+                        </tr>
+                        <tr>
+                            <td>Non-Maintenance Charges</td>
+                            <td class="cl-highlight">₹500 - ₹750</td>
+                            <td>Per quarter if balance not maintained</td>
+                        </tr>
+                        <tr>
+                            <td>Cheque Book (25 leaves)</td>
+                            <td class="cl-highlight">Free (First 2 books/year)</td>
+                            <td>₹3 per leaf thereafter</td>
+                        </tr>
+                        <tr>
+                            <td>Debit Card Annual Fee</td>
+                            <td class="cl-highlight">₹250</td>
+                            <td>First year free</td>
+                        </tr>
+                        <tr>
+                            <td>NEFT/RTGS (Online)</td>
+                            <td class="cl-highlight">Free</td>
+                            <td>Unlimited transactions</td>
+                        </tr>
+                        <tr>
+                            <td>IMPS (Per transaction)</td>
+                            <td class="cl-highlight">₹5 - ₹15</td>
+                            <td>Based on amount</td>
+                        </tr>
+                        <tr>
+                            <td>Cash Deposit (at branch)</td>
+                            <td class="cl-highlight">Free up to ₹2 Lakhs/month</td>
+                            <td>0.05% beyond limit</td>
+                        </tr>
+                        <tr>
+                            <td>Cash Withdrawal (at branch)</td>
+                            <td class="cl-highlight">Free up to ₹1 Lakh/day</td>
+                            <td>0.05% beyond limit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Note -->
+        <p class="cl-note">
+            * Charges are subject to change. Please contact your relationship manager for the latest rates.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- FAQ SECTION -->
+ <section class="faq-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <!-- Header -->
+                <h2 class="faq-title">
+                    Frequently Asked <span>Questions</span>
+                </h2>
+                <p class="faq-subtitle">
+                    Find answers to common questions about our Current Account
+                </p>
+
+                <!-- Accordion -->
+                <div class="accordion faq-accordion" id="faqAccordion">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                <span class="faq-q-icon">?</span>
+                                What is the minimum balance required for a Current Account?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                The minimum balance depends on your location and account type.
+                                Metro/Urban branches require ₹10,000, while Semi-Urban/Rural
+                                branches require ₹5,000 as average quarterly balance.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                <span class="faq-q-icon">?</span>
+                                Are there any transaction limits on the Current Account?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                There are no limits on the number of transactions.
+                                NEFT and RTGS transactions are unlimited when done online.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                <span class="faq-q-icon">?</span>
+                                What online banking features are available?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Online banking includes fund transfers, bulk payments,
+                                GST invoicing, account analytics, and mobile banking access.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                <span class="faq-q-icon">?</span>
+                                How secure is the Current Account?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                The account uses bank-grade encryption, two-factor authentication,
+                                and continuous fraud monitoring to ensure maximum security.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                <span class="faq-q-icon">?</span>
+                                How can I contact customer support?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can contact customer support via phone, email,
+                                or by reaching out to your dedicated relationship manager.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Footer -->
+                <p class="faq-footer">
+                    Still have questions?
+                    <a href="#">Contact our support team</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+    <div class="container">
+
+        <h2 class="cta-title">
+            Open Your Current Account <span>Today</span>
+        </h2>
+
+        <p class="cta-subtitle">
+            Join thousands of businesses who trust us for their banking needs.
+            Quick setup, powerful features, exceptional support.
+        </p>
+
+        <a href="#" class="cta-btn">
+            Open Current Account Now
+            <i class="bi bi-arrow-right"></i>
+        </a>
+
+        <!-- Features -->
+        <div class="cta-features">
+
+            <div class="cta-feature">
+                <div class="cta-feature-icon">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+                <div>
+                    <h6>Bank-Grade Security</h6>
+                    <p>256-bit encryption</p>
+                </div>
+            </div>
+
+            <div class="cta-feature">
+                <div class="cta-feature-icon">
+                    <i class="bi bi-clock"></i>
+                </div>
+                <div>
+                    <h6>Quick Activation</h6>
+                    <p>Account ready in 24 hours</p>
+                </div>
+            </div>
+
+            <div class="cta-feature">
+                <div class="cta-feature-icon">
+                    <i class="bi bi-patch-check"></i>
+                </div>
+                <div>
+                    <h6>RBI Licensed</h6>
+                    <p>Fully regulated</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+     <!--====================  Footer =====================-->
+    <footer class="footer-premium pt-5">
+        <div class="container">
+
+            <div class="row gy-5">
+
+                <!--  Left Brand -->
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+
+                        <div class="footer-logo">
+                            <img src="./../../assets/images/webImg/nav-logo.png" alt="footer-logo">
+                        </div>
+
+                        <p class="brand-desc mt-3">
+                            AI-powered credit repair software that generates Metro 2 compliant dispute letters backed by
+                            consumer
+                            protection law.
+                        </p>
+
+                        <!-- contact -->
+                        <ul class="footer-contact">
+                            <li><i class="bi bi-envelope"></i> support@ficofixerpro.com</li>
+                            <li><i class="bi bi-telephone"></i> 1-800-FICO-FIX</li>
+                            <li><i class="bi bi-geo-alt"></i> Miami, FL 33101</li>
+                        </ul>
+
+                        <!-- social -->
+                        <div class="footer-social">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--  Product -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Product</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Templates</a></li>
+                        <li><a href="#">API Access</a></li>
+                    </ul>
+                </div>
+
+                <!--  Company -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!--  Resources -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Resources</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Credit Education</a></li>
+                        <li><a href="#">FCRA Guide</a></li>
+                        <li><a href="#">Sample Letters</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Legal</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">DMCA</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- bottom bar -->
+            <div class="footer-bottom mt-5">
+                <p class="mb-0">
+                    © 2026 FICO Fixer Pro. All rights reserved. Not affiliated with FICO® or Fair Isaac Corporation.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- MAIN JS LINK -->
+    <script src="./../../assets/js/main.js"></script>
+
+    <!--  Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
