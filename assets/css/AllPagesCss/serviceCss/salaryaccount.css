@@ -1,12 +1,78 @@
-* {
-  font-family: 'Inter', sans-serif;
-  box-sizing: border-box;
+/* ================= GLOBAL OVERFLOW FIX ================= */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
-body {
-  margin: 0;
-  background: #000000;
+/* Prevent any section from pushing width */
+section,
+.salary-hero,
+.salary-benefits,
+.interest-section,
+.why-choose-section,
+.who-open-section,
+.documents-section,
+.salary-calculator-section,
+.faq-section {
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
+/* Fix Bootstrap row overflow on mobile */
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Prevent cards from exceeding viewport */
+.info-card,
+.benefit-card,
+.open-card,
+.documents-card,
+.calculator-card,
+.stats-card,
+.faq-card {
+  max-width: 100%;
+}
+
+/* TABLE RESPONSIVE FIX */
+.interest-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.interest-table {
+  min-width: 720px; /* keeps layout intact without breaking mobile */
+}
+
+/* RANGE INPUT FIX */
+input[type="range"] {
+  max-width: 100%;
+}
+
+/* FLEX CHILD FIX */
+.d-flex,
+.flex-wrap {
+  max-width: 100%;
+}
+
+/* ICON / BADGE SAFETY */
+.icon-box,
+.benefit-icon,
+.open-icon,
+.doc-icon,
+.stat-icon {
+  flex-shrink: 0;
+}
+
+/* FINAL MOBILE SAFETY NET */
+@media (max-width: 576px) {
+  * {
+    max-width: 100%;
+  }
+}
+
 
 /* ================= HERO SECTION ================= */
 .salary-hero {
