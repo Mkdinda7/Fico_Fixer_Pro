@@ -1,0 +1,839 @@
+/* EDUCATION LOAN HERO */
+.edu-hero-section {
+  padding: 170px 0 110px;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  color: #ffffff;
+}
+
+/* TITLE */
+.edu-hero-title {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 22px;
+}
+
+/* SUBTITLE */
+.edu-hero-subtitle {
+  max-width: 820px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #aab6cf;
+}
+
+/* BUTTONS */
+.edu-hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+.edu-btn-primary {
+  background: #ff7a18;
+  color: #000;
+  padding: 14px 32px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(255,122,24,0.35);
+  transition: all 0.3s ease;
+}
+
+.edu-btn-primary:hover {
+  background: #ff8c33;
+  transform: translateY(-2px);
+}
+
+.edu-btn-outline {
+  padding: 14px 30px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ff7a18;
+  border: 1px solid rgba(255,122,24,0.6);
+  transition: all 0.3s ease;
+}
+
+.edu-btn-outline:hover {
+  background: rgba(255,122,24,0.1);
+}
+
+/* STATS GRID */
+.edu-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* STAT CARD */
+.edu-stat-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 22px;
+  padding: 30px 22px;
+  text-align: center;
+  transition: all 0.35s ease;
+}
+
+.edu-stat-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.08);
+}
+
+/* ICON */
+.edu-stat-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 16px;
+  border-radius: 14px;
+  background: rgba(255,122,24,0.18);
+  color: #ff7a18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* TEXT */
+.edu-stat-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.edu-stat-card p {
+  font-size: 13px;
+  color: #aab6cf;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .edu-hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .edu-hero-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .edu-hero-section {
+    padding: 90px 0 80px;
+  }
+
+  .edu-hero-title {
+    font-size: 28px;
+  }
+
+  .edu-hero-stats {
+    grid-template-columns: 1fr;
+  }
+}
+/* EDUCATION LOAN BENEFITS */
+.edu-benefits-section {
+  padding: 120px 0;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  color: #ffffff;
+}
+
+/* HEADER */
+.edu-benefits-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.edu-benefits-header p {
+  font-size: 16px;
+  color: #9fb0c8;
+  margin-bottom: 70px;
+}
+
+/* GRID */
+.edu-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* CARD */
+.edu-benefit-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 22px;
+  padding: 36px 30px;
+  transition: all 0.35s ease;
+}
+
+.edu-benefit-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.08);
+}
+
+/* ICON */
+.edu-benefit-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 22px;
+  border-radius: 14px;
+  background: rgba(255,122,24,0.18);
+  color: #ff7a18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* TEXT */
+.edu-benefit-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.edu-benefit-card p {
+  font-size: 14px;
+  color: #aab6cf;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .edu-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .edu-benefits-section {
+    padding: 80px 0;
+  }
+
+  .edu-benefits-header h2 {
+    font-size: 28px;
+  }
+
+  .edu-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* COURSES WE FINANCE */
+.edu-courses-section {
+  padding: 120px 0;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  color: #ffffff;
+}
+
+/* HEADER */
+.edu-courses-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.edu-courses-header p {
+  font-size: 16px;
+  color: #9fb0c8;
+  margin-bottom: 70px;
+}
+
+/* GRID */
+.edu-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* CARD */
+.edu-course-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 22px;
+  padding: 36px 30px;
+  transition: all 0.35s ease;
+}
+
+.edu-course-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.08);
+}
+
+/* ICON */
+.edu-course-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 22px;
+  border-radius: 14px;
+  background: rgba(255,122,24,0.18);
+  color: #ff7a18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* TEXT */
+.edu-course-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.edu-course-card p {
+  font-size: 14px;
+  color: #aab6cf;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .edu-courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .edu-courses-section {
+    padding: 80px 0;
+  }
+
+  .edu-courses-header h2 {
+    font-size: 28px;
+  }
+
+  .edu-courses-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* EDUCATION LOAN RATES */
+.edu-rates-section {
+  padding: 120px 0;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  color: #ffffff;
+}
+
+/* HEADER */
+.edu-rates-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.edu-rates-header p {
+  font-size: 16px;
+  color: #9fb0c8;
+  margin-bottom: 60px;
+}
+
+/* TABLE WRAPPER */
+.edu-rates-table-wrapper {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* TABLE */
+.edu-rates-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* HEAD */
+.edu-rates-table thead th {
+  padding: 18px 22px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: #cfd8ea;
+  background: rgba(255,255,255,0.03);
+}
+
+/* BODY */
+.edu-rates-table tbody td {
+  padding: 18px 22px;
+  font-size: 14px;
+  color: #aab6cf;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.edu-rates-table tbody tr:hover {
+  background: rgba(255,255,255,0.04);
+}
+
+/* HIGHLIGHT RATE */
+.edu-rate-highlight {
+  color: #ff7a18;
+  font-weight: 600;
+}
+
+/* BADGES */
+.edu-badge {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+.edu-badge-premier {
+  background: #ff7a18;
+  color: #000;
+}
+
+.edu-badge-intl {
+  background: #ff7a18;
+  color: #000;
+}
+
+/* NOTE */
+.edu-rates-note {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #8fa1c2;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .edu-rates-table thead {
+    display: none;
+  }
+
+  .edu-rates-table,
+  .edu-rates-table tbody,
+  .edu-rates-table tr,
+  .edu-rates-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .edu-rates-table tr {
+    padding: 10px 0;
+  }
+
+  .edu-rates-table td {
+    padding: 10px 18px;
+    border-top: none;
+  }
+}
+/* EDUCATION LOAN ELIGIBILITY */
+.edu-eligibility-section {
+  padding: 120px 0;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  color: #ffffff;
+}
+
+/* HEADER */
+.edu-eligibility-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.edu-eligibility-header p {
+  font-size: 16px;
+  color: #9fb0c8;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.edu-eligibility-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.edu-eligibility-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 32px;
+}
+
+/* CARD TITLE */
+.edu-card-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.edu-card-title h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ICON */
+.edu-icon-box {
+  width: 42px;
+  height: 42px;
+  background: rgba(255,122,24,0.15);
+  color: #ff7a18;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* CHECKLIST */
+.edu-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.edu-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #aab6cf;
+}
+
+/* GREEN CHECK */
+.edu-checklist li::before {
+  content: "✔";
+  width: 18px;
+  height: 18px;
+  background: rgba(0, 200, 83, 0.15);
+  color: #00c853;
+  border-radius: 50%;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .edu-eligibility-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* EDUCATION LOAN DOCUMENTS */
+.edu-docs-section {
+  padding: 120px 0;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  color: #ffffff;
+}
+
+/* HEADER */
+.edu-docs-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.edu-docs-header p {
+  font-size: 16px;
+  color: #9fb0c8;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.edu-docs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.edu-docs-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 30px;
+}
+
+/* TITLE */
+.edu-docs-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.edu-docs-title h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ICON BADGE */
+.edu-docs-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(255,122,24,0.15);
+  color: #ff7a18;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* LIST */
+.edu-docs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.edu-docs-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #aab6cf;
+}
+
+.edu-docs-list li i {
+  color: #ff7a18;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .edu-docs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* FAQ SECTION */
+.edu-faq-section {
+  padding: 120px 0;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  color: #ffffff;
+}
+
+/* HEADER */
+.edu-faq-header {
+  margin-bottom: 50px;
+}
+
+.edu-faq-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: rgba(255,122,24,0.15);
+  color: #ff7a18;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.edu-faq-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.edu-faq-header p {
+  color: #9fb0c8;
+  font-size: 16px;
+}
+
+/* FAQ BOX */
+.edu-faq-box {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* FAQ ITEM */
+.edu-faq-item {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.edu-faq-item:last-child {
+  border-bottom: none;
+}
+
+.edu-faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.edu-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.edu-faq-item summary i {
+  color: #9fb0c8;
+  transition: transform 0.3s ease;
+}
+
+/* OPEN STATE */
+.edu-faq-item[open] summary i {
+  transform: rotate(180deg);
+  color: #ff7a18;
+}
+
+/* CONTENT */
+.edu-faq-content {
+  padding: 0 24px 20px;
+  font-size: 14px;
+  color: #aab6cf;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  .edu-faq-header h2 {
+    font-size: 30px;
+  }
+
+  .edu-faq-item summary {
+    font-size: 15px;
+  }
+}
+/* FINAL CTA */
+.edu-final-cta {
+  padding: 120px 0;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+}
+
+/* CTA BOX */
+.edu-final-cta-box {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.03)
+  );
+  border: 1px solid rgba(255,122,24,0.35);
+  border-radius: 20px;
+}
+
+/* BADGE */
+.edu-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: rgba(255,122,24,0.18);
+  color: #ff7a18;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+/* HEADING */
+.edu-final-cta-box h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+/* SUBTITLE */
+.edu-final-cta-box p {
+  max-width: 620px;
+  margin: 0 auto 36px;
+  font-size: 16px;
+  color: #aab6cf;
+  line-height: 1.6;
+}
+
+/* ACTIONS */
+.edu-cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* PRIMARY BUTTON */
+.edu-btn-primary {
+  background: #ff7a18;
+  color: #000;
+  padding: 14px 34px;
+  border-radius: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 0 24px rgba(255,122,24,0.45);
+}
+
+.edu-btn-primary:hover {
+  background: #ff8c33;
+  color: #000;
+}
+
+/* OUTLINE BUTTON */
+.edu-btn-outline {
+  border: 1px solid rgba(255,122,24,0.6);
+  color: #ff7a18;
+  padding: 14px 34px;
+  border-radius: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.edu-btn-outline:hover {
+  background: rgba(255,122,24,0.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  .edu-final-cta-box {
+    padding: 60px 20px;
+  }
+
+  .edu-final-cta-box h2 {
+    font-size: 30px;
+  }
+}

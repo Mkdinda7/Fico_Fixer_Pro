@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fico-Fixer Pro</title>
+
+    <!-- favicon area -->
+    <link rel="shortcut icon" href="./assets/images/webImg/favicon.png" type="image/x-icon">
+
+    <!--  Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--  Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+
+    <!--  Custom CSS -->
+    <link rel="stylesheet" href="./../../assets/css/AllPagesCss/serviceCss/vehicleloan.css" />
+    <link rel="stylesheet" href="./../../assets/css/main.css">
+</head>
+
+<body>
+    <!--==================Header section area ==================-->
+    <header>
+        <!--  Premium Navbar -->
+        <nav class="navbar navbar-expand-lg premium-navbar sticky-top">
+            <div class="container">
+
+                <!--  Brand / Logo -->
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+
+                    <img src="./../../assets/images/webImg/nav-logo.png" alt="header-logo"
+                        style="width: 100%; height: 80px;">
+                </a>
+
+                <!--  Mobile toggler -->
+                <button class="navbar-toggler premium-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--  Desktop Menu -->
+                <div class="collapse navbar-collapse">
+
+                    <!-- Center Links -->
+                    <ul class="navbar-nav mx-auto gap-lg-4">
+                        <li class="nav-item"><a class="nav-link nav-premium active" href="./../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-premium" href="./../../features.html">Features</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-premium" href="./../../pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-premium" href="./../../work.html">Works</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-premium dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">
+                                Services
+                            </a>
+
+                            <ul class="dropdown-menu premium-dropdown-menu">
+
+                                <!-- Accounts -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                        Accounts
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./AllAccount.html">All Account</a></li>
+                                        <li><a class="dropdown-item" href="./SavingAccount.html">Savings Account</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Current Account</a></li>
+                                        <li><a class="dropdown-item" href="#">Fixed Deposit</a></li>
+                                        <li><a class="dropdown-item" href="#">Salary Account</a></li>
+                                        <li><a class="dropdown-item" href="#">NRI Account</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- Cards -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                        Cards
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./../cardPages/allCard.html">All Card</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Credit Card</a></li>
+                                        <li><a class="dropdown-item" href="#">Debit Card</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- Loans -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                        Loans
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Home Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Personal Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Vehicle Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Education Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Gold Loan</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-premium dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Apply Now
+                            </a>
+
+                            <ul class="dropdown-menu premium-dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Home Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Personal Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Vehicle Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Education Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Gold Loan</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Right Action -->
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="./../../auth/login.html" class="nav-signin">Sign In</a>
+                        <a href="./../../auth/register.html" class="btn btn-premium">Get Started</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Offcanvas Mobile Menu -->
+        <div class="offcanvas offcanvas-end premium-offcanvas" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header border-bottom border-light border-opacity-10">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <img src="./../../assets/images/webImg/nav-logo.png" alt="header-logo" style="height:80px;">
+                </a>
+                <button type="button" class="btn-close btn-close-white me-3" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+
+                <!-- NORMAL LINKS -->
+                <ul class="navbar-nav gap-2 mb-2">
+                    <li class="nav-item"><a class="nav-link nav-premium " href="./../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-premium" href="./../../features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link nav-premium" href="./../../pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link nav-premium" href="./../../work.html">Works</a></li>
+                </ul>
+
+                <!-- MAIN ACCORDION -->
+                <div class="accordion accordion-flush" id="mobileAccordion">
+
+                    <!-- SERVICES -->
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent text-white active" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#servicesAcc">
+                                Services
+                            </button>
+                        </h2>
+
+                        <div id="servicesAcc" class="accordion-collapse collapse">
+                            <div class="accordion-body pt-0">
+
+                                <!-- MINI ACCORDION -->
+                                <div class="accordion accordion-flush ms-3" id="servicesMini">
+
+                                    <!-- ACCOUNTS -->
+                                    <div class="accordion-item bg-transparent border-0">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent text-white"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#accountsAcc">
+                                                Accounts
+                                            </button>
+                                        </h2>
+                                        <div id="accountsAcc" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <a class="nav-link nav-premium" href="./AllAccount.html">All Account</a>
+                                                <a class="nav-link nav-premium" href="./SavingAccount.html">Savings
+                                                    Account</a>
+                                                <a class="nav-link nav-premium" href="#">Current Account</a>
+                                                <a class="nav-link nav-premium" href="#">Fixed Deposit</a>
+                                                <a class="nav-link nav-premium" href="#">Salary Account</a>
+                                                <a class="nav-link nav-premium" href="#">NRI Account</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- CARDS -->
+                                    <div class="accordion-item bg-transparent border-0">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent text-white"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#cardsAcc">
+                                                Cards
+                                            </button>
+                                        </h2>
+                                        <div id="cardsAcc" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <a class="dropdown-item" href="./../cardPages/allCard.html">All Card</a>
+                                                <a class="nav-link nav-premium" href="#">Credit Card</a>
+                                                <a class="nav-link nav-premium" href="#">Debit Card</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- LOANS -->
+                                    <div class="accordion-item bg-transparent border-0">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent text-white"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#loansAcc">
+                                                Loans
+                                            </button>
+                                        </h2>
+                                        <div id="loansAcc" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <a class="nav-link nav-premium" href="#">Home Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Personal Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Vehicle Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Education Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Gold Loan</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- APPLY NOW -->
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#applyAcc" data-bs-toggle="modal"
+                                data-bs-target="#vehicleLoanModal">
+                                Apply Now
+                            </button>
+                        </h2>
+                        <div id="applyAcc" class="accordion-collapse collapse">
+                            <div class="accordion-body pt-0">
+                                <a class="nav-link nav-premium" href="#">Dispute Letters</a>
+                                <a class="nav-link nav-premium" href="#">Goodwill Letters</a>
+                                <a class="nav-link nav-premium" href="#">Debt Validation</a>
+                                <a class="nav-link nav-premium" href="#">Identity Theft</a>
+                                <a class="nav-link nav-premium" href="#">Cease & Desist</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="mt-4 d-grid gap-2">
+                    <a href="./../../auth/register.html" class="btn btn-premium w-100">Get Started</a>
+                    <a href="./../../auth/login.html" class="btn btn-outline-light w-100 rounded-pill py-2 fw-bold">
+                        Sign In
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <!-- vehicle-loan-hero -->
+    <section class="vehicle-loan-hero">
+        <div class="container text-center">
+
+            <!-- Heading -->
+            <h1 class="vl-hero-title">
+                Drive Home Your Dream<br />Vehicle Today
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="vl-hero-subtitle">
+                Affordable vehicle loans with low EMIs, flexible tenure, and same-day approval.
+                Finance new cars, used cars, and two-wheelers.
+            </p>
+
+            <!-- Buttons -->
+            <div class="vl-hero-buttons">
+                <a href="#" class="btn-primary-vl">Apply for Vehicle Loan</a>
+                <a href="#" class="btn-outline-vl">Calculate EMI</a>
+            </div>
+
+            <!-- Stats -->
+            <div class="vl-stats">
+
+                <div class="vl-stat-card">
+                    <div class="vl-stat-icon">
+                        <i class="bi bi-percent"></i>
+                    </div>
+                    <h4>9.00% p.a.</h4>
+                    <p>Interest Rates</p>
+                </div>
+
+                <div class="vl-stat-card">
+                    <div class="vl-stat-icon">
+                        <i class="bi bi-currency-rupee"></i>
+                    </div>
+                    <h4>Up to ₹1 Cr</h4>
+                    <p>Loan Amount</p>
+                </div>
+
+                <div class="vl-stat-card">
+                    <div class="vl-stat-icon">
+                        <i class="bi bi-clock"></i>
+                    </div>
+                    <h4>7 Years</h4>
+                    <p>Max Tenure</p>
+                </div>
+
+                <div class="vl-stat-card">
+                    <div class="vl-stat-icon">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+                    <h4>Same Day</h4>
+                    <p>Approval</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- vehicle-benefits-section -->
+    <section class="vehicle-benefits-section">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="vehicle-benefits-header text-center">
+                <h2>Vehicle Loan Benefits</h2>
+                <p>Drive your dream vehicle with our hassle-free financing</p>
+            </div>
+
+            <!-- Grid -->
+            <div class="vehicle-benefits-grid">
+
+                <div class="vehicle-benefits-card">
+                    <div class="vehicle-benefits-icon">
+                        <i class="bi bi-percent"></i>
+                    </div>
+                    <h4>Competitive Interest Rates</h4>
+                    <p>
+                        Get the best rates in the market starting
+                        from 9.00% p.a. for new vehicles.
+                    </p>
+                </div>
+
+                <div class="vehicle-benefits-card">
+                    <div class="vehicle-benefits-icon">
+                        <i class="bi bi-currency-rupee"></i>
+                    </div>
+                    <h4>High Loan Amount</h4>
+                    <p>
+                        Finance up to 100% of on-road price for
+                        select vehicles with no down payment.
+                    </p>
+                </div>
+
+                <div class="vehicle-benefits-card">
+                    <div class="vehicle-benefits-icon">
+                        <i class="bi bi-clock"></i>
+                    </div>
+                    <h4>Flexible Tenure</h4>
+                    <p>
+                        Choose repayment period from 1 to 7 years
+                        based on your convenience.
+                    </p>
+                </div>
+
+                <div class="vehicle-benefits-card">
+                    <div class="vehicle-benefits-icon">
+                        <i class="bi bi-file-earmark-text"></i>
+                    </div>
+                    <h4>Minimal Documentation</h4>
+                    <p>
+                        Quick paperwork with simple document
+                        requirements for faster processing.
+                    </p>
+                </div>
+
+                <div class="vehicle-benefits-card">
+                    <div class="vehicle-benefits-icon">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+                    <h4>Quick Disbursement</h4>
+                    <p>
+                        Get same-day approval and disbursement
+                        directly to the dealer.
+                    </p>
+                </div>
+
+                <div class="vehicle-benefits-card">
+                    <div class="vehicle-benefits-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4>Free Insurance Options</h4>
+                    <p>
+                        Get complimentary first-year insurance
+                        with select vehicle loans.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- vehicle-types-section -->
+    <section class="vehicle-types-section">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="vehicle-types-header text-center">
+                <h2>Types of Vehicle Loans</h2>
+                <p>Choose the right financing for your vehicle</p>
+            </div>
+
+            <!-- Grid -->
+            <div class="vehicle-types-grid">
+
+                <div class="vehicle-types-card">
+                    <div class="vehicle-types-icon">
+                        <i class="bi bi-car-front"></i>
+                    </div>
+                    <h4>New Car Loan</h4>
+                    <p>Finance your brand new car with up to 100% funding</p>
+                </div>
+
+                <div class="vehicle-types-card">
+                    <div class="vehicle-types-icon">
+                        <i class="bi bi-car-front-fill"></i>
+                    </div>
+                    <h4>Used Car Loan</h4>
+                    <p>Get financing for certified pre-owned vehicles</p>
+                </div>
+
+                <div class="vehicle-types-card">
+                    <div class="vehicle-types-icon">
+                        <i class="bi bi-bicycle"></i>
+                    </div>
+                    <h4>Two-Wheeler Loan</h4>
+                    <p>Affordable EMIs for bikes and scooters</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- vl-rates-section -->
+    <section class="vl-rates-section">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="vl-rates-header text-center">
+                <h2>Interest Rates & Charges</h2>
+                <p>Competitive rates for all vehicle categories</p>
+            </div>
+
+            <!-- Table Wrapper -->
+            <div class="vl-rates-table-wrapper">
+                <table class="vl-rates-table">
+                    <thead>
+                        <tr>
+                            <th>Loan Category</th>
+                            <th>Interest Rate</th>
+                            <th>Processing Fee</th>
+                            <th>Tenure</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>New Car – Premium Segment</strong>
+                                <span class="vl-badge vl-badge-best">Best Rate</span>
+                            </td>
+                            <td class="vl-rate-highlight">9.00% – 9.75%</td>
+                            <td>0.50%</td>
+                            <td>Up to 7 years</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>New Car – Standard</strong></td>
+                            <td>9.50% – 10.50%</td>
+                            <td>0.50%</td>
+                            <td>Up to 7 years</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Used Car (&lt; 3 years old)</strong></td>
+                            <td>11.00% – 13.00%</td>
+                            <td>1.00%</td>
+                            <td>Up to 5 years</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Used Car (3–7 years old)</strong></td>
+                            <td>13.00% – 15.00%</td>
+                            <td>1.50%</td>
+                            <td>Up to 4 years</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Two-Wheeler – New</strong></td>
+                            <td>9.50% – 12.00%</td>
+                            <td>1.00%</td>
+                            <td>Up to 4 years</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Note -->
+            <p class="vl-rates-note">
+                * Interest rates are subject to change. Final rates depend on credit profile and loan amount.
+            </p>
+
+        </div>
+    </section>
+    <!-- vl-eligibility-section -->
+    <section class="vl-eligibility-section">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="vl-eligibility-header text-center">
+                <h2>Eligibility Criteria</h2>
+                <p>Check if you qualify for our vehicle loan</p>
+            </div>
+
+            <!-- Grid -->
+            <div class="vl-eligibility-grid">
+
+                <!-- Salaried -->
+                <div class="vl-eligibility-card">
+                    <div class="vl-eligibility-title">
+                        <div class="vl-eligibility-icon">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+                        <h4>Salaried Individuals</h4>
+                    </div>
+
+                    <ul class="vl-eligibility-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Age: 21–60 years</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Minimum 1 year work experience</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Minimum monthly income: ₹15,000</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Good credit score (650+)</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Stable employment history</li>
+                    </ul>
+                </div>
+
+                <!-- Self Employed -->
+                <div class="vl-eligibility-card">
+                    <div class="vl-eligibility-title">
+                        <div class="vl-eligibility-icon">
+                            <i class="bi bi-person"></i>
+                        </div>
+                        <h4>Self-Employed</h4>
+                    </div>
+
+                    <ul class="vl-eligibility-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Age: 21–65 years</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Minimum 2 years in business</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Minimum annual income: ₹3 Lakhs</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Business continuity proof</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Valid ITR filings</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- vl-documents-section -->
+    <section class="vl-documents-section">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="vl-documents-header text-center">
+                <h2>Documents Required</h2>
+                <p>Simple documentation for quick processing</p>
+            </div>
+
+            <!-- Grid -->
+            <div class="vl-documents-grid">
+
+                <!-- Identity & Address -->
+                <div class="vl-documents-card">
+                    <div class="vl-documents-title">
+                        <div class="vl-documents-icon">
+                            <i class="bi bi-person"></i>
+                        </div>
+                        <h4>Identity & Address Proof</h4>
+                    </div>
+
+                    <ul class="vl-documents-list">
+                        <li><i class="bi bi-file-earmark-text"></i> Aadhaar Card</li>
+                        <li><i class="bi bi-file-earmark-text"></i> PAN Card</li>
+                        <li><i class="bi bi-file-earmark-text"></i> Driving License</li>
+                        <li><i class="bi bi-file-earmark-text"></i> Passport (if available)</li>
+                    </ul>
+                </div>
+
+                <!-- Income Documents -->
+                <div class="vl-documents-card">
+                    <div class="vl-documents-title">
+                        <div class="vl-documents-icon">
+                            <i class="bi bi-file-earmark-ruled"></i>
+                        </div>
+                        <h4>Income Documents</h4>
+                    </div>
+
+                    <ul class="vl-documents-list">
+                        <li><i class="bi bi-file-earmark-text"></i> Last 3 months salary slips</li>
+                        <li><i class="bi bi-file-earmark-text"></i> Bank statements (3 months)</li>
+                        <li><i class="bi bi-file-earmark-text"></i> Form 16 / ITR</li>
+                        <li><i class="bi bi-file-earmark-text"></i> Employment letter</li>
+                    </ul>
+                </div>
+
+                <!-- Vehicle Documents -->
+                <div class="vl-documents-card">
+                    <div class="vl-documents-title">
+                        <div class="vl-documents-icon">
+                            <i class="bi bi-car-front"></i>
+                        </div>
+                        <h4>Vehicle Documents</h4>
+                    </div>
+
+                    <ul class="vl-documents-list">
+                        <li><i class="bi bi-file-earmark-text"></i> Proforma invoice from dealer</li>
+                        <li><i class="bi bi-file-earmark-text"></i> Vehicle quotation</li>
+                        <li><i class="bi bi-file-earmark-text"></i> RC book (for used vehicles)</li>
+                        <li><i class="bi bi-file-earmark-text"></i> Insurance documents</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- vl-emi-section -->
+    <section class="vl-emi-section">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="vl-emi-header text-center">
+                <span class="vl-emi-badge">
+                    <i class="bi bi-calculator"></i> Interactive Calculator
+                </span>
+                <h2>Vehicle Loan EMI Calculator</h2>
+                <p>Calculate your monthly EMI instantly</p>
+            </div>
+
+            <!-- Calculator Box -->
+            <div class="vl-emi-box">
+
+                <!-- LEFT -->
+                <div class="vl-emi-left">
+
+                    <!-- Loan Amount -->
+                    <div class="vl-control">
+                        <div class="vl-control-title">
+                            <span><i class="bi bi-currency-rupee"></i> Loan Amount</span>
+                            <strong id="loanAmountText">₹8.00 L</strong>
+                        </div>
+                        <input type="range" id="loanAmount" min="50000" max="10000000" step="50000" value="800000">
+                        <div class="vl-range-labels">
+                            <span>₹50,000</span>
+                            <span>₹1.00 Cr</span>
+                        </div>
+                    </div>
+
+                    <!-- Tenure -->
+                    <div class="vl-control">
+                        <div class="vl-control-title">
+                            <span><i class="bi bi-clock"></i> Loan Tenure</span>
+                            <strong id="loanTenureText">5 years</strong>
+                        </div>
+                        <input type="range" id="loanTenure" min="1" max="7" step="1" value="5">
+                        <div class="vl-range-labels">
+                            <span>1 years</span>
+                            <span>7 years</span>
+                        </div>
+                    </div>
+
+                    <!-- Interest -->
+                    <div class="vl-control">
+                        <div class="vl-control-title">
+                            <span><i class="bi bi-percent"></i> Interest Rate</span>
+                            <strong id="interestRateText">10% p.a.</strong>
+                        </div>
+                        <input type="range" id="interestRate" min="9" max="16" step="0.1" value="10">
+                        <div class="vl-range-labels">
+                            <span>9%</span>
+                            <span>16%</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="vl-emi-right">
+                    <p class="vl-emi-label">Your Monthly EMI</p>
+                    <h3 id="emiValue">₹16,998</h3>
+
+                    <div class="vl-emi-summary">
+                        <div>
+                            <span>Principal Amount</span>
+                            <strong id="principalText">₹8.00 L</strong>
+                        </div>
+                        <div>
+                            <span>Total Interest</span>
+                            <strong class="interest" id="interestText">₹2.20 L</strong>
+                        </div>
+                        <div class="total">
+                            <span>Total Payable</span>
+                            <strong id="totalPayableText">₹10.20 L</strong>
+                        </div>
+                    </div>
+
+                    <!-- BAR -->
+                    <div class="vl-bar">
+                        <div id="principalBar"></div>
+                        <div id="interestBar"></div>
+                    </div>
+                    <div class="vl-bar-labels">
+                        <span><i></i> Principal</span>
+                        <span><i class="int"></i> Interest</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- vl-faq-section -->
+    <section class="vl-faq-section">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="vl-faq-header text-center">
+                <span class="vl-faq-badge">
+                    <i class="bi bi-question-circle"></i> FAQs
+                </span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Get answers to common questions about vehicle loans</p>
+            </div>
+
+            <!-- FAQ Box -->
+            <div class="vl-faq-box">
+
+                <details class="vl-faq-item">
+                    <summary>What is the maximum loan amount for a car loan?</summary>
+                    <p>You can get up to 100% on-road funding for select vehicles depending on eligibility.</p>
+                </details>
+
+                <details class="vl-faq-item">
+                    <summary>What is the minimum down payment required?</summary>
+                    <p>Down payment starts as low as 0% for eligible applicants and vehicles.</p>
+                </details>
+
+                <details class="vl-faq-item">
+                    <summary>Can I get a loan for a used car?</summary>
+                    <p>Yes, we provide loans for certified pre-owned vehicles up to 7 years old.</p>
+                </details>
+
+                <details class="vl-faq-item">
+                    <summary>How long does the vehicle loan approval take?</summary>
+                    <p>Loan approvals are usually completed within a few hours, subject to verification.</p>
+                </details>
+
+                <!-- OPEN BY DEFAULT -->
+                <details class="vl-faq-item" open>
+                    <summary>Is insurance mandatory for vehicle loan?</summary>
+                    <p>
+                        Yes, comprehensive insurance is mandatory for the loan tenure.
+                        We offer attractive insurance packages through our partner insurers with the loan.
+                    </p>
+                </details>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- vl-final-cta -->
+    <section class="vl-final-cta">
+        <div class="container">
+
+            <div class="vl-final-cta-box text-center">
+
+                <span class="vl-final-badge">
+                    ✨ Get Started Today
+                </span>
+
+                <h2>Apply for Vehicle Loan in Minutes</h2>
+
+                <p>
+                    Get instant approval and drive home your dream vehicle today.
+                </p>
+
+                <div class="vl-final-buttons">
+                    <a href="#" class="vl-btn-primary" data-bs-toggle="modal" data-bs-target="#vehicleLoanModal">
+                        Apply Now <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="tel:18001234567" class="vl-btn-outline">
+                        Call Us: 1800-123-4567
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+<!-- Vehicle Loan Modal -->
+<div class="modal fade" id="vehicleLoanModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content vl-modal">
+
+      <!-- HEADER -->
+      <div class="vl-modal-header">
+        <h5>Apply for Vehicle Loan</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- PROGRESS -->
+      <div class="vl-progress">
+        <div class="vl-progress-line"></div>
+        <div class="vl-step active"><i class="bi bi-person"></i></div>
+        <div class="vl-step"><i class="bi bi-briefcase"></i></div>
+        <div class="vl-step"><i class="bi bi-credit-card"></i></div>
+        <div class="vl-step"><i class="bi bi-file-earmark-check"></i></div>
+      </div>
+
+      <!-- BODY -->
+      <div class="modal-body vl-body">
+
+        <!-- STEP 1 -->
+        <div class="vl-step-pane active">
+          <div class="vl-field">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name">
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 vl-field">
+              <label>Email</label>
+              <input type="email" placeholder="your@email.com">
+            </div>
+            <div class="col-md-6 vl-field">
+              <label>Mobile Number</label>
+              <input type="tel" placeholder="10-digit mobile number">
+            </div>
+          </div>
+
+          <div class="vl-field">
+            <label>Date of Birth</label>
+            <input type="date">
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="vl-step-pane">
+          <div class="vl-field">
+            <label>Employment Type</label>
+            <select>
+              <option>Select employment type</option>
+              <option>Salaried</option>
+              <option>Self Employed</option>
+            </select>
+          </div>
+
+          <div class="vl-field">
+            <label>Company / Business Name</label>
+            <input type="text" placeholder="Enter company name">
+          </div>
+
+          <div class="vl-field">
+            <label>Monthly Income</label>
+            <input type="range" min="10000" max="200000" value="75000">
+            <span class="vl-range-value">₹75,000</span>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="vl-step-pane">
+          <div class="vl-field">
+            <label>Loan Amount Required</label>
+            <input type="range" min="50000" max="1000000" value="500000">
+            <span class="vl-range-value">₹5.0 L</span>
+          </div>
+
+          <div class="vl-field">
+            <label>Preferred Tenure</label>
+            <input type="range" min="12" max="84" value="60">
+            <span class="vl-range-value">60 months</span>
+          </div>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="vl-step-pane">
+          <div class="vl-summary-box">
+            <h6>Application Summary</h6>
+            <div class="vl-summary-row">
+              <span>Loan Amount</span>
+              <strong>₹5.0 L</strong>
+            </div>
+            <div class="vl-summary-row">
+              <span>Tenure</span>
+              <strong>60 months</strong>
+            </div>
+          </div>
+
+          <p class="vl-terms">
+            By submitting, you agree to our terms and conditions.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+      <div class="vl-modal-footer">
+        <button class="vl-btn-outline" id="prevStep">← Back</button>
+        <button class="vl-btn-primary" id="nextStep">Next →</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+    <!--====================  Footer =====================-->
+    <footer class="footer-premium pt-5">
+        <div class="container">
+
+            <div class="row gy-5">
+
+                <!--  Left Brand -->
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+
+                        <div class="footer-logo">
+                            <img src="./../../assets/images/webImg/nav-logo.png" alt="footer-logo">
+                        </div>
+
+                        <p class="brand-desc mt-3">
+                            AI-powered credit repair software that generates Metro 2 compliant dispute letters backed by
+                            consumer
+                            protection law.
+                        </p>
+
+                        <!-- contact -->
+                        <ul class="footer-contact">
+                            <li><i class="bi bi-envelope"></i> support@ficofixerpro.com</li>
+                            <li><i class="bi bi-telephone"></i> 1-800-FICO-FIX</li>
+                            <li><i class="bi bi-geo-alt"></i> Miami, FL 33101</li>
+                        </ul>
+
+                        <!-- social -->
+                        <div class="footer-social">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--  Product -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Product</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Templates</a></li>
+                        <li><a href="#">API Access</a></li>
+                    </ul>
+                </div>
+
+                <!--  Company -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!--  Resources -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Resources</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Credit Education</a></li>
+                        <li><a href="#">FCRA Guide</a></li>
+                        <li><a href="#">Sample Letters</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Legal</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">DMCA</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- bottom bar -->
+            <div class="footer-bottom mt-5">
+                <p class="mb-0">
+                    © 2026 FICO Fixer Pro. All rights reserved. Not affiliated with FICO® or Fair Isaac Corporation.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        const loanAmount = document.getElementById("loanAmount");
+        const tenure = document.getElementById("loanTenure");
+        const interest = document.getElementById("interestRate");
+
+        const emiValue = document.getElementById("emiValue");
+        const principalText = document.getElementById("principalText");
+        const interestText = document.getElementById("interestText");
+        const totalPayableText = document.getElementById("totalPayableText");
+
+        const loanAmountText = document.getElementById("loanAmountText");
+        const loanTenureText = document.getElementById("loanTenureText");
+        const interestRateText = document.getElementById("interestRateText");
+
+        const principalBar = document.getElementById("principalBar");
+        const interestBar = document.getElementById("interestBar");
+
+        function formatLakh(val) {
+            return "₹" + (val / 100000).toFixed(2) + " L";
+        }
+
+        function calculateEMI() {
+            let P = +loanAmount.value;
+            let r = (+interest.value / 12) / 100;
+            let n = +tenure.value * 12;
+
+            let emi = P * r * Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1);
+            let total = emi * n;
+            let totalInterest = total - P;
+
+            emiValue.innerText = "₹" + Math.round(emi).toLocaleString();
+            principalText.innerText = formatLakh(P);
+            interestText.innerText = formatLakh(totalInterest);
+            totalPayableText.innerText = formatLakh(total);
+
+            loanAmountText.innerText = formatLakh(P);
+            loanTenureText.innerText = tenure.value + " years";
+            interestRateText.innerText = interest.value + "% p.a.";
+
+            let pPercent = (P / total) * 100;
+            principalBar.style.width = pPercent + "%";
+            interestBar.style.width = (100 - pPercent) + "%";
+        }
+
+        [loanAmount, tenure, interest].forEach(i => {
+            i.addEventListener("input", calculateEMI);
+        });
+
+        calculateEMI();
+    </script>
+  <script>
+let currentStep = 0;
+const panes = document.querySelectorAll(".vl-step-pane");
+const steps = document.querySelectorAll(".vl-step");
+const nextBtn = document.getElementById("nextStep");
+const prevBtn = document.getElementById("prevStep");
+
+function renderStep() {
+  panes.forEach((p,i)=>p.classList.toggle("active", i===currentStep));
+  steps.forEach((s,i)=>s.classList.toggle("active", i<=currentStep));
+
+  prevBtn.style.visibility = currentStep === 0 ? "hidden" : "visible";
+  nextBtn.innerText = currentStep === panes.length-1 ? "Submit Application" : "Next →";
+}
+
+nextBtn.onclick = () => {
+  if(currentStep < panes.length-1) {
+    currentStep++;
+    renderStep();
+  } else {
+    alert("Application Submitted 🚀");
+  }
+};
+
+prevBtn.onclick = () => {
+  if(currentStep > 0) {
+    currentStep--;
+    renderStep();
+  }
+};
+
+renderStep();
+</script>
+
+
+
+    <!-- MAIN JS LINK -->
+    <script src="./../../assets/js/main.js"></script>
+
+    <!--  Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

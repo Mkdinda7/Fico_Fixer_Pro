@@ -1,0 +1,1154 @@
+/* VEHICLE LOAN HERO */
+.vehicle-loan-hero {
+  padding: 170px 0 110px;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  color: #ffffff;
+
+}
+
+/* TITLE */
+.vl-hero-title {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+/* SUBTITLE */
+.vl-hero-subtitle {
+  max-width: 780px;
+  margin: 0 auto 38px;
+  font-size: 16px;
+  color: #aab0c0;
+  line-height: 1.7;
+}
+
+/* BUTTONS */
+.vl-hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+.btn-primary-vl {
+  background: #ff7a18;
+  color: #000;
+  padding: 14px 34px;
+  border-radius: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 12px 30px rgba(255,122,24,0.35);
+  transition: all 0.3s ease;
+}
+
+.btn-primary-vl:hover {
+  background: #ff8c33;
+  transform: translateY(-2px);
+}
+
+.btn-outline-vl {
+  border: 1px solid rgba(255,122,24,0.6);
+  color: #ff7a18;
+  padding: 14px 32px;
+  border-radius: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-vl:hover {
+  background: rgba(255,122,24,0.1);
+}
+
+/* STATS */
+.vl-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+/* STAT CARD */
+.vl-stat-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 28px 20px;
+  transition: all 0.35s ease;
+}
+
+.vl-stat-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.08);
+}
+
+/* ICON */
+.vl-stat-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 14px;
+  background: rgba(255,122,24,0.18);
+  color: #ff7a18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  font-size: 20px;
+}
+
+/* TEXT */
+.vl-stat-card h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.vl-stat-card p {
+  font-size: 13px;
+  color: #aab0c0;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .vl-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vl-hero-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .vehicle-loan-hero {
+    padding: 90px 0 80px;
+  }
+
+  .vl-hero-title {
+    font-size: 30px;
+  }
+
+  .vl-stats {
+    grid-template-columns: 1fr;
+  }
+}
+/* VEHICLE LOAN BENEFITS */
+.vehicle-benefits-section {
+  padding: 120px 0;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  color: #ffffff;
+}
+
+/* HEADER */
+.vehicle-benefits-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.vehicle-benefits-header p {
+  font-size: 16px;
+  color: #9fb0c8;
+  margin-bottom: 70px;
+}
+
+/* GRID */
+.vehicle-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* CARD */
+.vehicle-benefits-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 22px;
+  padding: 36px 30px;
+  transition: all 0.35s ease;
+}
+
+.vehicle-benefits-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.08);
+}
+
+/* ICON */
+.vehicle-benefits-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(255,122,24,0.18);
+  color: #ff7a18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+/* TITLE */
+.vehicle-benefits-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.vehicle-benefits-card p {
+  font-size: 14px;
+  color: #aab6cf;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .vehicle-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .vehicle-benefits-section {
+    padding: 80px 0;
+  }
+
+  .vehicle-benefits-header h2 {
+    font-size: 28px;
+  }
+
+  .vehicle-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* TYPES OF VEHICLE LOANS */
+.vehicle-types-section {
+  padding: 120px 0;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  color: #ffffff;
+}
+
+/* HEADER */
+.vehicle-types-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.vehicle-types-header p {
+  font-size: 16px;
+  color: #9fb0c8;
+  margin-bottom: 70px;
+}
+
+/* GRID */
+.vehicle-types-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* CARD */
+.vehicle-types-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 22px;
+  padding: 42px 30px;
+  text-align: center;
+  transition: all 0.35s ease;
+}
+
+.vehicle-types-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.08);
+}
+
+/* ICON */
+.vehicle-types-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 22px;
+  border-radius: 16px;
+  background: rgba(255,122,24,0.18);
+  color: #ff7a18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+/* TITLE */
+.vehicle-types-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.vehicle-types-card p {
+  font-size: 14px;
+  color: #aab6cf;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .vehicle-types-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .vehicle-types-section {
+    padding: 80px 0;
+  }
+
+  .vehicle-types-header h2 {
+    font-size: 28px;
+  }
+
+  .vehicle-types-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* VEHICLE LOAN RATES */
+.vl-rates-section {
+  padding: 120px 0;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  color: #ffffff;
+}
+
+/* HEADER */
+.vl-rates-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.vl-rates-header p {
+  font-size: 16px;
+  color: #9fb0c8;
+  margin-bottom: 60px;
+}
+
+/* TABLE WRAPPER */
+.vl-rates-table-wrapper {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* TABLE */
+.vl-rates-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* HEAD */
+.vl-rates-table thead th {
+  padding: 18px 22px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: #cfd8ea;
+  background: rgba(255,255,255,0.03);
+}
+
+/* BODY */
+.vl-rates-table tbody td {
+  padding: 18px 22px;
+  font-size: 14px;
+  color: #aab6cf;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.vl-rates-table tbody tr:hover {
+  background: rgba(255,255,255,0.04);
+}
+
+/* HIGHLIGHT RATE */
+.vl-rate-highlight {
+  color: #ff7a18;
+  font-weight: 600;
+}
+
+/* BADGES */
+.vl-badge {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+.vl-badge-best {
+  background: #ff7a18;
+  color: #000;
+}
+
+/* NOTE */
+.vl-rates-note {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #8fa1c2;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .vl-rates-table thead {
+    display: none;
+  }
+
+  .vl-rates-table,
+  .vl-rates-table tbody,
+  .vl-rates-table tr,
+  .vl-rates-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .vl-rates-table tr {
+    padding: 10px 0;
+  }
+
+  .vl-rates-table td {
+    padding: 10px 18px;
+    border-top: none;
+  }
+}
+/* VEHICLE LOAN ELIGIBILITY */
+.vl-eligibility-section {
+  padding: 120px 0;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  color: #ffffff;
+}
+
+/* HEADER */
+.vl-eligibility-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.vl-eligibility-header p {
+  font-size: 16px;
+  color: #9fb0c8;
+  margin-bottom: 70px;
+}
+
+/* GRID */
+.vl-eligibility-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+}
+
+/* CARD */
+.vl-eligibility-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 22px;
+  padding: 36px 32px;
+  transition: all 0.35s ease;
+}
+
+.vl-eligibility-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.08);
+}
+
+/* TITLE */
+.vl-eligibility-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.vl-eligibility-title h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ICON */
+.vl-eligibility-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(255,122,24,0.18);
+  color: #ff7a18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* LIST */
+.vl-eligibility-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vl-eligibility-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #aab6cf;
+  padding: 10px 0;
+}
+
+/* CHECK ICON */
+.vl-eligibility-list i {
+  color: #22c55e;
+  font-size: 16px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .vl-eligibility-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vl-eligibility-section {
+    padding: 80px 0;
+  }
+
+  .vl-eligibility-header h2 {
+    font-size: 28px;
+  }
+}
+/* VEHICLE LOAN DOCUMENTS */
+.vl-documents-section {
+  padding: 120px 0;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  color: #ffffff;
+}
+
+/* HEADER */
+.vl-documents-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.vl-documents-header p {
+  font-size: 16px;
+  color: #9fb0c8;
+  margin-bottom: 70px;
+}
+
+/* GRID */
+.vl-documents-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* CARD */
+.vl-documents-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 22px;
+  padding: 34px 30px;
+  transition: all 0.35s ease;
+}
+
+.vl-documents-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.08);
+}
+
+/* TITLE */
+.vl-documents-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.vl-documents-title h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ICON */
+.vl-documents-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(255,122,24,0.18);
+  color: #ff7a18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* LIST */
+.vl-documents-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vl-documents-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #aab6cf;
+  padding: 9px 0;
+}
+
+/* LIST ICON */
+.vl-documents-list i {
+  color: #ff7a18;
+  font-size: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .vl-documents-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .vl-documents-section {
+    padding: 80px 0;
+  }
+
+  .vl-documents-header h2 {
+    font-size: 28px;
+  }
+
+  .vl-documents-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* EMI SECTION */
+.vl-emi-section {
+  padding: 120px 0;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  color: #fff;
+}
+
+/* HEADER */
+.vl-emi-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin: 14px 0 8px;
+}
+
+.vl-emi-header p {
+  color: #9fb0c8;
+  margin-bottom: 60px;
+}
+
+.vl-emi-badge {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 14px;
+  background: rgba(255,122,24,.15);
+  color: #ff7a18;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+/* BOX */
+.vl-emi-box {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 36px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 22px;
+  padding: 36px;
+}
+
+/* LEFT */
+.vl-control {
+  margin-bottom: 36px;
+}
+
+.vl-control-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #ff7a18;
+}
+
+.vl-range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #9fb0c8;
+}
+
+/* RIGHT */
+.vl-emi-right {
+  background: rgba(0,0,0,.25);
+  border-radius: 18px;
+  padding: 32px;
+  border: 1px solid rgba(255,122,24,.25);
+}
+
+.vl-emi-label {
+  color: #9fb0c8;
+  margin-bottom: 6px;
+}
+
+.vl-emi-right h3 {
+  font-size: 40px;
+  color: #ff7a18;
+  margin-bottom: 24px;
+}
+
+/* SUMMARY */
+.vl-emi-summary div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+
+.vl-emi-summary .interest {
+  color: #ffb020;
+}
+
+.vl-emi-summary .total {
+  font-weight: 700;
+}
+
+/* BAR */
+.vl-bar {
+  display: flex;
+  height: 8px;
+  border-radius: 99px;
+  overflow: hidden;
+  margin: 24px 0 10px;
+}
+
+#principalBar {
+  background: #ff7a18;
+}
+
+#interestBar {
+  background: #ffb020;
+}
+
+.vl-bar-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.vl-bar-labels i {
+  width: 10px;
+  height: 10px;
+  background: #ff7a18;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.vl-bar-labels i.int {
+  background: #ffb020;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .vl-emi-box{grid-template-columns:1fr}
+}
+/* FAQ SECTION */
+.vl-faq-section {
+  padding: 120px 0;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  color: #fff;
+}
+
+/* HEADER */
+.vl-faq-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin: 14px 0 10px;
+}
+
+.vl-faq-header p {
+  color: #9fb0c8;
+  margin-bottom: 60px;
+}
+
+.vl-faq-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(255,122,24,0.15);
+  color: #ff7a18;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+/* FAQ BOX */
+.vl-faq-box {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* FAQ ITEM */
+.vl-faq-item {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.vl-faq-item:last-child {
+  border-bottom: none;
+}
+
+/* SUMMARY */
+.vl-faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  position: relative;
+}
+
+/* REMOVE DEFAULT ARROW */
+.vl-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* CUSTOM CHEVRON */
+.vl-faq-item summary::after {
+  content: "\f282";
+  font-family: "bootstrap-icons";
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #9fb0c8;
+  transition: transform 0.3s ease;
+}
+
+/* ROTATE WHEN OPEN */
+.vl-faq-item[open] summary::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* ANSWER */
+.vl-faq-item p {
+  padding: 0 24px 18px;
+  font-size: 14px;
+  color: #aab6cf;
+  line-height: 1.6;
+}
+
+/* HOVER */
+.vl-faq-item summary:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  .vl-faq-section {
+    padding: 80px 0;
+  }
+
+  .vl-faq-header h2 {
+    font-size: 28px;
+  }
+
+  .vl-faq-item summary {
+    padding-right: 50px;
+  }
+}
+/* FINAL CTA SECTION */
+.vl-final-cta {
+  padding: 100px 0 120px;
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+}
+
+/* CTA BOX */
+.vl-final-cta-box {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 64px 40px;
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,122,24,0.35);
+  color: #ffffff;
+}
+
+/* BADGE */
+.vl-final-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ff7a18;
+  background: rgba(255,122,24,0.18);
+  margin-bottom: 22px;
+}
+
+/* TITLE */
+.vl-final-cta-box h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+/* TEXT */
+.vl-final-cta-box p {
+  font-size: 16px;
+  color: #aab6cf;
+  max-width: 600px;
+  margin: 0 auto 36px;
+}
+
+/* BUTTONS */
+.vl-final-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* PRIMARY BUTTON */
+.vl-btn-primary {
+  background: #ff7a18;
+  color: #000;
+  padding: 14px 34px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 10px 30px rgba(255,122,24,0.35);
+  transition: all 0.3s ease;
+}
+
+.vl-btn-primary:hover {
+  background: #ff8c33;
+  transform: translateY(-2px);
+}
+
+/* OUTLINE BUTTON */
+.vl-btn-outline {
+  padding: 14px 30px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ff7a18;
+  border: 1px solid rgba(255,122,24,0.6);
+  transition: all 0.3s ease;
+}
+
+.vl-btn-outline:hover {
+  background: rgba(255,122,24,0.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .vl-final-cta-box {
+    padding: 48px 24px;
+  }
+
+  .vl-final-cta-box h2 {
+    font-size: 28px;
+  }
+}
+/* MODAL */
+.vl-modal {
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  border-radius: 22px;
+  border: 1px solid rgba(255,122,24,.35);
+  color: #fff;
+}
+
+/* HEADER */
+.vl-modal-header {
+  padding: 22px 32px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* PROGRESS */
+.vl-progress {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+}
+
+.vl-progress-line {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  right: 60px;
+  height: 2px;
+  background: rgba(255,255,255,.15);
+}
+
+.vl-step {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #0f1f3a;
+  border: 1px solid rgba(255,255,255,.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  color: #9fb0c8;
+}
+
+.vl-step.active {
+  background: #ff7a18;
+  color: #000;
+  border-color: transparent;
+}
+
+/* BODY */
+.vl-body {
+  padding: 30px 40px;
+}
+
+.vl-step-pane {
+  display: none;
+  animation: fadeUp .4s ease;
+}
+
+.vl-step-pane.active {
+  display: block;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* FIELDS */
+.vl-field {
+  margin-bottom: 22px;
+}
+
+.vl-field label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #cdd6e6;
+  display: block;
+}
+
+.vl-field input,
+.vl-field select {
+  width: 100% !important;
+  padding: 14px 16px !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.05) !important;
+  border: 1px solid rgba(255,255,255,.15) !important;
+  color: #fff !important;
+}
+
+.vl-field input:focus,
+.vl-field select:focus {
+  outline: none !important;
+  border-color: #ff7a18 !important;
+  box-shadow: 0 0 0 2px rgba(255,122,24,.25) !important;
+}
+
+.vl-range-value {
+  margin-top: 8px;
+  display: inline-block;
+  font-weight: 600;
+  color: #ff7a18;
+}
+
+/* SUMMARY */
+.vl-summary-box {
+  background: rgba(255,255,255,.05);
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.vl-summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+
+.vl-summary-row:first-child {
+  border-top: none;
+}
+
+.vl-terms {
+  font-size: 12px;
+  color: #9fb0c8;
+  margin-top: 18px;
+}
+
+/* FOOTER */
+.vl-modal-footer {
+  padding: 22px 32px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fico-Fixer Pro</title>
+
+    <!-- favicon area -->
+    <link rel="shortcut icon" href="./assets/images/webImg/favicon.png" type="image/x-icon">
+
+    <!--  Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--  Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+
+    <!--  Custom CSS -->
+    <link rel="stylesheet" href="./../../assets/css/AllPagesCss/serviceCss/personalloan.css" />
+    <link rel="stylesheet" href="./../../assets/css/main.css">
+</head>
+<body>
+     <!--==================Header section area ==================-->
+    <header>
+        <!--  Premium Navbar -->
+        <nav class="navbar navbar-expand-lg premium-navbar sticky-top">
+            <div class="container">
+
+                <!--  Brand / Logo -->
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+
+                    <img src="./../../assets/images/webImg/nav-logo.png" alt="header-logo"
+                        style="width: 100%; height: 80px;">
+                </a>
+
+                <!--  Mobile toggler -->
+                <button class="navbar-toggler premium-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--  Desktop Menu -->
+                <div class="collapse navbar-collapse">
+
+                    <!-- Center Links -->
+                    <ul class="navbar-nav mx-auto gap-lg-4">
+                        <li class="nav-item"><a class="nav-link nav-premium active" href="./../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-premium" href="./../../features.html">Features</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-premium" href="./../../pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-premium" href="./../../work.html">Works</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-premium dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">
+                                Services
+                            </a>
+
+                            <ul class="dropdown-menu premium-dropdown-menu">
+
+                                <!-- Accounts -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                        Accounts
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./AllAccount.html">All Account</a></li>
+                                        <li><a class="dropdown-item" href="./SavingAccount.html">Savings Account</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Current Account</a></li>
+                                        <li><a class="dropdown-item" href="#">Fixed Deposit</a></li>
+                                        <li><a class="dropdown-item" href="#">Salary Account</a></li>
+                                        <li><a class="dropdown-item" href="#">NRI Account</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- Cards -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                        Cards
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./../cardPages/allCard.html">All Card</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Credit Card</a></li>
+                                        <li><a class="dropdown-item" href="#">Debit Card</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- Loans -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                        Loans
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Home Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Personal Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Vehicle Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Education Loan</a></li>
+                                        <li><a class="dropdown-item" href="#">Gold Loan</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-premium dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Apply Now
+                            </a>
+
+                            <ul class="dropdown-menu premium-dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Home Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Personal Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Vehicle Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Education Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Gold Loan</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Right Action -->
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="./../../auth/login.html" class="nav-signin">Sign In</a>
+                        <a href="./../../auth/register.html" class="btn btn-premium">Get Started</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Offcanvas Mobile Menu -->
+        <div class="offcanvas offcanvas-end premium-offcanvas" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header border-bottom border-light border-opacity-10">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <img src="./../../assets/images/webImg/nav-logo.png" alt="header-logo" style="height:80px;">
+                </a>
+                <button type="button" class="btn-close btn-close-white me-3" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+
+                <!-- NORMAL LINKS -->
+                <ul class="navbar-nav gap-2 mb-2">
+                    <li class="nav-item"><a class="nav-link nav-premium " href="./../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-premium" href="./../../features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link nav-premium" href="./../../pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link nav-premium" href="./../../work.html">Works</a></li>
+                </ul>
+
+                <!-- MAIN ACCORDION -->
+                <div class="accordion accordion-flush" id="mobileAccordion">
+
+                    <!-- SERVICES -->
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent text-white active" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#servicesAcc">
+                                Services
+                            </button>
+                        </h2>
+
+                        <div id="servicesAcc" class="accordion-collapse collapse">
+                            <div class="accordion-body pt-0">
+
+                                <!-- MINI ACCORDION -->
+                                <div class="accordion accordion-flush ms-3" id="servicesMini">
+
+                                    <!-- ACCOUNTS -->
+                                    <div class="accordion-item bg-transparent border-0">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent text-white"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#accountsAcc">
+                                                Accounts
+                                            </button>
+                                        </h2>
+                                        <div id="accountsAcc" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <a class="nav-link nav-premium" href="./AllAccount.html">All Account</a>
+                                                <a class="nav-link nav-premium" href="./SavingAccount.html">Savings
+                                                    Account</a>
+                                                <a class="nav-link nav-premium" href="#">Current Account</a>
+                                                <a class="nav-link nav-premium" href="#">Fixed Deposit</a>
+                                                <a class="nav-link nav-premium" href="#">Salary Account</a>
+                                                <a class="nav-link nav-premium" href="#">NRI Account</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- CARDS -->
+                                    <div class="accordion-item bg-transparent border-0">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent text-white"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#cardsAcc">
+                                                Cards
+                                            </button>
+                                        </h2>
+                                        <div id="cardsAcc" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <a class="dropdown-item" href="./../cardPages/allCard.html">All Card</a>
+                                                <a class="nav-link nav-premium" href="#">Credit Card</a>
+                                                <a class="nav-link nav-premium" href="#">Debit Card</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- LOANS -->
+                                    <div class="accordion-item bg-transparent border-0">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent text-white"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#loansAcc">
+                                                Loans
+                                            </button>
+                                        </h2>
+                                        <div id="loansAcc" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <a class="nav-link nav-premium" href="#">Home Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Personal Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Vehicle Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Education Loan</a>
+                                                <a class="nav-link nav-premium" href="#">Gold Loan</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- APPLY NOW -->
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#applyAcc">
+                                Apply Now
+                            </button>
+                        </h2>
+                        <div id="applyAcc" class="accordion-collapse collapse">
+                            <div class="accordion-body pt-0">
+                                <a class="nav-link nav-premium" href="#">Dispute Letters</a>
+                                <a class="nav-link nav-premium" href="#">Goodwill Letters</a>
+                                <a class="nav-link nav-premium" href="#">Debt Validation</a>
+                                <a class="nav-link nav-premium" href="#">Identity Theft</a>
+                                <a class="nav-link nav-premium" href="#">Cease & Desist</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="mt-4 d-grid gap-2">
+                    <a href="./../../auth/register.html" class="btn btn-premium w-100">Get Started</a>
+                    <a href="./../../auth/login.html" class="btn btn-outline-light w-100 rounded-pill py-2 fw-bold">
+                        Sign In
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <!-- personal-loan-hero -->
+     <section class="personal-loan-hero">
+  <div class="container text-center">
+
+    <!-- Heading -->
+    <h1 class="pl-hero-title">
+      Instant Personal Loans, Zero<br />Hassle
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="pl-hero-subtitle">
+      Get funds for any personal need with quick approval, no collateral,
+      and 100% digital process. Disbursal in as fast as 2 hours.
+    </p>
+
+    <!-- Buttons -->
+    <div class="pl-hero-buttons">
+      <a href="#" class="btn-primary-pl">Apply Now</a>
+      <a href="#" class="btn-outline-pl">Check EMI</a>
+    </div>
+
+    <!-- Stats -->
+    <div class="pl-stats">
+
+      <div class="pl-stat-card">
+        <div class="pl-stat-icon">
+          <i class="bi bi-lightning-charge"></i>
+        </div>
+        <h4>Instant</h4>
+        <p>Approval Time</p>
+      </div>
+
+      <div class="pl-stat-card">
+        <div class="pl-stat-icon">
+          <i class="bi bi-shield-check"></i>
+        </div>
+        <h4>Not Required</h4>
+        <p>Collateral</p>
+      </div>
+
+      <div class="pl-stat-card">
+        <div class="pl-stat-icon">
+          <i class="bi bi-clock"></i>
+        </div>
+        <h4>5 Years</h4>
+        <p>Max Tenure</p>
+      </div>
+
+      <div class="pl-stat-card">
+        <div class="pl-stat-icon">
+          <i class="bi bi-percent"></i>
+        </div>
+        <h4>10.50% p.a.</h4>
+        <p>Interest Rates</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- pl-why-section -->
+ <section class="pl-why-section">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="pl-why-header text-center">
+      <h2>Why Choose Our Personal Loan?</h2>
+      <p>Experience the fastest and most convenient personal loan process</p>
+    </div>
+
+    <!-- Grid -->
+    <div class="pl-why-grid">
+
+      <div class="pl-why-card">
+        <div class="pl-why-icon">
+          <i class="bi bi-file-earmark-text"></i>
+        </div>
+        <h4>100% Paperless Process</h4>
+        <p>
+          Apply online with e-KYC and digital documentation.
+          No branch visits required.
+        </p>
+      </div>
+
+      <div class="pl-why-card">
+        <div class="pl-why-icon">
+          <i class="bi bi-lightning-charge"></i>
+        </div>
+        <h4>Instant Disbursement</h4>
+        <p>
+          Get funds transferred to your account within
+          minutes of approval.
+        </p>
+      </div>
+
+      <div class="pl-why-card">
+        <div class="pl-why-icon">
+          <i class="bi bi-shield-check"></i>
+        </div>
+        <h4>Transparent Pricing</h4>
+        <p>
+          No hidden charges. Clear breakdown of interest
+          and processing fees upfront.
+        </p>
+      </div>
+
+      <div class="pl-why-card">
+        <div class="pl-why-icon">
+          <i class="bi bi-wallet2"></i>
+        </div>
+        <h4>No Collateral Required</h4>
+        <p>
+          Get loans up to ₹40 Lakhs without any
+          security or collateral.
+        </p>
+      </div>
+
+      <div class="pl-why-card">
+        <div class="pl-why-icon">
+          <i class="bi bi-clock"></i>
+        </div>
+        <h4>Flexible Tenure</h4>
+        <p>
+          Choose repayment tenure from 12 to 60 months
+          as per your convenience.
+        </p>
+      </div>
+
+      <div class="pl-why-card">
+        <div class="pl-why-icon">
+          <i class="bi bi-patch-check"></i>
+        </div>
+        <h4>Pre-approved Offers</h4>
+        <p>
+          Existing customers get pre-approved loan
+          offers with zero documentation.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- "pl-purpose-section -->
+ <section class="pl-purpose-section">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="pl-purpose-header text-center">
+      <h2>Use Your Loan For Any Purpose</h2>
+      <p>No restrictions on how you use your personal loan funds</p>
+    </div>
+
+    <!-- Grid -->
+    <div class="pl-purpose-grid">
+
+      <div class="pl-purpose-card">
+        <div class="pl-purpose-icon">
+          <i class="bi bi-heart-pulse"></i>
+        </div>
+        <h4>Medical Expenses</h4>
+        <p>Cover unexpected medical bills and treatments</p>
+      </div>
+
+      <div class="pl-purpose-card">
+        <div class="pl-purpose-icon">
+          <i class="bi bi-airplane"></i>
+        </div>
+        <h4>Travel & Holidays</h4>
+        <p>Fund your dream vacation or travel plans</p>
+      </div>
+
+      <div class="pl-purpose-card">
+        <div class="pl-purpose-icon">
+          <i class="bi bi-balloon-heart"></i>
+        </div>
+        <h4>Wedding Expenses</h4>
+        <p>Make your special day memorable without stress</p>
+      </div>
+
+      <div class="pl-purpose-card">
+        <div class="pl-purpose-icon">
+          <i class="bi bi-mortarboard"></i>
+        </div>
+        <h4>Education Fees</h4>
+        <p>Pay for courses, certifications, or higher studies</p>
+      </div>
+
+      <div class="pl-purpose-card">
+        <div class="pl-purpose-icon">
+          <i class="bi bi-exclamation-circle"></i>
+        </div>
+        <h4>Emergency Needs</h4>
+        <p>Handle any unexpected financial emergencies</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- pl-rates-section -->
+ <section class="pl-rates-section">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="pl-rates-header text-center">
+      <h2>Interest Rates & Fees</h2>
+      <p>Competitive rates based on your credit profile</p>
+    </div>
+
+    <!-- Table Wrapper -->
+    <div class="pl-rates-table-wrapper">
+      <table class="pl-rates-table">
+        <thead>
+          <tr>
+            <th>Loan Category</th>
+            <th>Interest Rate</th>
+            <th>Processing Fee</th>
+            <th>Tenure</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              <strong>Salaried (Credit Score 750+)</strong>
+              <span class="pl-badge pl-badge-best">Best Rate</span>
+            </td>
+            <td class="pl-rate-highlight">10.50% – 12.00%</td>
+            <td>1.00%</td>
+            <td>Up to 5 years</td>
+          </tr>
+
+          <tr>
+            <td><strong>Salaried (Credit Score 700–749)</strong></td>
+            <td>12.00% – 14.00%</td>
+            <td>1.50%</td>
+            <td>Up to 5 years</td>
+          </tr>
+
+          <tr>
+            <td><strong>Self-Employed</strong></td>
+            <td>13.00% – 16.00%</td>
+            <td>2.00%</td>
+            <td>Up to 4 years</td>
+          </tr>
+
+          <tr>
+            <td>
+              <strong>Pre-Approved Customers</strong>
+              <span class="pl-badge pl-badge-exclusive">Exclusive</span>
+            </td>
+            <td>10.00% – 11.00%</td>
+            <td>0.50%</td>
+            <td>Up to 5 years</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Note -->
+    <p class="pl-rates-note">
+      * Interest rates are subject to change. Final rates depend on credit profile and loan amount.
+    </p>
+
+  </div>
+</section>
+
+<!-- pl-eligibility-section -->
+ <section class="pl-eligibility-section">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="pl-eligibility-header text-center">
+      <h2>Eligibility Criteria</h2>
+      <p>Check if you qualify for our personal loan</p>
+    </div>
+
+    <!-- Grid -->
+    <div class="pl-eligibility-grid">
+
+      <!-- Salaried -->
+      <div class="pl-eligibility-card">
+        <div class="pl-eligibility-title">
+          <div class="pl-eligibility-icon">
+            <i class="bi bi-briefcase"></i>
+          </div>
+          <h4>Salaried Individuals</h4>
+        </div>
+
+        <ul class="pl-eligibility-list">
+          <li><i class="bi bi-check-circle-fill"></i> Age: 21–58 years</li>
+          <li><i class="bi bi-check-circle-fill"></i> Minimum 1 year work experience</li>
+          <li><i class="bi bi-check-circle-fill"></i> Minimum monthly income: ₹20,000</li>
+          <li><i class="bi bi-check-circle-fill"></i> Good credit score (700+)</li>
+          <li><i class="bi bi-check-circle-fill"></i> Stable employment with reputed company</li>
+        </ul>
+      </div>
+
+      <!-- Self Employed -->
+      <div class="pl-eligibility-card">
+        <div class="pl-eligibility-title">
+          <div class="pl-eligibility-icon">
+            <i class="bi bi-person"></i>
+          </div>
+          <h4>Self-Employed</h4>
+        </div>
+
+        <ul class="pl-eligibility-list">
+          <li><i class="bi bi-check-circle-fill"></i> Age: 25–60 years</li>
+          <li><i class="bi bi-check-circle-fill"></i> Minimum 2 years in business</li>
+          <li><i class="bi bi-check-circle-fill"></i> Minimum annual income: ₹4 Lakhs</li>
+          <li><i class="bi bi-check-circle-fill"></i> Business should be profitable</li>
+          <li><i class="bi bi-check-circle-fill"></i> ITR filings for last 2 years</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- pl-documents-section -->
+ <section class="pl-documents-section">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="pl-documents-header text-center">
+      <h2>Documents Required</h2>
+      <p>Minimal documentation for a paperless experience</p>
+    </div>
+
+    <!-- Grid -->
+    <div class="pl-documents-grid">
+
+      <!-- Identity Proof -->
+      <div class="pl-documents-card">
+        <div class="pl-documents-title">
+          <div class="pl-documents-icon">
+            <i class="bi bi-person"></i>
+          </div>
+          <h4>Identity Proof</h4>
+        </div>
+
+        <ul class="pl-documents-list">
+          <li><i class="bi bi-file-earmark-text"></i> Aadhaar Card</li>
+          <li><i class="bi bi-file-earmark-text"></i> PAN Card</li>
+          <li><i class="bi bi-file-earmark-text"></i> Passport (if available)</li>
+        </ul>
+      </div>
+
+      <!-- Income Documents -->
+      <div class="pl-documents-card">
+        <div class="pl-documents-title">
+          <div class="pl-documents-icon">
+            <i class="bi bi-file-earmark-ruled"></i>
+          </div>
+          <h4>Income Documents</h4>
+        </div>
+
+        <ul class="pl-documents-list">
+          <li><i class="bi bi-file-earmark-text"></i> Last 3 months salary slips</li>
+          <li><i class="bi bi-file-earmark-text"></i> Bank statements (3 months)</li>
+          <li><i class="bi bi-file-earmark-text"></i> Form 16 (for salaried)</li>
+          <li><i class="bi bi-file-earmark-text"></i> ITR (for self-employed)</li>
+        </ul>
+      </div>
+
+      <!-- Employment Proof -->
+      <div class="pl-documents-card">
+        <div class="pl-documents-title">
+          <div class="pl-documents-icon">
+            <i class="bi bi-briefcase"></i>
+          </div>
+          <h4>Employment Proof</h4>
+        </div>
+
+        <ul class="pl-documents-list">
+          <li><i class="bi bi-file-earmark-text"></i> Employment letter</li>
+          <li><i class="bi bi-file-earmark-text"></i> Company ID card</li>
+          <li><i class="bi bi-file-earmark-text"></i> Business registration (for self-employed)</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- pl-emi-section -->
+ <section class="pl-emi-section">
+  <div class="container">
+
+    <!-- Badge -->
+    <div class="pl-emi-badge">🧮 Interactive Calculator</div>
+
+    <!-- Header -->
+    <div class="pl-emi-header text-center">
+      <h2>Personal Loan EMI Calculator</h2>
+      <p>Calculate your monthly EMI instantly</p>
+    </div>
+
+    <!-- Calculator Box -->
+    <div class="pl-emi-box">
+
+      <!-- LEFT CONTROLS -->
+      <div class="pl-emi-controls">
+
+        <!-- Loan Amount -->
+        <div class="pl-emi-control">
+          <div class="pl-label-row">
+            <span>₹ Loan Amount</span>
+            <strong id="plLoanAmountText">₹5.00 L</strong>
+          </div>
+          <input type="range" id="plLoanAmount"
+                 min="50000" max="4000000" step="10000" value="500000">
+          <div class="pl-range-labels">
+            <span>₹50,000</span>
+            <span>₹40.00 L</span>
+          </div>
+        </div>
+
+        <!-- Tenure -->
+        <div class="pl-emi-control">
+          <div class="pl-label-row">
+            <span>🕒 Loan Tenure</span>
+            <strong id="plTenureText">3 years</strong>
+          </div>
+          <input type="range" id="plTenure"
+                 min="1" max="5" value="3">
+          <div class="pl-range-labels">
+            <span>1 year</span>
+            <span>5 years</span>
+          </div>
+        </div>
+
+        <!-- Interest -->
+        <div class="pl-emi-control">
+          <div class="pl-label-row">
+            <span>% Interest Rate</span>
+            <strong id="plRateText">12% p.a.</strong>
+          </div>
+          <input type="range" id="plInterest"
+                 min="10" max="18" step="0.1" value="12">
+          <div class="pl-range-labels">
+            <span>10%</span>
+            <span>18%</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT RESULT -->
+      <div class="pl-emi-result">
+
+        <p class="pl-emi-title">Your Monthly EMI</p>
+        <h3 id="plEmiAmount">₹16,607</h3>
+
+        <div class="pl-emi-breakup">
+          <div>
+            <span>Principal Amount</span>
+            <strong id="plPrincipalText">₹5.00 L</strong>
+          </div>
+          <div>
+            <span>Total Interest</span>
+            <strong class="interest" id="plInterestText">₹97,858</strong>
+          </div>
+        </div>
+
+        <div class="pl-emi-total">
+          <span>Total Payable</span>
+          <strong id="plTotalPayable">₹5.98 L</strong>
+        </div>
+
+        <!-- BAR -->
+        <div class="pl-emi-bar">
+          <span class="pl-principal-bar"></span>
+          <span class="pl-interest-bar"></span>
+        </div>
+
+        <div class="pl-emi-legend">
+          <span><i class="dot principal"></i> Principal</span>
+          <span><i class="dot interest"></i> Interest</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- pl-faq-section -->
+ <section class="pl-faq-section">
+  <div class="container">
+
+    <!-- Badge -->
+    <div class="pl-faq-badge">❓ FAQs</div>
+
+    <!-- Header -->
+    <div class="pl-faq-header text-center">
+      <h2>Frequently Asked Questions</h2>
+      <p>Get answers to common questions about personal loans</p>
+    </div>
+
+    <!-- FAQ Box -->
+    <div class="pl-faq-box">
+
+      <details class="pl-faq-item">
+        <summary>
+          How quickly can I get a personal loan?
+          <span class="pl-faq-icon"></span>
+        </summary>
+        <div class="pl-faq-content">
+          Personal loans can be approved instantly and disbursed within a few hours,
+          subject to successful verification and eligibility checks.
+        </div>
+      </details>
+
+      <details class="pl-faq-item">
+        <summary>
+          What is the maximum personal loan amount?
+          <span class="pl-faq-icon"></span>
+        </summary>
+        <div class="pl-faq-content">
+          You can get a personal loan of up to ₹40 Lakhs depending on your income,
+          credit score, and repayment capacity.
+        </div>
+      </details>
+
+      <details class="pl-faq-item">
+        <summary>
+          Is there any collateral required?
+          <span class="pl-faq-icon"></span>
+        </summary>
+        <div class="pl-faq-content">
+          No, personal loans are unsecured. You do not need to provide any collateral
+          or security.
+        </div>
+      </details>
+
+      <details class="pl-faq-item">
+        <summary>
+          Can I prepay my personal loan?
+          <span class="pl-faq-icon"></span>
+        </summary>
+        <div class="pl-faq-content">
+          Yes, you can prepay or foreclose your personal loan. Prepayment charges,
+          if any, depend on the lender’s policy.
+        </div>
+      </details>
+
+      <details class="pl-faq-item">
+        <summary>
+          What credit score is required for personal loan?
+          <span class="pl-faq-icon"></span>
+        </summary>
+        <div class="pl-faq-content">
+          A minimum credit score of 700 or above is generally preferred to get
+          better interest rates and faster approval.
+        </div>
+      </details>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- pl-final-cta-section -->
+ <section class="pl-final-cta-section">
+  <div class="container">
+
+    <div class="pl-final-cta-box">
+
+      <!-- Badge -->
+      <div class="pl-cta-badge">
+        ✨ Get Started Today
+      </div>
+
+      <!-- Heading -->
+      <h2>Get Your Personal Loan Instantly</h2>
+
+      <!-- Subtitle -->
+      <p>
+        Apply online in 2 minutes. Get approval in seconds. Funds in hours.
+      </p>
+
+      <!-- Buttons -->
+      <div class="pl-cta-buttons">
+        <a href="#" class="pl-btn-apply" data-bs-toggle="modal" data-bs-target="#personalLoanModal">
+          Apply Now <span>→</span>
+        </a>
+
+        <a href="tel:18001234567" class="pl-btn-call">
+          Call Us: 1800-123-4567
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!--====================  Footer =====================-->
+    <footer class="footer-premium pt-5">
+        <div class="container">
+
+            <div class="row gy-5">
+
+                <!--  Left Brand -->
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+
+                        <div class="footer-logo">
+                            <img src="./../../assets/images/webImg/nav-logo.png" alt="footer-logo">
+                        </div>
+
+                        <p class="brand-desc mt-3">
+                            AI-powered credit repair software that generates Metro 2 compliant dispute letters backed by
+                            consumer
+                            protection law.
+                        </p>
+
+                        <!-- contact -->
+                        <ul class="footer-contact">
+                            <li><i class="bi bi-envelope"></i> support@ficofixerpro.com</li>
+                            <li><i class="bi bi-telephone"></i> 1-800-FICO-FIX</li>
+                            <li><i class="bi bi-geo-alt"></i> Miami, FL 33101</li>
+                        </ul>
+
+                        <!-- social -->
+                        <div class="footer-social">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--  Product -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Product</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Templates</a></li>
+                        <li><a href="#">API Access</a></li>
+                    </ul>
+                </div>
+
+                <!--  Company -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!--  Resources -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Resources</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Credit Education</a></li>
+                        <li><a href="#">FCRA Guide</a></li>
+                        <li><a href="#">Sample Letters</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-title">Legal</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">DMCA</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- bottom bar -->
+            <div class="footer-bottom mt-5">
+                <p class="mb-0">
+                    © 2026 FICO Fixer Pro. All rights reserved. Not affiliated with FICO® or Fair Isaac Corporation.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Personal Loan Apply Modal -->
+<div class="modal fade" id="personalLoanModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content pl-modal">
+
+      <!-- HEADER -->
+      <div class="pl-modal-header">
+        <h5>Apply for Personal Loan</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- STEPS -->
+      <div class="pl-steps">
+        <div class="pl-line"></div>
+        <div class="pl-step active"><i class="bi bi-person"></i></div>
+        <div class="pl-step"><i class="bi bi-briefcase"></i></div>
+        <div class="pl-step"><i class="bi bi-credit-card"></i></div>
+        <div class="pl-step"><i class="bi bi-file-earmark-check"></i></div>
+      </div>
+
+      <!-- BODY -->
+      <div class="modal-body pl-modal-body">
+
+        <!-- STEP 1 -->
+        <div class="pl-step-pane active">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your full name">
+
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <label>Email</label>
+              <input type="email" placeholder="your@email.com">
+            </div>
+            <div class="col-md-6">
+              <label>Mobile Number</label>
+              <input type="tel" placeholder="10-digit mobile number">
+            </div>
+          </div>
+
+          <label class="mt-3">Date of Birth</label>
+          <input type="date">
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="pl-step-pane">
+          <label>Employment Type</label>
+          <select>
+            <option>Select employment type</option>
+            <option>Salaried</option>
+            <option>Self Employed</option>
+          </select>
+
+          <label class="mt-3">Company / Business Name</label>
+          <input type="text" placeholder="Enter company name">
+
+          <label class="mt-3">Monthly Income</label>
+          <input type="range" min="10000" max="200000" value="50000">
+          <span class="pl-range-value">₹50,000</span>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="pl-step-pane">
+          <label>Loan Amount Required</label>
+          <input type="range" min="50000" max="4000000" value="500000">
+          <span class="pl-range-value">₹5.0 L</span>
+
+          <label class="mt-4">Preferred Tenure (months)</label>
+          <input type="range" min="12" max="60" value="60">
+          <span class="pl-range-value">60 months</span>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="pl-step-pane">
+          <div class="pl-summary">
+            <h6>Application Summary</h6>
+
+            <div class="row">
+              <div class="col">
+                <p>Loan Amount</p>
+                <strong>₹5.0 L</strong>
+              </div>
+              <div class="col">
+                <p>Tenure</p>
+                <strong>60 months</strong>
+              </div>
+            </div>
+          </div>
+
+          <p class="pl-terms">
+            By submitting, you agree to our terms and conditions.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+      <div class="pl-modal-footer">
+        <button class="pl-btn-back" id="plPrev">← Back</button>
+        <button class="pl-btn-next" id="plNext">Next →</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <script>
+const loan = document.getElementById("plLoanAmount");
+const tenure = document.getElementById("plTenure");
+const rate = document.getElementById("plInterest");
+
+function formatINR(num) {
+  return "₹" + num.toLocaleString("en-IN");
+}
+
+function calculatePersonalLoanEMI() {
+  const P = +loan.value;
+  const r = (+rate.value / 12) / 100;
+  const n = +tenure.value * 12;
+
+  const emi = (P * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+  const total = emi * n;
+  const interest = total - P;
+
+  document.getElementById("plEmiAmount").innerText = formatINR(Math.round(emi));
+  document.getElementById("plLoanAmountText").innerText = `₹${(P/100000).toFixed(2)} L`;
+  document.getElementById("plTenureText").innerText = `${tenure.value} years`;
+  document.getElementById("plRateText").innerText = `${rate.value}% p.a.`;
+
+  document.getElementById("plPrincipalText").innerText = `₹${(P/100000).toFixed(2)} L`;
+  document.getElementById("plInterestText").innerText = formatINR(Math.round(interest));
+  document.getElementById("plTotalPayable").innerText =
+    interest + P >= 100000
+      ? `₹${((interest + P) / 100000).toFixed(2)} L`
+      : formatINR(Math.round(interest + P));
+
+  const principalPercent = (P / total) * 100;
+  document.querySelector(".pl-principal-bar").style.width = principalPercent + "%";
+  document.querySelector(".pl-interest-bar").style.width = (100 - principalPercent) + "%";
+}
+
+loan.oninput = tenure.oninput = rate.oninput = calculatePersonalLoanEMI;
+calculatePersonalLoanEMI();
+</script>
+<script>
+let plStep = 0;
+const plPanes = document.querySelectorAll(".pl-step-pane");
+const plSteps = document.querySelectorAll(".pl-step");
+const plNext = document.getElementById("plNext");
+const plPrev = document.getElementById("plPrev");
+
+function updatePLSteps() {
+  plPanes.forEach((p,i)=>p.classList.toggle("active", i===plStep));
+  plSteps.forEach((s,i)=>s.classList.toggle("active", i<=plStep));
+
+  plPrev.style.visibility = plStep === 0 ? "hidden" : "visible";
+  plNext.innerText = plStep === plPanes.length-1 ? "Submit Application" : "Next →";
+}
+
+plNext.onclick = () => {
+  if(plStep < plPanes.length-1){
+    plStep++;
+    updatePLSteps();
+  } else {
+    alert("Personal Loan Application Submitted 🚀");
+  }
+};
+
+plPrev.onclick = () => {
+  if(plStep > 0){
+    plStep--;
+    updatePLSteps();
+  }
+};
+
+updatePLSteps();
+</script>
+
+
+ <!-- MAIN JS LINK -->
+    <script src="./../../assets/js/main.js"></script>
+
+    <!--  Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
