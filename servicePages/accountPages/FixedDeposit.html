@@ -21,8 +21,7 @@
 </head>
 
 <body>
-
-     <!--==================Header section area ==================-->
+    <!--==================Header section area ==================-->
     <header>
         <!--  Premium Navbar -->
         <nav class="navbar navbar-expand-lg premium-navbar sticky-top">
@@ -292,12 +291,9 @@
                     </div>
 
                     <div class="d-flex gap-3 flex-wrap mt-4">
-                        <a href="#"
-   class="fd-btn-primary"
-   data-bs-toggle="modal"
-   data-bs-target="#fdModal">
-  Open Fixed Deposit <i class="bi bi-arrow-right"></i>
-</a>
+                        <a href="#" class="fd-btn-primary" data-bs-toggle="modal" data-bs-target="#fdModal">
+                            Open Fixed Deposit <i class="bi bi-arrow-right"></i>
+                        </a>
 
 
                         <a href="#" class="fd-btn-outline">
@@ -1028,129 +1024,125 @@
     </section>
 
     <!-- FD CTA SECTION -->
-     <section class="fd-cta-wrapper">
-    <div class="container">
-        <div class="fd-cta-box">
+    <section class="fd-cta-wrapper">
+        <div class="container">
+            <div class="fd-cta-box">
 
-            <!-- Top Icons -->
-            <div class="fd-cta-meta">
-                <span><i class="bi bi-shield-check"></i> 100% Secure</span>
-                <span><i class="bi bi-graph-up-arrow"></i> Up to 8.5% Returns</span>
-                <span><i class="bi bi-clock"></i> 5-Minute Setup</span>
+                <!-- Top Icons -->
+                <div class="fd-cta-meta">
+                    <span><i class="bi bi-shield-check"></i> 100% Secure</span>
+                    <span><i class="bi bi-graph-up-arrow"></i> Up to 8.5% Returns</span>
+                    <span><i class="bi bi-clock"></i> 5-Minute Setup</span>
+                </div>
+
+                <!-- Title -->
+                <h2 class="fd-cta-title">
+                    Secure Your Future with <span>Fixed Deposits</span>
+                </h2>
+
+                <!-- Description -->
+                <p class="fd-cta-desc">
+                    Start your journey towards financial security today. Open a Fixed Deposit
+                    account in minutes and enjoy guaranteed returns with complete peace of mind.
+                </p>
+
+                <!-- Buttons -->
+                <div class="fd-cta-actions">
+                    <a href="#" class="fd-btn-primary" data-bs-toggle="modal" data-bs-target="#fdModal">
+                        Invest Now <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a href="#" class="fd-btn-outline">
+                        Talk to an Expert
+                    </a>
+                </div>
+
+                <!-- Footer Note -->
+                <p class="fd-cta-note">
+                    *Terms and conditions apply. Interest rates are subject to change.
+                </p>
+
             </div>
+        </div>
+    </section>
 
-            <!-- Title -->
-            <h2 class="fd-cta-title">
-                Secure Your Future with <span>Fixed Deposits</span>
-            </h2>
 
-            <!-- Description -->
-            <p class="fd-cta-desc">
-                Start your journey towards financial security today. Open a Fixed Deposit
-                account in minutes and enjoy guaranteed returns with complete peace of mind.
-            </p>
+    <!-- FIXED DEPOSIT MODAL -->
+    <div class="modal fade" id="fdModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content fd-modal">
 
-            <!-- Buttons -->
-            <div class="fd-cta-actions">
-                <a href="#"
-   class="fd-btn-primary"
-   data-bs-toggle="modal"
-   data-bs-target="#fdModal">
-  Invest Now <i class="bi bi-arrow-right"></i>
-</a>
+                <!-- HEADER -->
+                <div class="fd-modal-header">
+                    <h5>Open Fixed Deposit</h5>
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
 
-                <a href="#" class="fd-btn-outline">
-                    Talk to an Expert
-                </a>
+                <!-- BODY -->
+                <div class="modal-body fd-modal-body">
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>Mobile Number</label>
+                            <input type="tel" placeholder="10-digit mobile number">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="Enter email address">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>City</label>
+                            <input type="text" placeholder="Your city">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>Deposit Amount</label>
+                            <select>
+                                <option>Select amount</option>
+                                <option>₹10,000 – ₹50,000</option>
+                                <option>₹50,000 – ₹1 Lakh</option>
+                                <option>₹1 Lakh – ₹5 Lakhs</option>
+                                <option>Above ₹5 Lakhs</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>Tenure</label>
+                            <select>
+                                <option>Select tenure</option>
+                                <option>6 Months</option>
+                                <option>1 Year</option>
+                                <option>2 Years</option>
+                                <option>3 Years</option>
+                                <option>5 Years</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <p class="fd-modal-note">
+                        Our executive will contact you shortly to complete the process.
+                    </p>
+
+                </div>
+
+                <!-- FOOTER -->
+                <div class="fd-modal-footer">
+                    <button class="fd-btn-outline" data-bs-dismiss="modal">Cancel</button>
+                    <button class="fd-btn-primary">Submit Request</button>
+                </div>
+
             </div>
-
-            <!-- Footer Note -->
-            <p class="fd-cta-note">
-                *Terms and conditions apply. Interest rates are subject to change.
-            </p>
-
         </div>
     </div>
-</section>
-
-
-
-<!-- FIXED DEPOSIT MODAL -->
-<div class="modal fade" id="fdModal" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content fd-modal">
-
-      <!-- HEADER -->
-      <div class="fd-modal-header">
-        <h5>Open Fixed Deposit</h5>
-        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-
-      <!-- BODY -->
-      <div class="modal-body fd-modal-body">
-
-        <div class="row g-3">
-
-          <div class="col-md-6">
-            <label>Full Name</label>
-            <input type="text" placeholder="Enter your full name">
-          </div>
-
-          <div class="col-md-6">
-            <label>Mobile Number</label>
-            <input type="tel" placeholder="10-digit mobile number">
-          </div>
-
-          <div class="col-md-6">
-            <label>Email Address</label>
-            <input type="email" placeholder="Enter email address">
-          </div>
-
-          <div class="col-md-6">
-            <label>City</label>
-            <input type="text" placeholder="Your city">
-          </div>
-
-          <div class="col-md-6">
-            <label>Deposit Amount</label>
-            <select>
-              <option>Select amount</option>
-              <option>₹10,000 – ₹50,000</option>
-              <option>₹50,000 – ₹1 Lakh</option>
-              <option>₹1 Lakh – ₹5 Lakhs</option>
-              <option>Above ₹5 Lakhs</option>
-            </select>
-          </div>
-
-          <div class="col-md-6">
-            <label>Tenure</label>
-            <select>
-              <option>Select tenure</option>
-              <option>6 Months</option>
-              <option>1 Year</option>
-              <option>2 Years</option>
-              <option>3 Years</option>
-              <option>5 Years</option>
-            </select>
-          </div>
-
-        </div>
-
-        <p class="fd-modal-note">
-          Our executive will contact you shortly to complete the process.
-        </p>
-
-      </div>
-
-      <!-- FOOTER -->
-      <div class="fd-modal-footer">
-        <button class="fd-btn-outline" data-bs-dismiss="modal">Cancel</button>
-        <button class="fd-btn-primary">Submit Request</button>
-      </div>
-
-    </div>
-  </div>
-</div>
 
     <!--====================  Footer =====================-->
     <footer class="footer-premium pt-5">

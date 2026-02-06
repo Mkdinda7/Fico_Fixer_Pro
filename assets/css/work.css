@@ -32,7 +32,7 @@ body {
 /*==================work breadcrum =================*/
 /* Section */
 .breadcrumb-hero {
-     min-height: 500px !important;
+    min-height: 500px !important;
     padding: 180px 15px 80px 15px;
     display: flex;
     align-items: center;
