@@ -820,121 +820,121 @@
         </div>
     </section>
 
-<!-- Vehicle Loan Modal -->
-<div class="modal fade" id="vehicleLoanModal" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content vl-modal">
+    <!-- Vehicle Loan Modal -->
+    <div class="modal fade" id="vehicleLoanModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content vl-modal">
 
-      <!-- HEADER -->
-      <div class="vl-modal-header">
-        <h5>Apply for Vehicle Loan</h5>
-        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
+                <!-- HEADER -->
+                <div class="vl-modal-header">
+                    <h5>Apply for Vehicle Loan</h5>
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
 
-      <!-- PROGRESS -->
-      <div class="vl-progress">
-        <div class="vl-progress-line"></div>
-        <div class="vl-step active"><i class="bi bi-person"></i></div>
-        <div class="vl-step"><i class="bi bi-briefcase"></i></div>
-        <div class="vl-step"><i class="bi bi-credit-card"></i></div>
-        <div class="vl-step"><i class="bi bi-file-earmark-check"></i></div>
-      </div>
+                <!-- PROGRESS -->
+                <div class="vl-progress">
+                    <div class="vl-progress-line"></div>
+                    <div class="vl-step active"><i class="bi bi-person"></i></div>
+                    <div class="vl-step"><i class="bi bi-briefcase"></i></div>
+                    <div class="vl-step"><i class="bi bi-credit-card"></i></div>
+                    <div class="vl-step"><i class="bi bi-file-earmark-check"></i></div>
+                </div>
 
-      <!-- BODY -->
-      <div class="modal-body vl-body">
+                <!-- BODY -->
+                <div class="modal-body vl-body">
 
-        <!-- STEP 1 -->
-        <div class="vl-step-pane active">
-          <div class="vl-field">
-            <label>Full Name</label>
-            <input type="text" placeholder="Enter your full name">
-          </div>
+                    <!-- STEP 1 -->
+                    <div class="vl-step-pane active">
+                        <div class="vl-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your full name">
+                        </div>
 
-          <div class="row">
-            <div class="col-md-6 vl-field">
-              <label>Email</label>
-              <input type="email" placeholder="your@email.com">
+                        <div class="row">
+                            <div class="col-md-6 vl-field">
+                                <label>Email</label>
+                                <input type="email" placeholder="your@email.com">
+                            </div>
+                            <div class="col-md-6 vl-field">
+                                <label>Mobile Number</label>
+                                <input type="tel" placeholder="10-digit mobile number">
+                            </div>
+                        </div>
+
+                        <div class="vl-field">
+                            <label>Date of Birth</label>
+                            <input type="date">
+                        </div>
+                    </div>
+
+                    <!-- STEP 2 -->
+                    <div class="vl-step-pane">
+                        <div class="vl-field">
+                            <label>Employment Type</label>
+                            <select>
+                                <option>Select employment type</option>
+                                <option>Salaried</option>
+                                <option>Self Employed</option>
+                            </select>
+                        </div>
+
+                        <div class="vl-field">
+                            <label>Company / Business Name</label>
+                            <input type="text" placeholder="Enter company name">
+                        </div>
+
+                        <div class="vl-field">
+                            <label>Monthly Income</label>
+                            <input type="range" min="10000" max="200000" value="75000">
+                            <span class="vl-range-value">₹75,000</span>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3 -->
+                    <div class="vl-step-pane">
+                        <div class="vl-field">
+                            <label>Loan Amount Required</label>
+                            <input type="range" min="50000" max="1000000" value="500000">
+                            <span class="vl-range-value">₹5.0 L</span>
+                        </div>
+
+                        <div class="vl-field">
+                            <label>Preferred Tenure</label>
+                            <input type="range" min="12" max="84" value="60">
+                            <span class="vl-range-value">60 months</span>
+                        </div>
+                    </div>
+
+                    <!-- STEP 4 -->
+                    <div class="vl-step-pane">
+                        <div class="vl-summary-box">
+                            <h6>Application Summary</h6>
+                            <div class="vl-summary-row">
+                                <span>Loan Amount</span>
+                                <strong>₹5.0 L</strong>
+                            </div>
+                            <div class="vl-summary-row">
+                                <span>Tenure</span>
+                                <strong>60 months</strong>
+                            </div>
+                        </div>
+
+                        <p class="vl-terms">
+                            By submitting, you agree to our terms and conditions.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- FOOTER -->
+                <div class="vl-modal-footer">
+                    <button class="vl-btn-outline" id="prevStep">← Back</button>
+                    <button class="vl-btn-primary" id="nextStep">Next →</button>
+                </div>
+
             </div>
-            <div class="col-md-6 vl-field">
-              <label>Mobile Number</label>
-              <input type="tel" placeholder="10-digit mobile number">
-            </div>
-          </div>
-
-          <div class="vl-field">
-            <label>Date of Birth</label>
-            <input type="date">
-          </div>
         </div>
-
-        <!-- STEP 2 -->
-        <div class="vl-step-pane">
-          <div class="vl-field">
-            <label>Employment Type</label>
-            <select>
-              <option>Select employment type</option>
-              <option>Salaried</option>
-              <option>Self Employed</option>
-            </select>
-          </div>
-
-          <div class="vl-field">
-            <label>Company / Business Name</label>
-            <input type="text" placeholder="Enter company name">
-          </div>
-
-          <div class="vl-field">
-            <label>Monthly Income</label>
-            <input type="range" min="10000" max="200000" value="75000">
-            <span class="vl-range-value">₹75,000</span>
-          </div>
-        </div>
-
-        <!-- STEP 3 -->
-        <div class="vl-step-pane">
-          <div class="vl-field">
-            <label>Loan Amount Required</label>
-            <input type="range" min="50000" max="1000000" value="500000">
-            <span class="vl-range-value">₹5.0 L</span>
-          </div>
-
-          <div class="vl-field">
-            <label>Preferred Tenure</label>
-            <input type="range" min="12" max="84" value="60">
-            <span class="vl-range-value">60 months</span>
-          </div>
-        </div>
-
-        <!-- STEP 4 -->
-        <div class="vl-step-pane">
-          <div class="vl-summary-box">
-            <h6>Application Summary</h6>
-            <div class="vl-summary-row">
-              <span>Loan Amount</span>
-              <strong>₹5.0 L</strong>
-            </div>
-            <div class="vl-summary-row">
-              <span>Tenure</span>
-              <strong>60 months</strong>
-            </div>
-          </div>
-
-          <p class="vl-terms">
-            By submitting, you agree to our terms and conditions.
-          </p>
-        </div>
-
-      </div>
-
-      <!-- FOOTER -->
-      <div class="vl-modal-footer">
-        <button class="vl-btn-outline" id="prevStep">← Back</button>
-        <button class="vl-btn-primary" id="nextStep">Next →</button>
-      </div>
-
     </div>
-  </div>
-</div>
 
 
 
@@ -1086,39 +1086,39 @@
 
         calculateEMI();
     </script>
-  <script>
-let currentStep = 0;
-const panes = document.querySelectorAll(".vl-step-pane");
-const steps = document.querySelectorAll(".vl-step");
-const nextBtn = document.getElementById("nextStep");
-const prevBtn = document.getElementById("prevStep");
+    <script>
+        let currentStep = 0;
+        const panes = document.querySelectorAll(".vl-step-pane");
+        const steps = document.querySelectorAll(".vl-step");
+        const nextBtn = document.getElementById("nextStep");
+        const prevBtn = document.getElementById("prevStep");
 
-function renderStep() {
-  panes.forEach((p,i)=>p.classList.toggle("active", i===currentStep));
-  steps.forEach((s,i)=>s.classList.toggle("active", i<=currentStep));
+        function renderStep() {
+            panes.forEach((p, i) => p.classList.toggle("active", i === currentStep));
+            steps.forEach((s, i) => s.classList.toggle("active", i <= currentStep));
 
-  prevBtn.style.visibility = currentStep === 0 ? "hidden" : "visible";
-  nextBtn.innerText = currentStep === panes.length-1 ? "Submit Application" : "Next →";
-}
+            prevBtn.style.visibility = currentStep === 0 ? "hidden" : "visible";
+            nextBtn.innerText = currentStep === panes.length - 1 ? "Submit Application" : "Next →";
+        }
 
-nextBtn.onclick = () => {
-  if(currentStep < panes.length-1) {
-    currentStep++;
-    renderStep();
-  } else {
-    alert("Application Submitted 🚀");
-  }
-};
+        nextBtn.onclick = () => {
+            if (currentStep < panes.length - 1) {
+                currentStep++;
+                renderStep();
+            } else {
+                alert("Application Submitted 🚀");
+            }
+        };
 
-prevBtn.onclick = () => {
-  if(currentStep > 0) {
-    currentStep--;
-    renderStep();
-  }
-};
+        prevBtn.onclick = () => {
+            if (currentStep > 0) {
+                currentStep--;
+                renderStep();
+            }
+        };
 
-renderStep();
-</script>
+        renderStep();
+    </script>
 
 
 

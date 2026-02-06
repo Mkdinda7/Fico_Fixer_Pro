@@ -296,9 +296,13 @@
 
             <!-- CTA -->
             <div class="hero-buttons">
-                <a href="#" class="btn btn-primary btn-lg">
-                    Open NRI Account <i class="bi bi-arrow-right"></i>
-                </a>
+                <a href="#"
+   class="btn btn-primary btn-lg"
+   data-bs-toggle="modal"
+   data-bs-target="#nriModal">
+  Open NRI Account <i class="bi bi-arrow-right"></i>
+</a>
+
                 <a href="#" class="btn btn-outline-light btn-lg">
                     Talk to an Advisor
                 </a>
@@ -1180,9 +1184,13 @@
 
     <!-- BUTTONS -->
     <div class="cta-buttons">
-      <a href="#" class="btn-primary-cta">
-        Open NRI Account <i class="bi bi-arrow-right"></i>
-      </a>
+     <a href="#"
+   class="btn btn-primary w-20"
+   data-bs-toggle="modal"
+   data-bs-target="#nriModal">
+  Open NRE Account <i class="bi bi-arrow-right"></i>
+</a>
+
 
       <a href="#" class="btn-outline-cta">
         <i class="bi bi-telephone"></i> Speak to an Expert
@@ -1297,6 +1305,79 @@
 
         </div>
     </footer>
+
+    <!-- NRI ACCOUNT MODAL -->
+<div class="modal fade" id="nriModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content nri-modal">
+
+      <!-- HEADER -->
+      <div class="nri-modal-header">
+        <h5>Open NRI Account</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- BODY -->
+      <div class="modal-body nri-modal-body">
+        <div class="row g-3">
+
+          <div class="col-md-6">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter full name">
+          </div>
+
+          <div class="col-md-6">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter email">
+          </div>
+
+          <div class="col-md-6">
+            <label>Mobile Number</label>
+            <input type="tel" placeholder="Country code + number">
+          </div>
+
+          <div class="col-md-6">
+            <label>Country of Residence</label>
+            <input type="text" placeholder="Country name">
+          </div>
+
+          <div class="col-md-6">
+            <label>Account Type</label>
+            <select>
+              <option>Select account type</option>
+              <option>NRE Account</option>
+              <option>NRO Account</option>
+              <option>FCNR Deposit</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label>Preferred Contact Time</label>
+            <select>
+              <option>Select time</option>
+              <option>Morning</option>
+              <option>Afternoon</option>
+              <option>Evening</option>
+            </select>
+          </div>
+
+        </div>
+
+        <p class="nri-modal-note">
+          Our NRI relationship manager will contact you within 24 hours.
+        </p>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="nri-modal-footer">
+        <button class="btn-outline-cta" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn-primary-cta">Submit Request</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
     <!-- MAIN JS LINK -->
     <script src="./../../assets/js/main.js"></script>\
     <script src="./../../assets/js/nri-fd-calculator.js"></script>

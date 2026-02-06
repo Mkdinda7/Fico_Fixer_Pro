@@ -1033,3 +1033,78 @@ input[type="range"] {
         font-size: 15px;
     }
 }
+
+
+/* ================= FD MODAL ================= */
+
+.fd-modal {
+  background: linear-gradient(135deg, #070c17, #0b1630);
+  border-radius: 22px;
+  border: 1px solid rgba(255,122,0,.35);
+  color: #fff;
+}
+
+/* HEADER */
+.fd-modal-header {
+  padding: 22px 30px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fd-modal-header h5 {
+  margin: 0;
+  font-weight: 700;
+}
+
+/* BODY */
+.fd-modal-body {
+  padding: 30px;
+}
+
+.fd-modal-body label {
+  font-size: 13px;
+  color: #aeb7c6;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.fd-modal-body input,
+.fd-modal-body select {
+  width: 100%;
+  padding: 14px 15px;
+  border-radius: 12px;
+  background: black;
+  border: 1px solid rgba(255,255,255,.15);
+  color: #fff;
+}
+
+.fd-modal-body input:focus,
+.fd-modal-body select:focus {
+  outline: none;
+  border-color: #ff7a00;
+  box-shadow: 0 0 0 2px rgba(255,122,0,.25);
+}
+
+.fd-modal-note {
+  margin-top: 22px;
+  font-size: 13px;
+  color: #aeb7c6;
+  text-align: center;
+}
+
+/* FOOTER */
+.fd-modal-footer {
+  padding: 20px 30px;
+  border-top: 1px solid rgba(255,255,255,.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  .fd-modal-body {
+    padding: 24px;
+  }
+}

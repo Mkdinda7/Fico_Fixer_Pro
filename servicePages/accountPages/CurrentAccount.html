@@ -285,9 +285,13 @@
                     </p>
 
                     <div class="d-flex gap-3 flex-wrap">
-                        <a href="#" class="btn btn-current-orange">
-                            Open Current Account &nbsp; →
-                        </a>
+                        <a href="#"
+   class="btn btn-current-orange"
+   data-bs-toggle="modal"
+   data-bs-target="#currentAccountModal">
+  Open Current Account &nbsp; →
+</a>
+
 
                         <a href="#" class="btn btn-current-outline">
                             <i class="bi bi-telephone"></i>
@@ -837,10 +841,14 @@
             Quick setup, powerful features, exceptional support.
         </p>
 
-        <a href="#" class="cta-btn">
-            Open Current Account Now
-            <i class="bi bi-arrow-right"></i>
-        </a>
+       <a href="#"
+   class="cta-btn"
+   data-bs-toggle="modal"
+   data-bs-target="#currentAccountModal">
+  Open Current Account Now
+  <i class="bi bi-arrow-right"></i>
+</a>
+
 
         <!-- Features -->
         <div class="cta-features">
@@ -879,6 +887,88 @@
 
     </div>
 </section>
+
+<!-- CURRENT ACCOUNT MODAL -->
+<div class="modal fade" id="currentAccountModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content ca-modal">
+
+      <!-- HEADER -->
+      <div class="ca-modal-header">
+        <h5>Open Current Account</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- BODY -->
+      <div class="modal-body ca-modal-body">
+
+        <div class="row g-3">
+
+          <div class="col-md-6">
+            <label>Business Name</label>
+            <input type="text" placeholder="Enter business name">
+          </div>
+
+          <div class="col-md-6">
+            <label>Business Type</label>
+            <select id="otp">
+              <option>Select business type</option>
+              <option>Proprietorship</option>
+              <option>Partnership</option>
+              <option>Private Limited</option>
+              <option>LLP</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label>Contact Person</label>
+            <input type="text" placeholder="Full name">
+          </div>
+
+          <div class="col-md-6">
+            <label>Mobile Number</label>
+            <input type="tel" placeholder="10-digit mobile number">
+          </div>
+
+          <div class="col-md-6">
+            <label>Email Address</label>
+            <input type="email" placeholder="Business email">
+          </div>
+
+          <div class="col-md-6">
+            <label>City</label>
+            <input type="text" placeholder="City">
+          </div>
+
+          <div class="col-12">
+            <label>Monthly Expected Turnover</label>
+            <select>
+              <option>Select range</option>
+              <option>Below ₹5 Lakhs</option>
+              <option>₹5 – ₹25 Lakhs</option>
+              <option>₹25 Lakhs – ₹1 Cr</option>
+              <option>Above ₹1 Cr</option>
+            </select>
+          </div>
+
+        </div>
+
+        <p class="ca-modal-note">
+          Our relationship manager will contact you within 24 hours.
+        </p>
+
+      </div>
+
+      <!-- FOOTER -->
+      <div class="ca-modal-footer">
+        <button class="ca-btn-outline" data-bs-dismiss="modal">Cancel</button>
+        <button class="ca-btn-primary">Submit Request</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
      <!--====================  Footer =====================-->
     <footer class="footer-premium pt-5">
         <div class="container">

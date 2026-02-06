@@ -283,9 +283,12 @@
 
     <!-- Buttons -->
     <div class="gold-hero-actions">
-      <a href="#" class="gold-btn-primary">
-        Apply for Gold Loan
-      </a>
+      <a href="#" class="gold-btn-primary"
+   data-bs-toggle="modal"
+   data-bs-target="#goldLoanModal">
+  Apply for Gold Loan
+</a>
+
       <a href="#" class="gold-btn-outline">
         Check Gold Value
       </a>
@@ -749,9 +752,12 @@
     </p>
 
     <div class="cta-actions">
-      <a href="#" class="btn-primary">
-        Apply Now <i class="bi bi-arrow-right"></i>
-      </a>
+     <a href="#" class="btn-primary"
+   data-bs-toggle="modal"
+   data-bs-target="#goldLoanModal">
+  Apply Now <i class="bi bi-arrow-right"></i>
+</a>
+
 
       <a href="#" class="btn-outline">
         Find Nearest Branch
@@ -760,6 +766,116 @@
 
   </div>
 </section>
+<!-- Gold Loan Modal -->
+<div class="modal fade" id="goldLoanModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content vl-modal">
+
+      <!-- HEADER -->
+      <div class="vl-modal-header">
+        <h5>Apply for Gold Loan</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- PROGRESS -->
+      <div class="vl-progress">
+        <div class="vl-progress-line"></div>
+        <div class="vl-step active"><i class="bi bi-person"></i></div>
+        <div class="vl-step"><i class="bi bi-gem"></i></div>
+        <div class="vl-step"><i class="bi bi-currency-rupee"></i></div>
+        <div class="vl-step"><i class="bi bi-check-circle"></i></div>
+      </div>
+
+      <!-- BODY -->
+      <div class="modal-body vl-body">
+
+        <!-- STEP 1 -->
+        <div class="vl-step-pane active">
+          <div class="vl-field">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter full name">
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 vl-field">
+              <label>Mobile Number</label>
+              <input type="tel" placeholder="10-digit mobile number">
+            </div>
+            <div class="col-md-6 vl-field">
+              <label>City</label>
+              <input type="text" placeholder="Your city">
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="vl-step-pane">
+          <div class="vl-field">
+            <label>Gold Type</label>
+            <select>
+              <option>Select gold type</option>
+              <option>Jewellery</option>
+              <option>Coins</option>
+              <option>Bars</option>
+            </select>
+          </div>
+
+          <div class="vl-field">
+            <label>Gold Weight (grams)</label>
+            <input type="range" min="10" max="500" value="50">
+            <span class="vl-range-value">50 g</span>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="vl-step-pane">
+          <div class="vl-field">
+            <label>Required Loan Amount</label>
+            <input type="range" min="10000" max="1000000" value="200000">
+            <span class="vl-range-value">₹2.00 L</span>
+          </div>
+
+          <div class="vl-field">
+            <label>Preferred Tenure</label>
+            <select>
+              <option>3 Months</option>
+              <option>6 Months</option>
+              <option>12 Months</option>
+              <option>24 Months</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="vl-step-pane">
+          <div class="vl-summary-box">
+            <h6>Application Summary</h6>
+            <div class="vl-summary-row">
+              <span>Gold Type</span>
+              <strong>Jewellery</strong>
+            </div>
+            <div class="vl-summary-row">
+              <span>Loan Amount</span>
+              <strong>₹2.00 L</strong>
+            </div>
+          </div>
+
+          <p class="vl-terms">
+            By submitting, you agree to our terms & conditions.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+      <div class="vl-modal-footer">
+        <button class="vl-btn-outline" id="goldPrev">← Back</button>
+        <button class="vl-btn-primary" id="goldNext">Next →</button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
     <!--====================  Footer =====================-->
@@ -860,6 +976,47 @@
 
         </div>
     </footer>
+
+    <script>
+  let goldStep = 0;
+  const goldPanes = document.querySelectorAll("#goldLoanModal .vl-step-pane");
+  const goldSteps = document.querySelectorAll("#goldLoanModal .vl-step");
+  const goldNext = document.getElementById("goldNext");
+  const goldPrev = document.getElementById("goldPrev");
+
+  function renderGoldStep() {
+    goldPanes.forEach((p, i) =>
+      p.classList.toggle("active", i === goldStep)
+    );
+
+    goldSteps.forEach((s, i) =>
+      s.classList.toggle("active", i <= goldStep)
+    );
+
+    goldPrev.style.visibility = goldStep === 0 ? "hidden" : "visible";
+    goldNext.innerText =
+      goldStep === goldPanes.length - 1 ? "Submit Application" : "Next →";
+  }
+
+  goldNext.onclick = () => {
+    if (goldStep < goldPanes.length - 1) {
+      goldStep++;
+      renderGoldStep();
+    } else {
+      alert("Gold Loan Application Submitted 🟡");
+    }
+  };
+
+  goldPrev.onclick = () => {
+    if (goldStep > 0) {
+      goldStep--;
+      renderGoldStep();
+    }
+  };
+
+  renderGoldStep();
+</script>
+
 
      <!-- MAIN JS LINK -->
     <script src="./../../assets/js/main.js"></script>

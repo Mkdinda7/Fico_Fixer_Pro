@@ -968,3 +968,78 @@ input[type="range"] {
     padding: 0 20px 18px;
   }
 }
+
+/* ================= SALARY ACCOUNT MODAL ================= */
+
+.salary-modal {
+  background: linear-gradient(135deg, #050b18, #0f1a2e);
+  border-radius: 22px;
+  border: 1px solid rgba(255,122,24,.35);
+  color: #fff;
+}
+
+/* HEADER */
+.salary-modal-header {
+  padding: 22px 30px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.salary-modal-header h5 {
+  margin: 0;
+  font-weight: 700;
+}
+
+/* BODY */
+.salary-modal-body {
+  padding: 30px;
+}
+
+.salary-modal-body label {
+  font-size: 13px;
+  color: #aab0c0;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.salary-modal-body input,
+.salary-modal-body select {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: black;
+  border: 1px solid rgba(255,255,255,.15);
+  color: #fff;
+}
+
+.salary-modal-body input:focus,
+.salary-modal-body select:focus {
+  outline: none;
+  border-color: #ff7a18;
+  box-shadow: 0 0 0 2px rgba(255,122,24,.25);
+}
+
+/* NOTE */
+.salary-modal-note {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #aab0c0;
+  text-align: center;
+}
+
+/* FOOTER */
+.salary-modal-footer {
+  padding: 20px 30px;
+  border-top: 1px solid rgba(255,255,255,.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  .salary-modal-body {
+    padding: 24px;
+  }
+}

@@ -812,3 +812,207 @@
     padding: 60px 20px;
   }
 }
+/* =========================
+   GOLD LOAN MODAL (REUSED UI)
+   ========================= */
+
+.vl-modal {
+  background: radial-gradient(circle at top, #0b1a33, #050b18);
+  border-radius: 22px;
+  border: 1px solid rgba(255,122,24,.35);
+  color: #fff;
+}
+
+/* HEADER */
+.vl-modal-header {
+  padding: 22px 32px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vl-modal-header h5 {
+  margin: 0;
+  font-weight: 700;
+}
+
+/* PROGRESS */
+.vl-progress {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+}
+
+.vl-progress-line {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  right: 60px;
+  height: 2px;
+  background: rgba(255,255,255,.15);
+}
+
+.vl-step {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #0f1f3a;
+  border: 1px solid rgba(255,255,255,.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  color: #9fb0c8;
+  font-size: 18px;
+}
+
+.vl-step.active {
+  background: #ff7a18;
+  color: #000;
+  border-color: transparent;
+}
+
+/* BODY */
+.vl-body {
+  padding: 30px 40px;
+}
+
+.vl-step-pane {
+  display: none;
+  animation: fadeUp .4s ease;
+}
+
+.vl-step-pane.active {
+  display: block;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* FORM FIELDS */
+.vl-field {
+  margin-bottom: 22px;
+}
+
+.vl-field label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #cdd6e6;
+  display: block;
+}
+
+.vl-field input,
+.vl-field select {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.15);
+  color: #fff;
+}
+
+.vl-field input:focus,
+.vl-field select:focus {
+  outline: none;
+  border-color: #ff7a18;
+  box-shadow: 0 0 0 2px rgba(255,122,24,.25);
+}
+
+.vl-range-value {
+  margin-top: 8px;
+  display: inline-block;
+  font-weight: 600;
+  color: #ff7a18;
+}
+
+/* SUMMARY */
+.vl-summary-box {
+  background: rgba(255,255,255,.05);
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.vl-summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+
+.vl-summary-row:first-child {
+  border-top: none;
+}
+
+.vl-terms {
+  font-size: 12px;
+  color: #9fb0c8;
+  margin-top: 18px;
+}
+
+/* FOOTER */
+.vl-modal-footer {
+  padding: 22px 32px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* BUTTONS */
+.vl-btn-primary {
+  background: #ff7a18;
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.vl-btn-primary:hover {
+  background: #ff8c33;
+  transform: translateY(-1px);
+}
+
+.vl-btn-outline {
+  background: transparent;
+  color: #ff7a18;
+  padding: 12px 26px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid rgba(255,122,24,.6);
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.vl-btn-outline:hover {
+  background: rgba(255,122,24,.12);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .vl-progress {
+    padding: 24px 30px;
+  }
+
+  .vl-progress-line {
+    left: 30px;
+    right: 30px;
+  }
+
+  .vl-body {
+    padding: 24px;
+  }
+}
