@@ -1,0 +1,148 @@
+body {
+  background: radial-gradient(circle at top, #0f1a2e, #050b18);
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+
+/* HERO */
+.blog-section {
+  padding: 90px 0;
+  margin-top: 70px;
+}
+
+.blog-title {
+  font-size: 46px;
+  font-weight: 800;
+}
+
+.blog-title span {
+  color: #ff7a18;
+}
+
+.blog-subtitle {
+  max-width: 720px;
+  margin: 18px auto 30px;
+  color: #aab0c0;
+}
+
+/* SEARCH */
+.search-box {
+  max-width: 480px;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 14px 16px 14px 42px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+}
+
+.search-box i {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #9aa3b2;
+}
+
+/* FILTER */
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.filter-tabs button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #cbd2e1;
+  font-size: 13px;
+}
+
+.filter-tabs button.active {
+  background: #ff7a18;
+  color: #000;
+  font-weight: 600;
+}
+
+/* BLOG CARD */
+.blog-box {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 22px;
+  overflow: hidden;
+  height: 100%;
+  transition: .3s;
+}
+
+.blog-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(255,122,24,0.2);
+}
+
+/* IMAGE */
+.blog-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+/* TAG COLORS */
+.credit { background: rgba(0,123,255,0.3); color:#7dbbff; }
+.ai { background: rgba(255,122,24,0.3); color:#ffb37a; }
+.legal { background: rgba(138,43,226,0.3); color:#c8a6ff; }
+
+/* CONTENT */
+.blog-content {
+  padding: 22px;
+}
+
+.blog-content h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 14px;
+  color: #aab0c0;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #8f97a8;
+  margin: 14px 0;
+}
+
+.read-more {
+  color: #ff7a18 !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+#loadMoreBtn{
+    border: 2px solid #ff7a18;
+    color: white;
+    font-weight: 700;
+}
+#loadMoreBtn:hover{
+    background-color: #ff7a18;
+}

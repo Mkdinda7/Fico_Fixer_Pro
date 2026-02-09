@@ -53,3 +53,4 @@ toggle.addEventListener("change", () => {
         el.textContent = yearly ? "/yr" : "/mo";
     });
 });
+

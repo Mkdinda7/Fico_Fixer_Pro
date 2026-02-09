@@ -565,3 +565,27 @@ body {
   font-weight: 600 !important;
   color: #fff !important;
 }
+/* ================= SCORE GRAPH ICON ================= */
+.score-icon-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 122, 24, 0.12);
+  border: 1px solid rgba(255, 122, 24, 0.35);
+  padding: 10px 16px;
+  border-radius: 14px;
+  margin-bottom: 22px;
+  width: fit-content;
+}
+
+.score-icon-box i {
+  font-size: 22px;
+  color: #ff7a18;
+}
+
+.score-icon-box span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ff7a18;
+  letter-spacing: 0.3px;
+}
