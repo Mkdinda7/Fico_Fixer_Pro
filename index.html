@@ -1,1321 +1,1593 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fico-Fixer Pro</title>
 
     <!-- favicon area -->
-    <link rel="shortcut icon" href="./assets/images/webImg/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/webImg/favicon.png"
+      type="image/x-icon"
+    />
 
     <!--  Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!--  Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
 
     <!--  Custom CSS -->
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/AllPagesCss/serviceCss/allCards.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="./assets/css/AllPagesCss/serviceCss/allCards.css"
+    />
+  </head>
 
-<body class="theme-body">
-
+  <body class="theme-body">
     <!--==================Header section area ==================-->
     <header>
-        <!--  Premium Navbar -->
-        <nav class="navbar navbar-expand-lg premium-navbar sticky-top">
-            <div class="container">
+      <!--  Premium Navbar -->
+      <nav class="navbar navbar-expand-lg premium-navbar sticky-top">
+        <div class="container">
+          <!--  Brand / Logo -->
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img
+              src="./assets/images/webImg/nav-logo.png"
+              alt="header-logo"
+              style="width: 100%; height: 80px"
+            />
+          </a>
 
-                <!--  Brand / Logo -->
-                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <!--  Mobile toggler -->
+          <button
+            class="navbar-toggler premium-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                    <img src="./assets/images/webImg/nav-logo.png" alt="header-logo" style="width: 100%; height: 80px;">
+          <!--  Desktop Menu -->
+          <div class="collapse navbar-collapse">
+            <!-- Center Links -->
+            <ul class="navbar-nav mx-auto gap-lg-4">
+              <li class="nav-item">
+                <a class="nav-link nav-premium active" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-premium" href="./features.html"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-premium" href="./pricing.html"
+                  >Pricing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-premium" href="./work.html">Works</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link nav-premium dropdown-toggle"
+                  href="./services.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Services
                 </a>
 
-                <!--  Mobile toggler -->
-                <button class="navbar-toggler premium-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#mobileMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!--  Desktop Menu -->
-                <div class="collapse navbar-collapse">
-
-                    <!-- Center Links -->
-                    <ul class="navbar-nav mx-auto gap-lg-4">
-                        <li class="nav-item"><a class="nav-link nav-premium active" href="./index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link nav-premium" href="./features.html">Features</a></li>
-                        <li class="nav-item"><a class="nav-link nav-premium" href="./pricing.html">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link nav-premium" href="./work.html">Works</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link nav-premium dropdown-toggle" href="./services.html" role="button"
-                                data-bs-toggle="dropdown">
-                                Services
-                            </a>
-
-                            <ul class="dropdown-menu premium-dropdown-menu">
-
-                                <!-- Accounts -->
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">
-                                        Accounts
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/accountPages/AllAccount.html">All Account</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/accountPages/SavingAccount.html">Savings
-                                                Account</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/accountPages/CurrentAccount.html">Current
-                                                Account</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/accountPages/FixedDeposit.html">Fixed Deposit</a>
-                                        </li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/accountPages/salary-account.html">Salary
-                                                Account</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/accountPages/nriaccount.html">NRI Account</a></li>
-                                    </ul>
-                                </li>
-
-                                <!-- Cards -->
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">
-                                        Cards
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="./servicePages/cardPages/allCard.html">All
-                                                Card</a></li>
-
-                                    </ul>
-                                </li>
-
-                                <!-- Loans -->
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">
-                                        Loans
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="./servicePages/loanPages/home-loan.html">Home
-                                                Loan</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/loanPages/personal-loan.html">Personal Loan</a>
-                                        </li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/loanPages/vehicle-loan.html">Vehicle Loan</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/loanPages/education-loan.html">Education Loan</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="./servicePages/loanPages/gold-loan.html">Gold
-                                                Loan</a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link nav-premium dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Apply Now
-                            </a>
-
-                            <ul class="dropdown-menu premium-dropdown-menu">
-                                <li><a class="dropdown-item" href="./servicePages/loanPages/home-loan.html">Home
-                                        Loan</a></li>
-                                <li><a class="dropdown-item" href="./servicePages/loanPages/personal-loan.html">Personal
-                                        Loan</a></li>
-                                <li><a class="dropdown-item" href="./servicePages/loanPages/vehicle-loan.html">Vehicle
-                                        Loan</a></li>
-                                <li><a class="dropdown-item"
-                                        href="./servicePages/loanPages/education-loan.html">Education Loan</a></li>
-                                <li><a class="dropdown-item" href="./servicePages/loanPages/gold-loan.html">Gold
-                                        Loan</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link nav-premium" href="./blog.html">Blog</a>
-                    </ul>
-
-                    <!-- Right Action -->
-                    <div class="d-flex align-items-center gap-3">
-                        <a href="./auth/login.html" class="nav-signin">Sign In</a>
-                        <a href="./auth/register.html" class="btn btn-premium">Get Started</a>
-                    </div>
-                </div>
-
-            </div>
-        </nav>
-
-        <!-- Offcanvas Mobile Menu -->
-        <div class="offcanvas offcanvas-end premium-offcanvas" tabindex="-1" id="mobileMenu">
-            <div class="offcanvas-header border-bottom border-light border-opacity-10">
-                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                    <img src="./assets/images/webImg/nav-logo.png" alt="header-logo" style="height:80px;">
-                </a>
-                <button type="button" class="btn-close btn-close-white me-3" data-bs-dismiss="offcanvas"></button>
-            </div>
-
-            <div class="offcanvas-body">
-
-                <!-- NORMAL LINKS -->
-                <ul class="navbar-nav gap-2 mb-2">
-                    <li class="nav-item"><a class="nav-link nav-premium active" href="./index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link nav-premium" href="./features.html">Features</a></li>
-                    <li class="nav-item"><a class="nav-link nav-premium" href="./pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link nav-premium" href="./work.html">Works</a></li>
-                </ul>
-
-                <!-- MAIN ACCORDION -->
-                <div class="accordion accordion-flush" id="mobileAccordion">
-
-                    <!-- SERVICES -->
-                    <div class="accordion-item bg-transparent border-0">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed bg-transparent text-white" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#servicesAcc">
-                                Services
-                            </button>
-                        </h2>
-
-                        <div id="servicesAcc" class="accordion-collapse collapse">
-                            <div class="accordion-body pt-0">
-
-                                <!-- MINI ACCORDION -->
-                                <div class="accordion accordion-flush ms-3" id="servicesMini">
-
-                                    <!-- ACCOUNTS -->
-                                    <div class="accordion-item bg-transparent border-0">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed bg-transparent text-white"
-                                                type="button" data-bs-toggle="collapse" data-bs-target="#accountsAcc">
-                                                Accounts
-                                            </button>
-                                        </h2>
-                                        <div id="accountsAcc" class="accordion-collapse collapse">
-                                            <div class="accordion-body">
-                                                <a class="nav-link nav-premium"
-                                                    href="./servicePages/accountPages/AllAccount.html">All Account</a>
-                                                <a class="nav-link nav-premium"
-                                                    href="./servicePages/accountPages/SavingAccount.html">Savings
-                                                    Account</a>
-                                                <a class="nav-link nav-premium" href="#">Current Account</a>
-                                                <a class="nav-link nav-premium" href="#">Fixed Deposit</a>
-                                                <a class="nav-link nav-premium" href="#">Salary Account</a>
-                                                <a class="nav-link nav-premium" href="#">NRI Account</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- CARDS -->
-                                    <div class="accordion-item bg-transparent border-0">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed bg-transparent text-white"
-                                                type="button" data-bs-toggle="collapse" data-bs-target="#cardsAcc">
-                                                Cards
-                                            </button>
-                                        </h2>
-                                        <div id="cardsAcc" class="accordion-collapse collapse">
-                                            <div class="accordion-body">
-                                                <a class="nav-link nav-premium"
-                                                    href="./servicePages/cardPages/allCard.html">All Card</a>
-                                                <a class="nav-link nav-premium" href="#">Credit Card</a>
-                                                <a class="nav-link nav-premium" href="#">Debit Card</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- LOANS -->
-                                    <div class="accordion-item bg-transparent border-0">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed bg-transparent text-white"
-                                                type="button" data-bs-toggle="collapse" data-bs-target="#loansAcc">
-                                                Loans
-                                            </button>
-                                        </h2>
-                                        <div id="loansAcc" class="accordion-collapse collapse">
-                                            <div class="accordion-body">
-                                                <a class="nav-link nav-premium" href="#">Home Loan</a>
-                                                <a class="nav-link nav-premium" href="#">Personal Loan</a>
-                                                <a class="nav-link nav-premium" href="#">Vehicle Loan</a>
-                                                <a class="nav-link nav-premium" href="#">Education Loan</a>
-                                                <a class="nav-link nav-premium" href="#">Gold Loan</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- APPLY NOW -->
-                    <div class="accordion-item bg-transparent border-0">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed bg-transparent text-white" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#applyAcc">
-                                Apply Now
-                            </button>
-                        </h2>
-                        <div id="applyAcc" class="accordion-collapse collapse">
-                            <div class="accordion-body pt-0">
-                                <a class="nav-link nav-premium" href="#">Dispute Letters</a>
-                                <a class="nav-link nav-premium" href="#">Goodwill Letters</a>
-                                <a class="nav-link nav-premium" href="#">Debt Validation</a>
-                                <a class="nav-link nav-premium" href="#">Identity Theft</a>
-                                <a class="nav-link nav-premium" href="#">Cease & Desist</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- BUTTONS -->
-                <div class="mt-4 d-grid gap-2">
-                    <a href="./auth/register.html" class="btn btn-premium w-100">Get Started</a>
-                    <a href="./auth/login.html" class="btn btn-outline-light w-100 rounded-pill py-2 fw-bold">
-                        Sign In
+                <ul class="dropdown-menu premium-dropdown-menu">
+                  <!-- Accounts -->
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">
+                      Accounts
                     </a>
-                </div>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/accountPages/AllAccount.html"
+                          >All Account</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/accountPages/SavingAccount.html"
+                          >Savings Account</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/accountPages/CurrentAccount.html"
+                          >Current Account</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/accountPages/FixedDeposit.html"
+                          >Fixed Deposit</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/accountPages/salary-account.html"
+                          >Salary Account</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/accountPages/nriaccount.html"
+                          >NRI Account</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
 
+                  <!-- Cards -->
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">
+                      Cards
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/cardPages/allCard.html"
+                          >All Card</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Loans -->
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">
+                      Loans
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/loanPages/home-loan.html"
+                          >Home Loan</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/loanPages/personal-loan.html"
+                          >Personal Loan</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/loanPages/vehicle-loan.html"
+                          >Vehicle Loan</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/loanPages/education-loan.html"
+                          >Education Loan</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/loanPages/gold-loan.html"
+                          >Gold Loan</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link nav-premium dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Apply Now
+                </a>
+
+                <ul class="dropdown-menu premium-dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./servicePages/loanPages/home-loan.html"
+                      >Home Loan</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./servicePages/loanPages/personal-loan.html"
+                      >Personal Loan</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./servicePages/loanPages/vehicle-loan.html"
+                      >Vehicle Loan</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./servicePages/loanPages/education-loan.html"
+                      >Education Loan</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./servicePages/loanPages/gold-loan.html"
+                      >Gold Loan</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-premium" href="./blog.html">Blog</a>
+              </li>
+            </ul>
+
+            <!-- Right Action -->
+            <div class="d-flex align-items-center gap-3">
+              <a href="./auth/login.html" class="nav-signin">Sign In</a>
+              <a href="./auth/register.html" class="btn btn-premium"
+                >Get Started</a
+              >
             </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Offcanvas Mobile Menu -->
+      <div
+        class="offcanvas offcanvas-end premium-offcanvas"
+        tabindex="-1"
+        id="mobileMenu"
+      >
+        <div
+          class="offcanvas-header border-bottom border-light border-opacity-10"
+        >
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img
+              src="./assets/images/webImg/nav-logo.png"
+              alt="header-logo"
+              style="height: 80px"
+            />
+          </a>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-3"
+            data-bs-dismiss="offcanvas"
+          ></button>
         </div>
 
+        <div class="offcanvas-body">
+          <!-- NORMAL LINKS -->
+          <ul class="navbar-nav gap-2 mb-2">
+            <li class="nav-item">
+              <a class="nav-link nav-premium active" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-premium" href="./features.html"
+                >Features</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-premium" href="./pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-premium" href="./work.html">Works</a>
+            </li>
+          </ul>
+
+          <!-- MAIN ACCORDION -->
+          <div class="accordion accordion-flush" id="mobileAccordion">
+            <!-- SERVICES -->
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-transparent text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#servicesAcc"
+                >
+                  Services
+                </button>
+              </h2>
+
+              <div id="servicesAcc" class="accordion-collapse collapse">
+                <div class="accordion-body pt-0">
+                  <!-- MINI ACCORDION -->
+                  <div class="accordion accordion-flush ms-3" id="servicesMini">
+                    <!-- ACCOUNTS -->
+                    <div class="accordion-item bg-transparent border-0">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed bg-transparent text-white"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#accountsAcc"
+                        >
+                          Accounts
+                        </button>
+                      </h2>
+                      <div id="accountsAcc" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <a
+                            class="nav-link nav-premium"
+                            href="./servicePages/accountPages/AllAccount.html"
+                            >All Account</a
+                          >
+                          <a
+                            class="nav-link nav-premium"
+                            href="./servicePages/accountPages/SavingAccount.html"
+                            >Savings Account</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >Current Account</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >Fixed Deposit</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >Salary Account</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >NRI Account</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- CARDS -->
+                    <div class="accordion-item bg-transparent border-0">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed bg-transparent text-white"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#cardsAcc"
+                        >
+                          Cards
+                        </button>
+                      </h2>
+                      <div id="cardsAcc" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <a
+                            class="nav-link nav-premium"
+                            href="./servicePages/cardPages/allCard.html"
+                            >All Card</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >Credit Card</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >Debit Card</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- LOANS -->
+                    <div class="accordion-item bg-transparent border-0">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed bg-transparent text-white"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#loansAcc"
+                        >
+                          Loans
+                        </button>
+                      </h2>
+                      <div id="loansAcc" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <a class="nav-link nav-premium" href="#">Home Loan</a>
+                          <a class="nav-link nav-premium" href="#"
+                            >Personal Loan</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >Vehicle Loan</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >Education Loan</a
+                          >
+                          <a class="nav-link nav-premium" href="#">Gold Loan</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- APPLY NOW -->
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-transparent text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#applyAcc"
+                >
+                  Apply Now
+                </button>
+              </h2>
+              <div id="applyAcc" class="accordion-collapse collapse">
+                <div class="accordion-body pt-0">
+                  <a class="nav-link nav-premium" href="#">Dispute Letters</a>
+                  <a class="nav-link nav-premium" href="#">Goodwill Letters</a>
+                  <a class="nav-link nav-premium" href="#">Debt Validation</a>
+                  <a class="nav-link nav-premium" href="#">Identity Theft</a>
+                  <a class="nav-link nav-premium" href="#">Cease & Desist</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BUTTONS -->
+          <div class="mt-4 d-grid gap-2">
+            <a href="./auth/register.html" class="btn btn-premium w-100"
+              >Get Started</a
+            >
+            <a
+              href="./auth/login.html"
+              class="btn btn-outline-light w-100 rounded-pill py-2 fw-bold"
+            >
+              Sign In
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-        <!--=================HERO SECTION AREA ==================-->
-        <section class="hero-section d-flex align-items-center">
-            <div class="container">
-                <div class="row align-items-center g-5">
+      <!--=================HERO SECTION AREA ==================-->
+      <section class="hero-section d-flex align-items-center">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-7">
+              <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Metro 2 Compliant • AI-Powered
+              </div>
 
-                    <!-- LEFT CONTENT -->
-                    <div class="col-lg-7">
-                        <div class="hero-badge">
-                            <span class="badge-dot"></span>
-                            Metro 2 Compliant • AI-Powered
-                        </div>
+              <h1 class="hero-title">
+                Fix Your Credit <br />
+                <span>With AI Precision</span>
+              </h1>
 
-                        <h1 class="hero-title">
-                            Fix Your Credit <br>
-                            <span>With AI Precision</span>
-                        </h1>
+              <p class="hero-desc">
+                Generate legally-compliant dispute letters in seconds. Our AI
+                analyzes your credit report and creates Metro 2 compliant
+                letters citing specific consumer protection laws.
+              </p>
 
-                        <p class="hero-desc">
-                            Generate legally-compliant dispute letters in seconds. Our AI
-                            analyzes your credit report and creates Metro 2 compliant
-                            letters citing specific consumer protection laws.
-                        </p>
-
-                        <div class="row g-3 mt-3 hero-features">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <span class="feature-check"><i class="bi bi-check-lg"></i></span>
-                                    AI-Generated Dispute Letters
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <span class="feature-check"><i class="bi bi-check-lg"></i></span>
-                                    Metro 2 Compliance Built-In
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <span class="feature-check"><i class="bi bi-check-lg"></i></span>
-                                    FCRA & FDCPA Citations
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <span class="feature-check"><i class="bi bi-check-lg"></i></span>
-                                    Mail Letters Directly From App
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="d-flex flex-wrap gap-3 mt-4">
-                            <a href="#" class="btn btn-premium">
-                                Start Fixing Your Credit <i class="bi bi-arrow-right"></i>
-                            </a>
-
-                            <a href="#" class="btn btn-outline-premium">
-                                <span class="play-icon"><i class="bi bi-play-fill"></i></span>
-                                Watch Demo
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--  RIGHT SIDE (CARD IMAGE ONLY) -->
-                    <div class="col-lg-5 d-flex justify-content-lg-end justify-content-center">
-                        <div class="score-wrapper position-relative">
-
-                            <!--  glow background circles -->
-                            <span class="hero-glow glow-1"></span>
-                            <span class="hero-glow glow-2"></span>
-
-                            <!--  Floating Credit Card Image -->
-                            <img src="./assets/images/webImg/credit-card.png" class="floating-card-img"
-                                alt="Credit Card">
-                        </div>
-                    </div>
-
+              <div class="row g-3 mt-3 hero-features">
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <span class="feature-check"
+                      ><i class="bi bi-check-lg"></i
+                    ></span>
+                    AI-Generated Dispute Letters
+                  </div>
                 </div>
-            </div>
-        </section>
 
-        <!--=============== MARQUEE ANIMATION FROM  LEFT AND RIGHT ==============-->
-        <section class="ribbon-wrap">
-            <div class="ribbon ribbon-rtl">
-                <div class="ribbon-track">
-                    <!-- repeat block 1 -->
-                    <div class="ribbon-content">
-                        <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
-                        <span class="sparkle">✦</span> FINANCE SMARTER
-                        <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
-                        <span class="sparkle">✦</span> FINANCE SMARTER
-                    </div>
-
-                    <!-- repeat block 2 (must be same content for seamless loop) -->
-                    <div class="ribbon-content">
-                        <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
-                        <span class="sparkle">✦</span> FINANCE SMARTER
-                        <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
-                        <span class="sparkle">✦</span> FINANCE SMARTER
-                    </div>
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <span class="feature-check"
+                      ><i class="bi bi-check-lg"></i
+                    ></span>
+                    Metro 2 Compliance Built-In
+                  </div>
                 </div>
+
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <span class="feature-check"
+                      ><i class="bi bi-check-lg"></i
+                    ></span>
+                    FCRA & FDCPA Citations
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <span class="feature-check"
+                      ><i class="bi bi-check-lg"></i
+                    ></span>
+                    Mail Letters Directly From App
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-wrap gap-3 mt-4">
+                <a href="#" class="btn btn-premium">
+                  Start Fixing Your Credit <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <a href="#" class="btn btn-outline-premium">
+                  <span class="play-icon"><i class="bi bi-play-fill"></i></span>
+                  Watch Demo
+                </a>
+              </div>
             </div>
 
-            <!-- Example of Left to Right -->
-            <div class="ribbon ribbon-ltr">
-                <div class="ribbon-track">
-                    <div class="ribbon-content">
-                        <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
-                        <span class="sparkle">✦</span> FINANCE SMARTER
-                        <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
-                        <span class="sparkle">✦</span> FINANCE SMARTER
-                    </div>
-                    <div class="ribbon-content">
-                        <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
-                        <span class="sparkle">✦</span> FINANCE SMARTER
-                        <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
-                        <span class="sparkle">✦</span> FINANCE SMARTER
-                    </div>
-                </div>
+            <!--  RIGHT SIDE (CARD IMAGE ONLY) -->
+            <div
+              class="col-lg-5 d-flex justify-content-lg-end justify-content-center"
+            >
+              <div class="score-wrapper position-relative">
+                <!--  glow background circles -->
+                <span class="hero-glow glow-1"></span>
+                <span class="hero-glow glow-2"></span>
+
+                <!--  Floating Credit Card Image -->
+                <img
+                  src="./assets/images/webImg/credit-card.png"
+                  class="floating-card-img"
+                  alt="Credit Card"
+                />
+              </div>
             </div>
-        </section>
-        <!--================FEATURES SECTION ================-->
-        <section class="features-premium py-5" id="features">
-            <div class="container">
+          </div>
+        </div>
+      </section>
 
-                <div class="text-center mb-5">
-                    <div class="feat-badge mx-auto">✨ Powerful Features</div>
-
-                    <h2 class="feat-title mt-4">
-                        Everything You Need to <span>Fix Your Credit</span>
-                    </h2>
-
-                    <p class="feat-desc mx-auto">
-                        Professional-grade credit repair tools powered by AI and backed by consumer protection law.
-                    </p>
-                </div>
-
-                <div class="row g-4 justify-content-center">
-
-                    <!-- 50K+ -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="feat-card text-center">
-                            <h3 class="feat-num">
-                                <span class="countup" data-count="50">0</span>K+
-                            </h3>
-                            <p class="feat-label mb-0">Disputes Filed</p>
-                        </div>
-                    </div>
-
-                    <!-- 92% -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="feat-card text-center">
-                            <h3 class="feat-num">
-                                <span class="countup" data-count="92">0</span>%
-                            </h3>
-                            <p class="feat-label mb-0">Success Rate</p>
-                        </div>
-                    </div>
-
-                    <!-- 48pts -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="feat-card text-center">
-                            <h3 class="feat-num">
-                                <span class="countup" data-count="48">0</span>pts
-                            </h3>
-                            <p class="feat-label mb-0">Avg Score Increase</p>
-                        </div>
-                    </div>
-
-                    <!-- 24hrs -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="feat-card text-center">
-                            <h3 class="feat-num">
-                                <span class="countup" data-count="24">0</span>hrs
-                            </h3>
-                            <p class="feat-label mb-0">Avg Response Time</p>
-                        </div>
-                    </div>
-
-                </div>
+      <!--=============== MARQUEE ANIMATION FROM  LEFT AND RIGHT ==============-->
+      <section class="ribbon-wrap">
+        <div class="ribbon ribbon-rtl">
+          <div class="ribbon-track">
+            <!-- repeat block 1 -->
+            <div class="ribbon-content">
+              <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
+              <span class="sparkle">✦</span> FINANCE SMARTER
+              <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
+              <span class="sparkle">✦</span> FINANCE SMARTER
             </div>
-        </section>
 
-        <!--================ ALL FEATURES HERE ================-->
-
-        <section class="feat-grid-section py-5">
-            <div class="container">
-
-                <div class="row g-4">
-
-                    <!-- Card 1 -->
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="feat-box">
-                            <div class="icon-box blue">
-                                <i class="bi bi-stars"></i>
-                            </div>
-
-                            <h5 class="feat-title">AI-Powered Analysis</h5>
-                            <p class="feat-text">
-                                Our AI scans your credit report to identify errors, inaccuracies,
-                                and disputable items automatically.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="feat-box">
-                            <div class="icon-box purple">
-                                <i class="bi bi-bank"></i>
-                            </div>
-
-                            <h5 class="feat-title">Consumer Law Integration</h5>
-                            <p class="feat-text">
-                                Every letter cites specific FCRA, FDCPA, and state consumer
-                                protection laws for maximum impact.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="feat-box">
-                            <div class="icon-box orange">
-                                <i class="bi bi-file-earmark-text"></i>
-                            </div>
-
-                            <h5 class="feat-title">Metro 2 Compliant</h5>
-                            <p class="feat-text">
-                                Letters reference specific Metro 2 format fields and codes
-                                that credit bureaus must address.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="feat-box">
-                            <div class="icon-box green">
-                                <i class="bi bi-envelope"></i>
-                            </div>
-
-                            <h5 class="feat-title">One-Click Mailing</h5>
-                            <p class="feat-text">
-                                Send certified mail directly from the app or download letters
-                                to mail yourself.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 5 -->
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="feat-box">
-                            <div class="icon-box cyan">
-                                <i class="bi bi-people"></i>
-                            </div>
-
-                            <h5 class="feat-title">Multi-Client Management</h5>
-                            <p class="feat-text">
-                                Manage your own credit or run a full credit repair business
-                                with up to 25 clients.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 6 -->
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="feat-box">
-                            <div class="icon-box pink">
-                                <i class="bi bi-graph-up-arrow"></i>
-                            </div>
-
-                            <h5 class="feat-title">Score History Tracking</h5>
-                            <p class="feat-text">
-                                Track your credit scores over time with visual charts showing
-                                progression for all three bureaus.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 7 -->
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="feat-box">
-                            <div class="icon-box yellow">
-                                <i class="bi bi-award"></i>
-                            </div>
-
-                            <h5 class="feat-title">Progress & Milestones</h5>
-                            <p class="feat-text">
-                                See percentage improvements, celebrate score milestones,
-                                and track your journey to better credit.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 8 -->
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="feat-box">
-                            <div class="icon-box red">
-                                <i class="bi bi-cloud-arrow-up"></i>
-                            </div>
-
-                            <h5 class="feat-title">Credit Report Upload</h5>
-                            <p class="feat-text">
-                                Upload PDF or CSV credit reports from Equifax, Experian,
-                                and TransUnion for instant AI analysis.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
+            <!-- repeat block 2 (must be same content for seamless loop) -->
+            <div class="ribbon-content">
+              <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
+              <span class="sparkle">✦</span> FINANCE SMARTER
+              <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
+              <span class="sparkle">✦</span> FINANCE SMARTER
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!--===================== HOW TO WORK HERE ================-->
-        <section class="process-section py-5">
-            <div class="container">
-
-                <!--  Top -->
-                <div class="text-center mb-5">
-                    <div class="process-badge mx-auto">
-                        <i class="bi bi-arrow-right"></i> Simple Process
-                    </div>
-
-                    <h2 class="process-title mt-4">
-                        How <span class="accent">FICO Fixer Pro</span> Works
-                    </h2>
-
-                    <p class="process-desc mx-auto">
-                        Get started in minutes with our streamlined credit repair process
-                    </p>
-                </div>
-
-                <!--  Cards Row -->
-                <div class="row g-4 justify-content-between process-row">
-
-                    <!-- 1 -->
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
-                        <div class="process-card">
-                            <div class="process-icon blue">
-                                <i class="bi bi-cloud-arrow-up"></i>
-                            </div>
-
-                            <h5>Upload Your Credit Report</h5>
-                            <p>
-                                Import your credit report from any of the three major bureaus.
-                                Our system securely processes your data.
-                            </p>
-
-                            <!--  Arrow absolute -->
-                            <span class="card-arrow d-none d-xl-flex">
-                                <i class="bi bi-arrow-right"></i>
-                            </span>
-                        </div>
-                    </div>
-
-                    <!-- 2 -->
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
-                        <div class="process-card">
-                            <div class="process-icon purple">
-                                <i class="bi bi-stars"></i>
-                            </div>
-
-                            <h5>AI Analyzes Errors</h5>
-                            <p>
-                                Our AI scans for inaccuracies, outdated information, and disputable items
-                                using Metro 2 compliance standards.
-                            </p>
-
-                            <!--  Arrow absolute -->
-                            <span class="card-arrow d-none d-xl-flex">
-                                <i class="bi bi-arrow-right"></i>
-                            </span>
-                        </div>
-                    </div>
-
-                    <!-- 3 -->
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
-                        <div class="process-card">
-                            <div class="process-icon orange">
-                                <i class="bi bi-file-earmark-text"></i>
-                            </div>
-
-                            <h5>Generate Dispute Letters</h5>
-                            <p>
-                                Receive professionally crafted letters citing specific consumer
-                                protection laws like FCRA and FDCPA.
-                            </p>
-
-                            <!--  Arrow absolute -->
-                            <span class="card-arrow d-none d-xl-flex">
-                                <i class="bi bi-arrow-right"></i>
-                            </span>
-                        </div>
-                    </div>
-
-                    <!-- 4 (highlight) -->
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
-                        <div class="process-card highlight">
-                            <div class="process-icon green">
-                                <i class="bi bi-envelope"></i>
-                            </div>
-
-                            <h5>Send or Download</h5>
-                            <p>
-                                Mail letters directly from our app with tracking, or download PDFs
-                                to send yourself.
-                            </p>
-
-                            <!--  Arrow absolute -->
-                            <span class="card-arrow d-none d-xl-flex">
-                                <i class="bi bi-arrow-right"></i>
-                            </span>
-                        </div>
-                    </div>
-
-                    <!-- 5 -->
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
-                        <div class="process-card">
-                            <div class="process-icon cyan">
-                                <i class="bi bi-check2-circle"></i>
-                            </div>
-
-                            <h5>Track & Follow Up</h5>
-                            <p>
-                                Monitor dispute status, receive reminders for follow-ups, and watch
-                                your credit score improve.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
+        <!-- Example of Left to Right -->
+        <div class="ribbon ribbon-ltr">
+          <div class="ribbon-track">
+            <div class="ribbon-content">
+              <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
+              <span class="sparkle">✦</span> FINANCE SMARTER
+              <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
+              <span class="sparkle">✦</span> FINANCE SMARTER
             </div>
-        </section>
-
-        <!--=================== demo section ================-->
-        <section class="demo-section py-5">
-            <div class="container">
-
-                <!--  Outer Big Card -->
-                <div class="demo-outer">
-                    <div class="row align-items-center g-5">
-
-                        <!-- LEFT -->
-                        <div class="col-lg-6">
-                            <h2 class="demo-title">See FICO Fixer Pro in Action</h2>
-
-                            <p class="demo-desc">
-                                Watch how our AI analyzes a real credit report and generates a
-                                Metro 2 compliant dispute letter in under 60 seconds.
-                            </p>
-                        </div>
-
-                        <!-- RIGHT -->
-                        <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
-                            <div class="demo-inner">
-
-                                <!-- top bar -->
-                                <div class="demo-top">
-                                    <span class="demo-brand">CREDITFLOW</span>
-
-                                    <div class="demo-dots">
-                                        <span class="dot-green"></span>
-                                        <span class="dot-orange"></span>
-                                    </div>
-                                </div>
-
-                                <!-- circle score -->
-                                <div class="demo-circle-area">
-                                    <div class="demo-circle">
-                                        <span class="demo-score">720</span>
-                                    </div>
-                                </div>
-
-                                <!-- footer row -->
-                                <div class="demo-footer">
-                                    <span class="demo-foot-text">Score History</span>
-
-                                    <!-- mini graph -->
-                                    <svg class="demo-graph" viewBox="0 0 120 40" fill="none">
-                                        <path d="M2 32 L20 26 L33 30 L49 18 L63 22 L78 12 L95 15 L118 6"
-                                            stroke="#FF6B3D" stroke-width="3" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
+            <div class="ribbon-content">
+              <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
+              <span class="sparkle">✦</span> FINANCE SMARTER
+              <span class="sparkle">✦</span> LET THE FICO-FIXER DO THE WORK
+              <span class="sparkle">✦</span> FINANCE SMARTER
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <!--================FEATURES SECTION ================-->
+      <section class="features-premium py-5" id="features">
+        <div class="container">
+          <div class="text-center mb-5">
+            <div class="feat-badge mx-auto">✨ Powerful Features</div>
 
-        <!--================== PRICING PLAN ===================-->
+            <h2 class="feat-title mt-4">
+              Everything You Need to <span>Fix Your Credit</span>
+            </h2>
 
-        <section class="pricing-section py-5">
-            <div class="container">
+            <p class="feat-desc mx-auto">
+              Professional-grade credit repair tools powered by AI and backed by
+              consumer protection law.
+            </p>
+          </div>
 
-                <!--  Heading -->
-                <div class="text-center mb-5">
-                    <div class="pricing-badge mx-auto">
-                        <i class="bi bi-currency-dollar"></i> Pricing Plans
-                    </div>
-
-                    <h2 class="pricing-title mt-4">
-                        Choose Your <span>Perfect Plan</span>
-                    </h2>
-
-                    <p class="pricing-desc mx-auto">
-                        Start your credit repair journey today with our flexible pricing options
-                    </p>
-
-                    <!--  Toggle -->
-                    <div class="toggle-wrap mt-4">
-                        <span class="toggle-label">Monthly</span>
-
-                        <label class="switch">
-                            <input type="checkbox" id="billingToggle">
-                            <span class="slider"></span>
-                        </label>
-
-                        <span class="toggle-label">
-                            Yearly <small class="save-tag">Save 20%</small>
-                        </span>
-                    </div>
-                </div>
-
-                <!--  Pricing Cards -->
-                <div class="row g-4 justify-content-center">
-
-                    <!-- Starter -->
-                    <div class="col-12 col-md-6 col-xl-3">
-                        <div class="plan-card">
-
-                            <div class="plan-icon blue">
-                                <i class="bi bi-lightning-charge"></i>
-                            </div>
-
-                            <h5 class="plan-name">Starter</h5>
-                            <p class="plan-sub">
-                                Perfect for individuals starting their credit repair journey
-                            </p>
-
-                            <div class="price">
-                                $<span class="plan-price" data-month="14.97" data-year="143.70">14.97</span>
-                                <span class="per">/mo</span>
-                            </div>
-
-                            <div class="attack">
-                                ⚡ <span class="plan-attack" data-month="2" data-year="24">2</span> Attacks/Month
-                            </div>
-
-                            <a href="#" class="btn-plan btn-fill">Start Free Trial</a>
-
-                            <ul class="plan-list">
-                                <li> <span class="letters" data-month="2" data-year="24">2</span> Dispute Letters/Month
-                                </li>
-                                <li> 1 Personal Profile</li>
-                                <li> AI-Powered Analysis</li>
-                                <li> Metro 2 Compliant Letters</li>
-                                <li> Consumer Law Citations</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Family -->
-                    <div class="col-12 col-md-6 col-xl-3">
-                        <div class="plan-card">
-
-                            <div class="plan-icon orange">
-                                <i class="bi bi-people"></i>
-                            </div>
-
-                            <h5 class="plan-name">Family</h5>
-                            <p class="plan-sub">
-                                Help yourself and up to 4 family members
-                            </p>
-
-                            <div class="price">
-                                $<span class="plan-price" data-month="59.97" data-year="575.70">59.97</span>
-                                <span class="per">/mo</span>
-                            </div>
-
-                            <div class="attack">
-                                ⚡ <span class="plan-attack" data-month="5" data-year="60">5</span> Attacks/Month
-                            </div>
-
-                            <a href="#" class="btn-plan btn-fill">Start Free Trial</a>
-
-                            <ul class="plan-list">
-                                <li> <span class="letters" data-month="5" data-year="60">5</span> Dispute Letters/Month
-                                </li>
-                                <li> 5 Profiles (You + 4 Others)</li>
-                                <li> AI-Powered Analysis</li>
-                                <li> Metro 2 Compliant Letters</li>
-                                <li> Consumer Law Citations</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Gold -->
-                    <div class="col-12 col-md-6 col-xl-3">
-                        <div class="plan-card">
-
-                            <div class="plan-icon yellow">
-                                <i class="bi bi-grid-1x2"></i>
-                            </div>
-
-                            <div class="mini-badge">Startups & New Agencies</div>
-
-                            <h5 class="plan-name">Gold</h5>
-                            <p class="plan-sub">
-                                Ideal for startups & new credit repair agencies
-                            </p>
-
-                            <div class="price">
-                                $<span class="plan-price" data-month="197.97" data-year="1900.00">197.97</span>
-                                <span class="per">/mo</span>
-                            </div>
-
-                            <div class="attack">
-                                ⚡ <span class="plan-attack" data-month="10" data-year="120">10</span> Attacks/Month
-                            </div>
-
-                            <a href="#" class="btn-plan btn-fill">Start Free Trial</a>
-
-                            <ul class="plan-list">
-                                <li> <span class="letters" data-month="10" data-year="120">10</span> Dispute
-                                    Letters/Month</li>
-                                <li> 10 Client Profiles</li>
-                                <li> AI-Powered Analysis</li>
-                                <li> Metro 2 Compliant Letters</li>
-                                <li> Consumer Law Citations</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Platinum -->
-                    <div class="col-12 col-md-6 col-xl-3">
-                        <div class="plan-card highlight">
-
-                            <div class="top-recommended">Recommended</div>
-
-                            <div class="plan-icon purple">
-                                <i class="bi bi-gem"></i>
-                            </div>
-
-                            <h5 class="plan-name">Platinum</h5>
-                            <p class="plan-sub">
-                                For established credit repair professionals
-                            </p>
-
-                            <div class="price">
-                                $<span class="plan-price" data-month="997.97" data-year="9570.00">997.97</span>
-                                <span class="per">/mo</span>
-                            </div>
-
-                            <div class="attack">
-                                ⚡ <span class="plan-attack" data-month="50" data-year="600">50</span> Attacks/Month
-                            </div>
-
-                            <a href="#" class="btn-plan btn-outline">Start Free Trial</a>
-
-                            <ul class="plan-list">
-                                <li> <span class="letters" data-month="50" data-year="600">50</span> Dispute
-                                    Letters/Month</li>
-                                <li> 50 Client Profiles</li>
-                                <li> AI-Powered Analysis</li>
-                                <li> Metro 2 Compliant Letters</li>
-                                <li> Consumer Law Citations</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
+          <div class="row g-4 justify-content-center">
+            <!-- 50K+ -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="feat-card text-center">
+                <h3 class="feat-num">
+                  <span class="countup" data-count="50">0</span>K+
+                </h3>
+                <p class="feat-label mb-0">Disputes Filed</p>
+              </div>
             </div>
-        </section>
 
-        <!--=================FAQ SECTION ===================-->
-
-        <!--=================  FAQ Section ==================-->
-        <section class="faq-section py-5">
-            <div class="container">
-
-                <!-- top -->
-                <div class="text-center mb-5">
-                    <div class="faq-badge mx-auto">
-                        <i class="bi bi-question-circle"></i> FAQ
-                    </div>
-
-                    <h2 class="faq-title mt-4">
-                        Frequently Asked <span>Questions</span>
-                    </h2>
-
-                    <p class="faq-desc mx-auto">
-                        Everything you need to know about FICO Fixer Pro and credit repair.
-                    </p>
-                </div>
-
-                <!--  accordion -->
-                <div class="faq-wrap mx-auto">
-
-                    <div class="accordion accordion-flush" id="faqAccordion">
-
-                        <!-- item 1 -->
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed faq-btn" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    What is Metro 2 compliance and why does it matter?
-                                </button>
-                            </h2>
-                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body faq-body">
-                                    Metro 2 is the industry reporting standard used by credit bureaus. Metro 2 compliant
-                                    disputes reference
-                                    proper reporting fields and codes, increasing the likelihood of accurate
-                                    corrections.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- item 2 -->
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed faq-btn" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#faq2">
-                                    How does the AI generate dispute letters?
-                                </button>
-                            </h2>
-                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body faq-body">
-                                    Our AI analyzes the uploaded credit report, detects inaccurate or unverifiable
-                                    items, then drafts
-                                    personalized dispute letters using consumer-protection laws like FCRA and FDCPA.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- item 3 -->
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed faq-btn" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#faq3">
-                                    Is FICO Fixer Pro compliant with credit repair laws?
-                                </button>
-                            </h2>
-                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body faq-body">
-                                    Yes. The platform is designed around compliance best-practices, including accurate
-                                    dispute processing
-                                    and responsible messaging. You should still consult legal counsel for CROA and
-                                    state-specific
-                                    requirements.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- item 4 -->
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed faq-btn" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#faq4">
-                                    How long does it take to see results?
-                                </button>
-                            </h2>
-                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body faq-body">
-                                    Disputes usually take 30–45 days depending on the bureau and creditor response time.
-                                    Some users may see
-                                    improvements sooner, depending on their report.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- item 5 -->
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed faq-btn" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#faq5">
-                                    Can I use this for my credit repair business?
-                                </button>
-                            </h2>
-                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body faq-body">
-                                    Yes. Our higher-tier plans support multi-client profiles and tracking tools built
-                                    for agencies managing
-                                    multiple customers.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- item 6 -->
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed faq-btn" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#faq6">
-                                    What if I need help or have questions?
-                                </button>
-                            </h2>
-                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body faq-body">
-                                    You can reach our support team via chat or ticket system. We also provide detailed
-                                    guides, templates,
-                                    and follow-up reminders for best results.
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
+            <!-- 92% -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="feat-card text-center">
+                <h3 class="feat-num">
+                  <span class="countup" data-count="92">0</span>%
+                </h3>
+                <p class="feat-label mb-0">Success Rate</p>
+              </div>
             </div>
-        </section>
 
-        <!--=============== ABOUT YOU =================-->
-
-        <section class="lt-section py-5">
-            <div class="container lt-container">
-                <div class="row align-items-center gy-5">
-
-                    <!-- Left Content -->
-                    <div class="col-lg-7" id="let-content">
-                        <h2 class="lt-title mb-3">What does Fico-Fixer pro do?</h2>
-
-                        <p class="lt-desc mb-4">
-                            LendingTree is a marketplace, built to save you money—we don't make
-                            loans, we find them. In fact, we've been finding the best loans for
-                            Americans for more than 20 years. Our marketplace is the largest in the
-                            country, and it's filled with lenders you know and trust.
-                        </p>
-
-                        <!-- Services -->
-                        <div class="row g-4 lt-services">
-
-                            <div class="col-md-6">
-                                <div class="lt-item">
-                                    <div class="lt-icon">
-                                        <i class="bi bi-house-door"></i>
-                                    </div>
-                                    <span>Mortgage Refinance</span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="lt-item">
-                                    <div class="lt-icon">
-                                        <i class="bi bi-bag"></i>
-                                    </div>
-                                    <span>Personal Loans</span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="lt-item">
-                                    <div class="lt-icon">
-                                        <i class="bi bi-house-heart"></i>
-                                    </div>
-                                    <span>Home Equity Loans</span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="lt-item">
-                                    <div class="lt-icon">
-                                        <i class="bi bi-car-front"></i>
-                                    </div>
-                                    <span>Auto Loans</span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="lt-item">
-                                    <div class="lt-icon">
-                                        <i class="bi bi-credit-card"></i>
-                                    </div>
-                                    <span>Credit Cards</span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="lt-item">
-                                    <div class="lt-icon">
-                                        <i class="bi bi-wallet2"></i>
-                                    </div>
-                                    <span>Free Credit Score</span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="lt-item">
-                                    <div class="lt-icon">
-                                        <i class="bi bi-calculator"></i>
-                                    </div>
-                                    <span>Mortgage Calculator</span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="lt-item">
-                                    <div class="lt-icon">
-                                        <i class="bi bi-umbrella"></i>
-                                    </div>
-                                    <span>Insurance</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Right Image -->
-                    <div class="col-lg-5 text-center">
-                        <div class="lt-photo-wrap">
-                            <div class="lt-yellow-circle"></div>
-                            <img src="./assets/images/webImg/girl.png" class="lt-photo img-fluid" alt="Woman" />
-                        </div>
-                    </div>
-
-                </div>
+            <!-- 48pts -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="feat-card text-center">
+                <h3 class="feat-num">
+                  <span class="countup" data-count="48">0</span>pts
+                </h3>
+                <p class="feat-label mb-0">Avg Score Increase</p>
+              </div>
             </div>
-        </section>
+
+            <!-- 24hrs -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="feat-card text-center">
+                <h3 class="feat-num">
+                  <span class="countup" data-count="24">0</span>hrs
+                </h3>
+                <p class="feat-label mb-0">Avg Response Time</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--================ ALL FEATURES HERE ================-->
+
+      <section class="feat-grid-section py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="feat-box">
+                <div class="icon-box blue">
+                  <i class="bi bi-stars"></i>
+                </div>
+
+                <h5 class="feat-title">AI-Powered Analysis</h5>
+                <p class="feat-text">
+                  Our AI scans your credit report to identify errors,
+                  inaccuracies, and disputable items automatically.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="feat-box">
+                <div class="icon-box purple">
+                  <i class="bi bi-bank"></i>
+                </div>
+
+                <h5 class="feat-title">Consumer Law Integration</h5>
+                <p class="feat-text">
+                  Every letter cites specific FCRA, FDCPA, and state consumer
+                  protection laws for maximum impact.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="feat-box">
+                <div class="icon-box orange">
+                  <i class="bi bi-file-earmark-text"></i>
+                </div>
+
+                <h5 class="feat-title">Metro 2 Compliant</h5>
+                <p class="feat-text">
+                  Letters reference specific Metro 2 format fields and codes
+                  that credit bureaus must address.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="feat-box">
+                <div class="icon-box green">
+                  <i class="bi bi-envelope"></i>
+                </div>
+
+                <h5 class="feat-title">One-Click Mailing</h5>
+                <p class="feat-text">
+                  Send certified mail directly from the app or download letters
+                  to mail yourself.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="feat-box">
+                <div class="icon-box cyan">
+                  <i class="bi bi-people"></i>
+                </div>
+
+                <h5 class="feat-title">Multi-Client Management</h5>
+                <p class="feat-text">
+                  Manage your own credit or run a full credit repair business
+                  with up to 25 clients.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="feat-box">
+                <div class="icon-box pink">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+
+                <h5 class="feat-title">Score History Tracking</h5>
+                <p class="feat-text">
+                  Track your credit scores over time with visual charts showing
+                  progression for all three bureaus.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="feat-box">
+                <div class="icon-box yellow">
+                  <i class="bi bi-award"></i>
+                </div>
+
+                <h5 class="feat-title">Progress & Milestones</h5>
+                <p class="feat-text">
+                  See percentage improvements, celebrate score milestones, and
+                  track your journey to better credit.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="feat-box">
+                <div class="icon-box red">
+                  <i class="bi bi-cloud-arrow-up"></i>
+                </div>
+
+                <h5 class="feat-title">Credit Report Upload</h5>
+                <p class="feat-text">
+                  Upload PDF or CSV credit reports from Equifax, Experian, and
+                  TransUnion for instant AI analysis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===================== HOW TO WORK HERE ================-->
+      <section class="process-section py-5">
+        <div class="container">
+          <!--  Top -->
+          <div class="text-center mb-5">
+            <div class="process-badge mx-auto">
+              <i class="bi bi-arrow-right"></i> Simple Process
+            </div>
+
+            <h2 class="process-title mt-4">
+              How <span class="accent">FICO Fixer Pro</span> Works
+            </h2>
+
+            <p class="process-desc mx-auto">
+              Get started in minutes with our streamlined credit repair process
+            </p>
+          </div>
+
+          <!--  Cards Row -->
+          <div class="row g-4 justify-content-between process-row">
+            <!-- 1 -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+              <div class="process-card">
+                <div class="process-icon blue">
+                  <i class="bi bi-cloud-arrow-up"></i>
+                </div>
+
+                <h5>Upload Your Credit Report</h5>
+                <p>
+                  Import your credit report from any of the three major bureaus.
+                  Our system securely processes your data.
+                </p>
+
+                <!--  Arrow absolute -->
+                <span class="card-arrow d-none d-xl-flex">
+                  <i class="bi bi-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+              <div class="process-card">
+                <div class="process-icon purple">
+                  <i class="bi bi-stars"></i>
+                </div>
+
+                <h5>AI Analyzes Errors</h5>
+                <p>
+                  Our AI scans for inaccuracies, outdated information, and
+                  disputable items using Metro 2 compliance standards.
+                </p>
+
+                <!--  Arrow absolute -->
+                <span class="card-arrow d-none d-xl-flex">
+                  <i class="bi bi-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+              <div class="process-card">
+                <div class="process-icon orange">
+                  <i class="bi bi-file-earmark-text"></i>
+                </div>
+
+                <h5>Generate Dispute Letters</h5>
+                <p>
+                  Receive professionally crafted letters citing specific
+                  consumer protection laws like FCRA and FDCPA.
+                </p>
+
+                <!--  Arrow absolute -->
+                <span class="card-arrow d-none d-xl-flex">
+                  <i class="bi bi-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- 4 (highlight) -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+              <div class="process-card highlight">
+                <div class="process-icon green">
+                  <i class="bi bi-envelope"></i>
+                </div>
+
+                <h5>Send or Download</h5>
+                <p>
+                  Mail letters directly from our app with tracking, or download
+                  PDFs to send yourself.
+                </p>
+
+                <!--  Arrow absolute -->
+                <span class="card-arrow d-none d-xl-flex">
+                  <i class="bi bi-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+              <div class="process-card">
+                <div class="process-icon cyan">
+                  <i class="bi bi-check2-circle"></i>
+                </div>
+
+                <h5>Track & Follow Up</h5>
+                <p>
+                  Monitor dispute status, receive reminders for follow-ups, and
+                  watch your credit score improve.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================== demo section ================-->
+      <section class="demo-section py-5">
+        <div class="container">
+          <!--  Outer Big Card -->
+          <div class="demo-outer">
+            <div class="row align-items-center g-5">
+              <!-- LEFT -->
+              <div class="col-lg-6">
+                <h2 class="demo-title">See FICO Fixer Pro in Action</h2>
+
+                <p class="demo-desc">
+                  Watch how our AI analyzes a real credit report and generates a
+                  Metro 2 compliant dispute letter in under 60 seconds.
+                </p>
+              </div>
+
+              <!-- RIGHT -->
+              <div
+                class="col-lg-6 d-flex justify-content-lg-end justify-content-center"
+              >
+                <div class="demo-inner">
+                  <!-- top bar -->
+                  <div class="demo-top">
+                    <span class="demo-brand">CREDITFLOW</span>
+
+                    <div class="demo-dots">
+                      <span class="dot-green"></span>
+                      <span class="dot-orange"></span>
+                    </div>
+                  </div>
+
+                  <!-- circle score -->
+                  <div class="demo-circle-area">
+                    <div class="demo-circle">
+                      <span class="demo-score">720</span>
+                    </div>
+                  </div>
+
+                  <!-- footer row -->
+                  <div class="demo-footer">
+                    <span class="demo-foot-text">Score History</span>
+
+                    <!-- mini graph -->
+                    <svg class="demo-graph" viewBox="0 0 120 40" fill="none">
+                      <path
+                        d="M2 32 L20 26 L33 30 L49 18 L63 22 L78 12 L95 15 L118 6"
+                        stroke="#FF6B3D"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--================== PRICING PLAN ===================-->
+
+      <section class="pricing-section py-5">
+        <div class="container">
+          <!--  Heading -->
+          <div class="text-center mb-5">
+            <div class="pricing-badge mx-auto">
+              <i class="bi bi-currency-dollar"></i> Pricing Plans
+            </div>
+
+            <h2 class="pricing-title mt-4">
+              Choose Your <span>Perfect Plan</span>
+            </h2>
+
+            <p class="pricing-desc mx-auto">
+              Start your credit repair journey today with our flexible pricing
+              options
+            </p>
+
+            <!--  Toggle -->
+            <div class="toggle-wrap mt-4">
+              <span class="toggle-label">Monthly</span>
+
+              <label class="switch">
+                <input type="checkbox" id="billingToggle" />
+                <span class="slider"></span>
+              </label>
+
+              <span class="toggle-label">
+                Yearly <small class="save-tag">Save 20%</small>
+              </span>
+            </div>
+          </div>
+
+          <!--  Pricing Cards -->
+          <div class="row g-4 justify-content-center">
+            <!-- Starter -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="plan-card">
+                <div class="plan-icon blue">
+                  <i class="bi bi-lightning-charge"></i>
+                </div>
+
+                <h5 class="plan-name">Starter</h5>
+                <p class="plan-sub">
+                  Perfect for individuals starting their credit repair journey
+                </p>
+
+                <div class="price">
+                  $<span
+                    class="plan-price"
+                    data-month="14.97"
+                    data-year="143.70"
+                    >14.97</span
+                  >
+                  <span class="per">/mo</span>
+                </div>
+
+                <div class="attack">
+                  ⚡
+                  <span class="plan-attack" data-month="2" data-year="24"
+                    >2</span
+                  >
+                  Attacks/Month
+                </div>
+
+                <a href="#" class="btn-plan btn-fill">Start Free Trial</a>
+
+                <ul class="plan-list">
+                  <li>
+                    <span class="letters" data-month="2" data-year="24">2</span>
+                    Dispute Letters/Month
+                  </li>
+                  <li>1 Personal Profile</li>
+                  <li>AI-Powered Analysis</li>
+                  <li>Metro 2 Compliant Letters</li>
+                  <li>Consumer Law Citations</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Family -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="plan-card">
+                <div class="plan-icon orange">
+                  <i class="bi bi-people"></i>
+                </div>
+
+                <h5 class="plan-name">Family</h5>
+                <p class="plan-sub">Help yourself and up to 4 family members</p>
+
+                <div class="price">
+                  $<span
+                    class="plan-price"
+                    data-month="59.97"
+                    data-year="575.70"
+                    >59.97</span
+                  >
+                  <span class="per">/mo</span>
+                </div>
+
+                <div class="attack">
+                  ⚡
+                  <span class="plan-attack" data-month="5" data-year="60"
+                    >5</span
+                  >
+                  Attacks/Month
+                </div>
+
+                <a href="#" class="btn-plan btn-fill">Start Free Trial</a>
+
+                <ul class="plan-list">
+                  <li>
+                    <span class="letters" data-month="5" data-year="60">5</span>
+                    Dispute Letters/Month
+                  </li>
+                  <li>5 Profiles (You + 4 Others)</li>
+                  <li>AI-Powered Analysis</li>
+                  <li>Metro 2 Compliant Letters</li>
+                  <li>Consumer Law Citations</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Gold -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="plan-card">
+                <div class="plan-icon yellow">
+                  <i class="bi bi-grid-1x2"></i>
+                </div>
+
+                <div class="mini-badge">Startups & New Agencies</div>
+
+                <h5 class="plan-name">Gold</h5>
+                <p class="plan-sub">
+                  Ideal for startups & new credit repair agencies
+                </p>
+
+                <div class="price">
+                  $<span
+                    class="plan-price"
+                    data-month="197.97"
+                    data-year="1900.00"
+                    >197.97</span
+                  >
+                  <span class="per">/mo</span>
+                </div>
+
+                <div class="attack">
+                  ⚡
+                  <span class="plan-attack" data-month="10" data-year="120"
+                    >10</span
+                  >
+                  Attacks/Month
+                </div>
+
+                <a href="#" class="btn-plan btn-fill">Start Free Trial</a>
+
+                <ul class="plan-list">
+                  <li>
+                    <span class="letters" data-month="10" data-year="120"
+                      >10</span
+                    >
+                    Dispute Letters/Month
+                  </li>
+                  <li>10 Client Profiles</li>
+                  <li>AI-Powered Analysis</li>
+                  <li>Metro 2 Compliant Letters</li>
+                  <li>Consumer Law Citations</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Platinum -->
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="plan-card highlight">
+                <div class="top-recommended">Recommended</div>
+
+                <div class="plan-icon purple">
+                  <i class="bi bi-gem"></i>
+                </div>
+
+                <h5 class="plan-name">Platinum</h5>
+                <p class="plan-sub">
+                  For established credit repair professionals
+                </p>
+
+                <div class="price">
+                  $<span
+                    class="plan-price"
+                    data-month="997.97"
+                    data-year="9570.00"
+                    >997.97</span
+                  >
+                  <span class="per">/mo</span>
+                </div>
+
+                <div class="attack">
+                  ⚡
+                  <span class="plan-attack" data-month="50" data-year="600"
+                    >50</span
+                  >
+                  Attacks/Month
+                </div>
+
+                <a href="#" class="btn-plan btn-outline">Start Free Trial</a>
+
+                <ul class="plan-list">
+                  <li>
+                    <span class="letters" data-month="50" data-year="600"
+                      >50</span
+                    >
+                    Dispute Letters/Month
+                  </li>
+                  <li>50 Client Profiles</li>
+                  <li>AI-Powered Analysis</li>
+                  <li>Metro 2 Compliant Letters</li>
+                  <li>Consumer Law Citations</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================FAQ SECTION ===================-->
+
+      <!--=================  FAQ Section ==================-->
+      <section class="faq-section py-5">
+        <div class="container">
+          <!-- top -->
+          <div class="text-center mb-5">
+            <div class="faq-badge mx-auto">
+              <i class="bi bi-question-circle"></i> FAQ
+            </div>
+
+            <h2 class="faq-title mt-4">
+              Frequently Asked <span>Questions</span>
+            </h2>
+
+            <p class="faq-desc mx-auto">
+              Everything you need to know about FICO Fixer Pro and credit
+              repair.
+            </p>
+          </div>
+
+          <!--  accordion -->
+          <div class="faq-wrap mx-auto">
+            <div class="accordion accordion-flush" id="faqAccordion">
+              <!-- item 1 -->
+              <div class="accordion-item faq-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed faq-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                  >
+                    What is Metro 2 compliance and why does it matter?
+                  </button>
+                </h2>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body faq-body">
+                    Metro 2 is the industry reporting standard used by credit
+                    bureaus. Metro 2 compliant disputes reference proper
+                    reporting fields and codes, increasing the likelihood of
+                    accurate corrections.
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 2 -->
+              <div class="accordion-item faq-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed faq-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    How does the AI generate dispute letters?
+                  </button>
+                </h2>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body faq-body">
+                    Our AI analyzes the uploaded credit report, detects
+                    inaccurate or unverifiable items, then drafts personalized
+                    dispute letters using consumer-protection laws like FCRA and
+                    FDCPA.
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 3 -->
+              <div class="accordion-item faq-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed faq-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    Is FICO Fixer Pro compliant with credit repair laws?
+                  </button>
+                </h2>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body faq-body">
+                    Yes. The platform is designed around compliance
+                    best-practices, including accurate dispute processing and
+                    responsible messaging. You should still consult legal
+                    counsel for CROA and state-specific requirements.
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 4 -->
+              <div class="accordion-item faq-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed faq-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4"
+                  >
+                    How long does it take to see results?
+                  </button>
+                </h2>
+                <div
+                  id="faq4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body faq-body">
+                    Disputes usually take 30–45 days depending on the bureau and
+                    creditor response time. Some users may see improvements
+                    sooner, depending on their report.
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 5 -->
+              <div class="accordion-item faq-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed faq-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq5"
+                  >
+                    Can I use this for my credit repair business?
+                  </button>
+                </h2>
+                <div
+                  id="faq5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body faq-body">
+                    Yes. Our higher-tier plans support multi-client profiles and
+                    tracking tools built for agencies managing multiple
+                    customers.
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 6 -->
+              <div class="accordion-item faq-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed faq-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq6"
+                  >
+                    What if I need help or have questions?
+                  </button>
+                </h2>
+                <div
+                  id="faq6"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body faq-body">
+                    You can reach our support team via chat or ticket system. We
+                    also provide detailed guides, templates, and follow-up
+                    reminders for best results.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== ABOUT YOU =================-->
+
+      <section class="lt-section py-5">
+        <div class="container lt-container">
+          <div class="row align-items-center gy-5">
+            <!-- Left Content -->
+            <div class="col-lg-7" id="let-content">
+              <h2 class="lt-title mb-3">What does Fico-Fixer pro do?</h2>
+
+              <p class="lt-desc mb-4">
+                LendingTree is a marketplace, built to save you money—we don't
+                make loans, we find them. In fact, we've been finding the best
+                loans for Americans for more than 20 years. Our marketplace is
+                the largest in the country, and it's filled with lenders you
+                know and trust.
+              </p>
+
+              <!-- Services -->
+              <div class="row g-4 lt-services">
+                <div class="col-md-6">
+                  <div class="lt-item">
+                    <div class="lt-icon">
+                      <i class="bi bi-house-door"></i>
+                    </div>
+                    <span>Mortgage Refinance</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="lt-item">
+                    <div class="lt-icon">
+                      <i class="bi bi-bag"></i>
+                    </div>
+                    <span>Personal Loans</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="lt-item">
+                    <div class="lt-icon">
+                      <i class="bi bi-house-heart"></i>
+                    </div>
+                    <span>Home Equity Loans</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="lt-item">
+                    <div class="lt-icon">
+                      <i class="bi bi-car-front"></i>
+                    </div>
+                    <span>Auto Loans</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="lt-item">
+                    <div class="lt-icon">
+                      <i class="bi bi-credit-card"></i>
+                    </div>
+                    <span>Credit Cards</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="lt-item">
+                    <div class="lt-icon">
+                      <i class="bi bi-wallet2"></i>
+                    </div>
+                    <span>Free Credit Score</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="lt-item">
+                    <div class="lt-icon">
+                      <i class="bi bi-calculator"></i>
+                    </div>
+                    <span>Mortgage Calculator</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="lt-item">
+                    <div class="lt-icon">
+                      <i class="bi bi-umbrella"></i>
+                    </div>
+                    <span>Insurance</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="col-lg-5 text-center">
+              <div class="lt-photo-wrap">
+                <div class="lt-yellow-circle"></div>
+                <img
+                  src="./assets/images/webImg/girl.png"
+                  class="lt-photo img-fluid"
+                  alt="Woman"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--====================  Footer =====================-->
     <footer class="footer-premium pt-5">
-        <div class="container">
+      <div class="container">
+        <div class="row gy-5">
+          <!--  Left Brand -->
+          <div class="col-lg-4">
+            <div class="footer-brand">
+              <div class="footer-logo">
+                <img
+                  src="./assets/images/webImg/nav-logo.png"
+                  alt="footer-logo"
+                />
+              </div>
 
-            <div class="row gy-5">
+              <p class="brand-desc mt-3">
+                AI-powered credit repair software that generates Metro 2
+                compliant dispute letters backed by consumer protection law.
+              </p>
 
-                <!--  Left Brand -->
-                <div class="col-lg-4">
-                    <div class="footer-brand">
+              <!-- contact -->
+              <ul class="footer-contact">
+                <li><i class="bi bi-envelope"></i> support@ficofixerpro.com</li>
+                <li><i class="bi bi-telephone"></i> 1-800-FICO-FIX</li>
+                <li><i class="bi bi-geo-alt"></i> Miami, FL 33101</li>
+              </ul>
 
-                        <div class="footer-logo">
-                            <img src="./assets/images/webImg/nav-logo.png" alt="footer-logo">
-                        </div>
-
-                        <p class="brand-desc mt-3">
-                            AI-powered credit repair software that generates Metro 2 compliant dispute letters backed by
-                            consumer
-                            protection law.
-                        </p>
-
-                        <!-- contact -->
-                        <ul class="footer-contact">
-                            <li><i class="bi bi-envelope"></i> support@ficofixerpro.com</li>
-                            <li><i class="bi bi-telephone"></i> 1-800-FICO-FIX</li>
-                            <li><i class="bi bi-geo-alt"></i> Miami, FL 33101</li>
-                        </ul>
-
-                        <!-- social -->
-                        <div class="footer-social">
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-twitter-x"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                            <a href="#"><i class="bi bi-linkedin"></i></a>
-                            <a href="#"><i class="bi bi-youtube"></i></a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--  Product -->
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h6 class="footer-title">Product</h6>
-                    <ul class="footer-links">
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">How It Works</a></li>
-                        <li><a href="#">Templates</a></li>
-                        <li><a href="#">API Access</a></li>
-                    </ul>
-                </div>
-
-                <!--  Company -->
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h6 class="footer-title">Company</h6>
-                    <ul class="footer-links">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!--  Resources -->
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h6 class="footer-title">Resources</h6>
-                    <ul class="footer-links">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Credit Education</a></li>
-                        <li><a href="#">FCRA Guide</a></li>
-                        <li><a href="#">Sample Letters</a></li>
-                    </ul>
-                </div>
-
-                <!-- Legal -->
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h6 class="footer-title">Legal</h6>
-                    <ul class="footer-links">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                        <li><a href="#">DMCA</a></li>
-                        <li><a href="#">Compliance</a></li>
-                    </ul>
-                </div>
-
+              <!-- social -->
+              <div class="footer-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </div>
             </div>
+          </div>
 
-            <!-- bottom bar -->
-            <div class="footer-bottom mt-5">
-                <p class="mb-0">
-                    © 2026 FICO Fixer Pro. All rights reserved. Not affiliated with FICO® or Fair Isaac Corporation.
-                </p>
-            </div>
+          <!--  Product -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="footer-title">Product</h6>
+            <ul class="footer-links">
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">How It Works</a></li>
+              <li><a href="#">Templates</a></li>
+              <li><a href="#">API Access</a></li>
+            </ul>
+          </div>
 
+          <!--  Company -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="footer-title">Company</h6>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!--  Resources -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="footer-title">Resources</h6>
+            <ul class="footer-links">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Credit Education</a></li>
+              <li><a href="#">FCRA Guide</a></li>
+              <li><a href="#">Sample Letters</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="footer-title">Legal</h6>
+            <ul class="footer-links">
+              <li><a href="./legal/privacy.html">Privacy Policy</a></li>
+              <li><a href="./legal/terms.html">Terms of Service</a></li>
+              <li><a href="./legal/cookies.html">Cookie Policy</a></li>
+              <li><a href="./legal/croa-disclosure.html">DMCA</a></li>
+              <li><a href="./legal/disclaimer.html">Disclaimer</a></li>
+              <li>
+                <a href="./legal/cancellation-policy.html"
+                  >Cancellation Policy</a
+                >
+              </li>
+              <li><a href="./legal/refund-policy.html">Refund Policy</a></li>
+            </ul>
+          </div>
         </div>
+
+        <!-- bottom bar -->
+        <div class="footer-bottom mt-5">
+          <p class="mb-0">
+            © 2026 FICO Fixer Pro. All rights reserved. Not affiliated with
+            FICO® or Fair Isaac Corporation.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <!--  CountUp.js CDN -->
@@ -1326,7 +1598,5 @@
 
     <!--  Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-
+  </body>
 </html>

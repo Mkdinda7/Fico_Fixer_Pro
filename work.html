@@ -1,582 +1,760 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How FICO Fixer Pro Works</title>
 
-    <link rel="shortcut icon" href="./assets/images/webImg/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/webImg/favicon.png"
+      type="image/x-icon"
+    />
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/work.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/work.css" />
+  </head>
 
-<body>
-
-     <!--==================Header section area ==================-->
+  <body>
+    <!--==================Header section area ==================-->
     <header>
-        <!--  Premium Navbar -->
-        <nav class="navbar navbar-expand-lg premium-navbar sticky-top">
-            <div class="container">
+      <!--  Premium Navbar -->
+      <nav class="navbar navbar-expand-lg premium-navbar sticky-top">
+        <div class="container">
+          <!--  Brand / Logo -->
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img
+              src="./assets/images/webImg/nav-logo.png"
+              alt="header-logo"
+              style="width: 100%; height: 80px"
+            />
+          </a>
 
-                <!--  Brand / Logo -->
-                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <!--  Mobile toggler -->
+          <button
+            class="navbar-toggler premium-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                    <img src="./assets/images/webImg/nav-logo.png" alt="header-logo" style="width: 100%; height: 80px;">
+          <!--  Desktop Menu -->
+          <div class="collapse navbar-collapse">
+            <!-- Center Links -->
+            <ul class="navbar-nav mx-auto gap-lg-4">
+              <li class="nav-item">
+                <a class="nav-link nav-premium active" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-premium" href="./features.html"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-premium" href="./pricing.html"
+                  >Pricing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-premium" href="./work.html">Works</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link nav-premium dropdown-toggle"
+                  href="./services.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Services
                 </a>
 
-                <!--  Mobile toggler -->
-                <button class="navbar-toggler premium-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#mobileMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!--  Desktop Menu -->
-                <div class="collapse navbar-collapse">
-
-                    <!-- Center Links -->
-                    <ul class="navbar-nav mx-auto gap-lg-4">
-                        <li class="nav-item"><a class="nav-link nav-premium active" href="./index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link nav-premium" href="./features.html">Features</a></li>
-                        <li class="nav-item"><a class="nav-link nav-premium" href="./pricing.html">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link nav-premium" href="./work.html">Works</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link nav-premium dropdown-toggle" href="./services.html" role="button"
-                                data-bs-toggle="dropdown">
-                                Services
-                            </a>
-
-                            <ul class="dropdown-menu premium-dropdown-menu">
-
-                                <!-- Accounts -->
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">
-                                        Accounts
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/accountPages/AllAccount.html">All Account</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/accountPages/SavingAccount.html">Savings
-                                                Account</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/accountPages/CurrentAccount.html">Current
-                                                Account</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/accountPages/FixedDeposit.html">Fixed Deposit</a>
-                                        </li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/accountPages/salary-account.html">Salary
-                                                Account</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/accountPages/nriaccount.html">NRI Account</a></li>
-                                    </ul>
-                                </li>
-
-                                <!-- Cards -->
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">
-                                        Cards
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="./servicePages/cardPages/allCard.html">All
-                                                Card</a></li>
-                                        <li><a class="dropdown-item" href="#">Credit Card</a></li>
-                                        <li><a class="dropdown-item" href="#">Debit Card</a></li>
-                                    </ul>
-                                </li>
-
-                                <!-- Loans -->
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">
-                                        Loans
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="./servicePages/loanPages/home-loan.html">Home
-                                                Loan</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/loanPages/personal-loan.html">Personal Loan</a>
-                                        </li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/loanPages/vehicle-loan.html">Vehicle Loan</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="./servicePages/loanPages/education-loan.html">Education Loan</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="./servicePages/loanPages/gold-loan.html">Gold
-                                                Loan</a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link nav-premium dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Apply Now
-                            </a>
-
-                            <ul class="dropdown-menu premium-dropdown-menu">
-                                <li><a class="dropdown-item" href="./servicePages/loanPages/home-loan.html">Home
-                                        Loan</a></li>
-                                <li><a class="dropdown-item" href="./servicePages/loanPages/personal-loan.html">Personal
-                                        Loan</a></li>
-                                <li><a class="dropdown-item" href="./servicePages/loanPages/vehicle-loan.html">Vehicle
-                                        Loan</a></li>
-                                <li><a class="dropdown-item"
-                                        href="./servicePages/loanPages/education-loan.html">Education Loan</a></li>
-                                <li><a class="dropdown-item" href="./servicePages/loanPages/gold-loan.html">Gold
-                                        Loan</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <!-- Right Action -->
-                    <div class="d-flex align-items-center gap-3">
-                        <a href="./auth/login.html" class="nav-signin">Sign In</a>
-                        <a href="./auth/register.html" class="btn btn-premium">Get Started</a>
-                    </div>
-                </div>
-
-            </div>
-        </nav>
-
-        <!-- Offcanvas Mobile Menu -->
-        <div class="offcanvas offcanvas-end premium-offcanvas" tabindex="-1" id="mobileMenu">
-            <div class="offcanvas-header border-bottom border-light border-opacity-10">
-                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                    <img src="./assets/images/webImg/nav-logo.png" alt="header-logo" style="height:80px;">
-                </a>
-                <button type="button" class="btn-close btn-close-white me-3" data-bs-dismiss="offcanvas"></button>
-            </div>
-
-            <div class="offcanvas-body">
-
-                <!-- NORMAL LINKS -->
-                <ul class="navbar-nav gap-2 mb-2">
-                    <li class="nav-item"><a class="nav-link nav-premium active" href="./index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link nav-premium" href="./features.html">Features</a></li>
-                    <li class="nav-item"><a class="nav-link nav-premium" href="./pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link nav-premium" href="./work.html">Works</a></li>
-                </ul>
-
-                <!-- MAIN ACCORDION -->
-                <div class="accordion accordion-flush" id="mobileAccordion">
-
-                    <!-- SERVICES -->
-                    <div class="accordion-item bg-transparent border-0">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed bg-transparent text-white" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#servicesAcc">
-                                Services
-                            </button>
-                        </h2>
-
-                        <div id="servicesAcc" class="accordion-collapse collapse">
-                            <div class="accordion-body pt-0">
-
-                                <!-- MINI ACCORDION -->
-                                <div class="accordion accordion-flush ms-3" id="servicesMini">
-
-                                    <!-- ACCOUNTS -->
-                                    <div class="accordion-item bg-transparent border-0">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed bg-transparent text-white"
-                                                type="button" data-bs-toggle="collapse" data-bs-target="#accountsAcc">
-                                                Accounts
-                                            </button>
-                                        </h2>
-                                        <div id="accountsAcc" class="accordion-collapse collapse">
-                                            <div class="accordion-body">
-                                                <a class="nav-link nav-premium"
-                                                    href="./servicePages/accountPages/AllAccount.html">All Account</a>
-                                                <a class="nav-link nav-premium"
-                                                    href="./servicePages/accountPages/SavingAccount.html">Savings
-                                                    Account</a>
-                                                <a class="nav-link nav-premium" href="#">Current Account</a>
-                                                <a class="nav-link nav-premium" href="#">Fixed Deposit</a>
-                                                <a class="nav-link nav-premium" href="#">Salary Account</a>
-                                                <a class="nav-link nav-premium" href="#">NRI Account</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- CARDS -->
-                                    <div class="accordion-item bg-transparent border-0">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed bg-transparent text-white"
-                                                type="button" data-bs-toggle="collapse" data-bs-target="#cardsAcc">
-                                                Cards
-                                            </button>
-                                        </h2>
-                                        <div id="cardsAcc" class="accordion-collapse collapse">
-                                            <div class="accordion-body">
-                                                <a class="nav-link nav-premium"
-                                                    href="./servicePages/cardPages/allCard.html">All Card</a>
-                                                <a class="nav-link nav-premium" href="#">Credit Card</a>
-                                                <a class="nav-link nav-premium" href="#">Debit Card</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- LOANS -->
-                                    <div class="accordion-item bg-transparent border-0">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed bg-transparent text-white"
-                                                type="button" data-bs-toggle="collapse" data-bs-target="#loansAcc">
-                                                Loans
-                                            </button>
-                                        </h2>
-                                        <div id="loansAcc" class="accordion-collapse collapse">
-                                            <div class="accordion-body">
-                                                <a class="nav-link nav-premium" href="#">Home Loan</a>
-                                                <a class="nav-link nav-premium" href="#">Personal Loan</a>
-                                                <a class="nav-link nav-premium" href="#">Vehicle Loan</a>
-                                                <a class="nav-link nav-premium" href="#">Education Loan</a>
-                                                <a class="nav-link nav-premium" href="#">Gold Loan</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- APPLY NOW -->
-                    <div class="accordion-item bg-transparent border-0">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed bg-transparent text-white" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#applyAcc">
-                                Apply Now
-                            </button>
-                        </h2>
-                        <div id="applyAcc" class="accordion-collapse collapse">
-                            <div class="accordion-body pt-0">
-                                <a class="nav-link nav-premium" href="#">Dispute Letters</a>
-                                <a class="nav-link nav-premium" href="#">Goodwill Letters</a>
-                                <a class="nav-link nav-premium" href="#">Debt Validation</a>
-                                <a class="nav-link nav-premium" href="#">Identity Theft</a>
-                                <a class="nav-link nav-premium" href="#">Cease & Desist</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- BUTTONS -->
-                <div class="mt-4 d-grid gap-2">
-                    <a href="./auth/register.html" class="btn btn-premium w-100">Get Started</a>
-                    <a href="./auth/login.html" class="btn btn-outline-light w-100 rounded-pill py-2 fw-bold">
-                        Sign In
+                <ul class="dropdown-menu premium-dropdown-menu">
+                  <!-- Accounts -->
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">
+                      Accounts
                     </a>
-                </div>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/accountPages/AllAccount.html"
+                          >All Account</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/accountPages/SavingAccount.html"
+                          >Savings Account</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/accountPages/CurrentAccount.html"
+                          >Current Account</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/accountPages/FixedDeposit.html"
+                          >Fixed Deposit</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/accountPages/salary-account.html"
+                          >Salary Account</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/accountPages/nriaccount.html"
+                          >NRI Account</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
 
+                  <!-- Cards -->
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">
+                      Cards
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/cardPages/allCard.html"
+                          >All Card</a
+                        >
+                      </li>
+                      <li><a class="dropdown-item" href="#">Credit Card</a></li>
+                      <li><a class="dropdown-item" href="#">Debit Card</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- Loans -->
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">
+                      Loans
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/loanPages/home-loan.html"
+                          >Home Loan</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/loanPages/personal-loan.html"
+                          >Personal Loan</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/loanPages/vehicle-loan.html"
+                          >Vehicle Loan</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/loanPages/education-loan.html"
+                          >Education Loan</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="./servicePages/loanPages/gold-loan.html"
+                          >Gold Loan</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link nav-premium dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Apply Now
+                </a>
+
+                <ul class="dropdown-menu premium-dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./servicePages/loanPages/home-loan.html"
+                      >Home Loan</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./servicePages/loanPages/personal-loan.html"
+                      >Personal Loan</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./servicePages/loanPages/vehicle-loan.html"
+                      >Vehicle Loan</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./servicePages/loanPages/education-loan.html"
+                      >Education Loan</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./servicePages/loanPages/gold-loan.html"
+                      >Gold Loan</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Right Action -->
+            <div class="d-flex align-items-center gap-3">
+              <a href="./auth/login.html" class="nav-signin">Sign In</a>
+              <a href="./auth/register.html" class="btn btn-premium"
+                >Get Started</a
+              >
             </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Offcanvas Mobile Menu -->
+      <div
+        class="offcanvas offcanvas-end premium-offcanvas"
+        tabindex="-1"
+        id="mobileMenu"
+      >
+        <div
+          class="offcanvas-header border-bottom border-light border-opacity-10"
+        >
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img
+              src="./assets/images/webImg/nav-logo.png"
+              alt="header-logo"
+              style="height: 80px"
+            />
+          </a>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-3"
+            data-bs-dismiss="offcanvas"
+          ></button>
         </div>
 
-    </header>
+        <div class="offcanvas-body">
+          <!-- NORMAL LINKS -->
+          <ul class="navbar-nav gap-2 mb-2">
+            <li class="nav-item">
+              <a class="nav-link nav-premium active" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-premium" href="./features.html"
+                >Features</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-premium" href="./pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-premium" href="./work.html">Works</a>
+            </li>
+          </ul>
 
+          <!-- MAIN ACCORDION -->
+          <div class="accordion accordion-flush" id="mobileAccordion">
+            <!-- SERVICES -->
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-transparent text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#servicesAcc"
+                >
+                  Services
+                </button>
+              </h2>
+
+              <div id="servicesAcc" class="accordion-collapse collapse">
+                <div class="accordion-body pt-0">
+                  <!-- MINI ACCORDION -->
+                  <div class="accordion accordion-flush ms-3" id="servicesMini">
+                    <!-- ACCOUNTS -->
+                    <div class="accordion-item bg-transparent border-0">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed bg-transparent text-white"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#accountsAcc"
+                        >
+                          Accounts
+                        </button>
+                      </h2>
+                      <div id="accountsAcc" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <a
+                            class="nav-link nav-premium"
+                            href="./servicePages/accountPages/AllAccount.html"
+                            >All Account</a
+                          >
+                          <a
+                            class="nav-link nav-premium"
+                            href="./servicePages/accountPages/SavingAccount.html"
+                            >Savings Account</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >Current Account</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >Fixed Deposit</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >Salary Account</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >NRI Account</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- CARDS -->
+                    <div class="accordion-item bg-transparent border-0">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed bg-transparent text-white"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#cardsAcc"
+                        >
+                          Cards
+                        </button>
+                      </h2>
+                      <div id="cardsAcc" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <a
+                            class="nav-link nav-premium"
+                            href="./servicePages/cardPages/allCard.html"
+                            >All Card</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >Credit Card</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >Debit Card</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- LOANS -->
+                    <div class="accordion-item bg-transparent border-0">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed bg-transparent text-white"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#loansAcc"
+                        >
+                          Loans
+                        </button>
+                      </h2>
+                      <div id="loansAcc" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <a class="nav-link nav-premium" href="#">Home Loan</a>
+                          <a class="nav-link nav-premium" href="#"
+                            >Personal Loan</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >Vehicle Loan</a
+                          >
+                          <a class="nav-link nav-premium" href="#"
+                            >Education Loan</a
+                          >
+                          <a class="nav-link nav-premium" href="#">Gold Loan</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- APPLY NOW -->
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-transparent text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#applyAcc"
+                >
+                  Apply Now
+                </button>
+              </h2>
+              <div id="applyAcc" class="accordion-collapse collapse">
+                <div class="accordion-body pt-0">
+                  <a class="nav-link nav-premium" href="#">Dispute Letters</a>
+                  <a class="nav-link nav-premium" href="#">Goodwill Letters</a>
+                  <a class="nav-link nav-premium" href="#">Debt Validation</a>
+                  <a class="nav-link nav-premium" href="#">Identity Theft</a>
+                  <a class="nav-link nav-premium" href="#">Cease & Desist</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BUTTONS -->
+          <div class="mt-4 d-grid gap-2">
+            <a href="./auth/register.html" class="btn btn-premium w-100"
+              >Get Started</a
+            >
+            <a
+              href="./auth/login.html"
+              class="btn btn-outline-light w-100 rounded-pill py-2 fw-bold"
+            >
+              Sign In
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!--=================work breadcrum ==================-->
     <section class="breadcrumb-hero">
-        <div class="container text-center">
-            <!-- Badge -->
-            <span class="pricing-badge mb-4 d-inline-flex align-items-center gap-2">
-                Simple Work
-            </span>
+      <div class="container text-center">
+        <!-- Badge -->
+        <span class="pricing-badge mb-4 d-inline-flex align-items-center gap-2">
+          Simple Work
+        </span>
 
-            <!-- Title -->
-            <h1 class="hero-title mt-3 fs-1">
-                How <span>FICO Fixer Pro</span><br />
-                Works
-            </h1>
+        <!-- Title -->
+        <h1 class="hero-title mt-3 fs-1">
+          How <span>FICO Fixer Pro</span><br />
+          Works
+        </h1>
 
-            <!-- Subtitle -->
-            <p class="hero-subtitle mx-auto mt-3">
-                Our streamlined process makes credit repair fast, simple, and effective.
-                Follow these easy steps to start improving your credit score today.
-            </p>
-
-        </div>
+        <!-- Subtitle -->
+        <p class="hero-subtitle mx-auto mt-3">
+          Our streamlined process makes credit repair fast, simple, and
+          effective. Follow these easy steps to start improving your credit
+          score today.
+        </p>
+      </div>
     </section>
 
     <!--=================HOW TO WORK HERE===============-->
     <main>
-        <section class="stepper-section">
-            <div class="container">
+      <section class="stepper-section">
+        <div class="container">
+          <!-- Heading -->
+          <div class="text-center mb-5">
+            <span class="badge-top">How It Works</span>
+            <h2 class="title">
+              Fix Your Credit in <span>5 Simple Steps</span>
+            </h2>
+            <p class="subtitle">
+              A modern, automated credit repair workflow powered by AI.
+            </p>
+          </div>
 
-                <!-- Heading -->
-                <div class="text-center mb-5">
-                    <span class="badge-top">How It Works</span>
-                    <h2 class="title">
-                        Fix Your Credit in <span>5 Simple Steps</span>
-                    </h2>
-                    <p class="subtitle">
-                        A modern, automated credit repair workflow powered by AI.
-                    </p>
-                </div>
-
-                <!-- Stepper -->
-                <div class="stepper">
-
-                    <!-- Step -->
-                    <div class="step">
-                        <div class="circle blue"><i class="bi bi-upload"></i></div>
-                        <div class="card">
-                            <span>01</span>
-                            <h5>Upload Credit Report</h5>
-                            <p>Upload reports securely from all major credit bureaus.</p>
-                        </div>
-                    </div>
-
-                    <div class="step">
-                        <div class="circle purple"><i class="bi bi-stars"></i></div>
-                        <div class="card">
-                            <span>02</span>
-                            <h5>AI Analysis</h5>
-                            <p>AI detects errors, violations, and dispute opportunities.</p>
-                        </div>
-                    </div>
-
-                    <div class="step">
-                        <div class="circle orange"><i class="bi bi-file-earmark-text"></i></div>
-                        <div class="card">
-                            <span>03</span>
-                            <h5>Generate Letters</h5>
-                            <p>Automatically create compliant dispute letters.</p>
-                        </div>
-                    </div>
-
-                    <div class="step">
-                        <div class="circle green"><i class="bi bi-envelope"></i></div>
-                        <div class="card">
-                            <span>04</span>
-                            <h5>Send Disputes</h5>
-                            <p>Mail instantly or download letters for manual delivery.</p>
-                        </div>
-                    </div>
-
-                    <div class="step">
-                        <div class="circle teal"><i class="bi bi-check-circle"></i></div>
-                        <div class="card">
-                            <span>05</span>
-                            <h5>Track Progress</h5>
-                            <p>Monitor responses and automate follow-ups.</p>
-                        </div>
-                    </div>
-
-                </div>
-
+          <!-- Stepper -->
+          <div class="stepper">
+            <!-- Step -->
+            <div class="step">
+              <div class="circle blue"><i class="bi bi-upload"></i></div>
+              <div class="card">
+                <span>01</span>
+                <h5>Upload Credit Report</h5>
+                <p>Upload reports securely from all major credit bureaus.</p>
+              </div>
             </div>
-        </section>
 
-        <!--============what is expect =================-->
-        <section class="expect-section">
-            <div class="container">
-
-                <!-- Heading -->
-                <div class="text-center mb-5">
-                    <span class="badge-top">Timeline</span>
-                    <h2 class="title">What to <span>Expect</span></h2>
-                    <p class="subtitle">
-                        A clear, structured timeline showing what happens at each stage.
-                    </p>
-                </div>
-
-                <!-- Timeline -->
-                <div class="timeline">
-
-                    <!-- Item 1 -->
-                    <div class="timeline-item left">
-                        <div class="content-box">
-                            <span class="day">Day 1</span>
-                            <h5>Upload & Analysis</h5>
-                            <p>Upload your credit reports and receive an AI-powered analysis.</p>
-                        </div>
-                        <span class="dot"></span>
-                    </div>
-
-                    <!-- Item 2 -->
-                    <div class="timeline-item right">
-                        <span class="dot"></span>
-                        <div class="content-box">
-                            <span class="day">Day 2–3</span>
-                            <h5>Letter Generation</h5>
-                            <p>Customized, legally compliant dispute letters are generated.</p>
-                        </div>
-                    </div>
-
-                    <!-- Item 3 -->
-                    <div class="timeline-item left">
-                        <div class="content-box">
-                            <span class="day">Day 3–5</span>
-                            <h5>Disputes Sent</h5>
-                            <p>Disputes are mailed to credit bureaus with tracking enabled.</p>
-                        </div>
-                        <span class="dot"></span>
-                    </div>
-
-                    <!-- Item 4 -->
-                    <div class="timeline-item right">
-                        <span class="dot"></span>
-                        <div class="content-box">
-                            <span class="day">Day 5–30</span>
-                            <h5>Bureau Investigation</h5>
-                            <p>Credit bureaus investigate and respond within the legal window.</p>
-                        </div>
-                    </div>
-
-                    <!-- Item 5 -->
-                    <div class="timeline-item left">
-                        <div class="content-box">
-                            <span class="day">Day 30+</span>
-                            <h5>Results & Follow-Up</h5>
-                            <p>Results are reviewed and follow-ups are automatically sent.</p>
-                        </div>
-                        <span class="dot"></span>
-                    </div>
-
-                </div>
-
+            <div class="step">
+              <div class="circle purple"><i class="bi bi-stars"></i></div>
+              <div class="card">
+                <span>02</span>
+                <h5>AI Analysis</h5>
+                <p>AI detects errors, violations, and dispute opportunities.</p>
+              </div>
             </div>
-        </section>
 
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-box text-center">
-
-                    <h2>Ready to Get Started?</h2>
-                    <p>
-                        Join thousands who have already improved their credit with
-                        FICO Fixer Pro.
-                    </p>
-
-                    <a href="#" class="cta-btn">
-                        Start Your Free Trial →
-                    </a>
-
-                </div>
+            <div class="step">
+              <div class="circle orange">
+                <i class="bi bi-file-earmark-text"></i>
+              </div>
+              <div class="card">
+                <span>03</span>
+                <h5>Generate Letters</h5>
+                <p>Automatically create compliant dispute letters.</p>
+              </div>
             </div>
-        </section>
+
+            <div class="step">
+              <div class="circle green"><i class="bi bi-envelope"></i></div>
+              <div class="card">
+                <span>04</span>
+                <h5>Send Disputes</h5>
+                <p>Mail instantly or download letters for manual delivery.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="circle teal"><i class="bi bi-check-circle"></i></div>
+              <div class="card">
+                <span>05</span>
+                <h5>Track Progress</h5>
+                <p>Monitor responses and automate follow-ups.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--============what is expect =================-->
+      <section class="expect-section">
+        <div class="container">
+          <!-- Heading -->
+          <div class="text-center mb-5">
+            <span class="badge-top">Timeline</span>
+            <h2 class="title">What to <span>Expect</span></h2>
+            <p class="subtitle">
+              A clear, structured timeline showing what happens at each stage.
+            </p>
+          </div>
+
+          <!-- Timeline -->
+          <div class="timeline">
+            <!-- Item 1 -->
+            <div class="timeline-item left">
+              <div class="content-box">
+                <span class="day">Day 1</span>
+                <h5>Upload & Analysis</h5>
+                <p>
+                  Upload your credit reports and receive an AI-powered analysis.
+                </p>
+              </div>
+              <span class="dot"></span>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="timeline-item right">
+              <span class="dot"></span>
+              <div class="content-box">
+                <span class="day">Day 2–3</span>
+                <h5>Letter Generation</h5>
+                <p>
+                  Customized, legally compliant dispute letters are generated.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="timeline-item left">
+              <div class="content-box">
+                <span class="day">Day 3–5</span>
+                <h5>Disputes Sent</h5>
+                <p>
+                  Disputes are mailed to credit bureaus with tracking enabled.
+                </p>
+              </div>
+              <span class="dot"></span>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="timeline-item right">
+              <span class="dot"></span>
+              <div class="content-box">
+                <span class="day">Day 5–30</span>
+                <h5>Bureau Investigation</h5>
+                <p>
+                  Credit bureaus investigate and respond within the legal
+                  window.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="timeline-item left">
+              <div class="content-box">
+                <span class="day">Day 30+</span>
+                <h5>Results & Follow-Up</h5>
+                <p>
+                  Results are reviewed and follow-ups are automatically sent.
+                </p>
+              </div>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-box text-center">
+            <h2>Ready to Get Started?</h2>
+            <p>
+              Join thousands who have already improved their credit with FICO
+              Fixer Pro.
+            </p>
+
+            <a href="#" class="cta-btn"> Start Your Free Trial → </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--====================  Footer =====================-->
     <footer class="footer-premium pt-5">
-        <div class="container">
+      <div class="container">
+        <div class="row gy-5">
+          <!--  Left Brand -->
+          <div class="col-lg-4">
+            <div class="footer-brand">
+              <div class="footer-logo">
+                <img
+                  src="./assets/images/webImg/nav-logo.png"
+                  alt="footer-logo"
+                />
+              </div>
 
-            <div class="row gy-5">
+              <p class="brand-desc mt-3">
+                AI-powered credit repair software that generates Metro 2
+                compliant dispute letters backed by consumer protection law.
+              </p>
 
-                <!--  Left Brand -->
-                <div class="col-lg-4">
-                    <div class="footer-brand">
+              <!-- contact -->
+              <ul class="footer-contact">
+                <li><i class="bi bi-envelope"></i> support@ficofixerpro.com</li>
+                <li><i class="bi bi-telephone"></i> 1-800-FICO-FIX</li>
+                <li><i class="bi bi-geo-alt"></i> Miami, FL 33101</li>
+              </ul>
 
-                        <div class="footer-logo">
-                            <img src="./assets/images/webImg/nav-logo.png" alt="footer-logo">
-                        </div>
-
-                        <p class="brand-desc mt-3">
-                            AI-powered credit repair software that generates Metro 2 compliant dispute letters backed by
-                            consumer
-                            protection law.
-                        </p>
-
-                        <!-- contact -->
-                        <ul class="footer-contact">
-                            <li><i class="bi bi-envelope"></i> support@ficofixerpro.com</li>
-                            <li><i class="bi bi-telephone"></i> 1-800-FICO-FIX</li>
-                            <li><i class="bi bi-geo-alt"></i> Miami, FL 33101</li>
-                        </ul>
-
-                        <!-- social -->
-                        <div class="footer-social">
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-twitter-x"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                            <a href="#"><i class="bi bi-linkedin"></i></a>
-                            <a href="#"><i class="bi bi-youtube"></i></a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--  Product -->
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h6 class="footer-title">Product</h6>
-                    <ul class="footer-links">
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">How It Works</a></li>
-                        <li><a href="#">Templates</a></li>
-                        <li><a href="#">API Access</a></li>
-                    </ul>
-                </div>
-
-                <!--  Company -->
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h6 class="footer-title">Company</h6>
-                    <ul class="footer-links">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!--  Resources -->
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h6 class="footer-title">Resources</h6>
-                    <ul class="footer-links">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Credit Education</a></li>
-                        <li><a href="#">FCRA Guide</a></li>
-                        <li><a href="#">Sample Letters</a></li>
-                    </ul>
-                </div>
-
-                <!-- Legal -->
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h6 class="footer-title">Legal</h6>
-                    <ul class="footer-links">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                        <li><a href="#">DMCA</a></li>
-                        <li><a href="#">Compliance</a></li>
-                    </ul>
-                </div>
-
+              <!-- social -->
+              <div class="footer-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </div>
             </div>
+          </div>
 
-            <!-- bottom bar -->
-            <div class="footer-bottom mt-5">
-                <p class="mb-0">
-                    © 2026 FICO Fixer Pro. All rights reserved. Not affiliated with FICO® or Fair Isaac Corporation.
-                </p>
-            </div>
+          <!--  Product -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="footer-title">Product</h6>
+            <ul class="footer-links">
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">How It Works</a></li>
+              <li><a href="#">Templates</a></li>
+              <li><a href="#">API Access</a></li>
+            </ul>
+          </div>
 
+          <!--  Company -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="footer-title">Company</h6>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!--  Resources -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="footer-title">Resources</h6>
+            <ul class="footer-links">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Credit Education</a></li>
+              <li><a href="#">FCRA Guide</a></li>
+              <li><a href="#">Sample Letters</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="footer-title">Legal</h6>
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">DMCA</a></li>
+              <li><a href="#">Compliance</a></li>
+            </ul>
+          </div>
         </div>
-    </footer>
 
+        <!-- bottom bar -->
+        <div class="footer-bottom mt-5">
+          <p class="mb-0">
+            © 2026 FICO Fixer Pro. All rights reserved. Not affiliated with
+            FICO® or Fair Isaac Corporation.
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <!-- BOOTSTRAP LINK -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-
+  </body>
 </html>
